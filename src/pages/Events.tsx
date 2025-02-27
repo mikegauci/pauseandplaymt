@@ -50,14 +50,14 @@ const events: Event[] = [
 
 export default function Events() {
   return (
-    <div className="min-h-screen bg-gray-900 py-16">
+    <div className="min-h-screen bg-[#111] py-16">
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
-        <div className="bg-[#CCFF33] inline-block px-4 py-1 mb-8">
+        <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
           <h1 className="text-[#1E0B36] font-bold">2024</h1>
         </div>
 
-        <h2 className="text-[#FF6B4E] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
           What's Happening at Frome Festival 2024?
         </h2>
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-gray-[#111]">
       {/* Hero Section */}
       <div 
         className="relative h-[80vh] bg-cover bg-center"
@@ -14,15 +14,15 @@ export default function Home() {
         <div className="absolute inset-0 bg-gray-900 bg-opacity-70" />
         <div className="relative max-w-6xl mx-auto px-4 h-full flex items-center">
           <div>
-            <div className="bg-[#CCFF33] inline-block px-4 py-1 mb-8">
+            <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
               <h1 className="text-[#1E0B36] font-bold">Festival 2024</h1>
             </div>
-            <h2 className="text-[#FF6B4E] text-5xl font-bold mb-8">
+            <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
               Experience the magic of theatre, music, and art
             </h2>
             <Link
               to="/programme"
-              className="inline-flex items-center px-8 py-3 bg-[#CCFF33] text-[#1E0B36] text-lg font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-[#EEC60D] text-[#1E0B36] text-lg font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
             >
               View Programme
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -35,7 +35,7 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-[#FF6B4E] text-4xl font-bold mb-6">About the Festival</h2>
+            <h2 className="text-[#37B5FF] text-4xl font-bold mb-6">About the Festival</h2>
             <p className="text-white text-lg">
               Join us for an extraordinary celebration of arts and culture, featuring world-class performances,
               interactive workshops, and unforgettable experiences.
@@ -68,7 +68,7 @@ export default function Home() {
       {/* Featured Events */}
       <section className="py-20 bg-gray-900">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-[#FF6B4E] text-4xl font-bold mb-12 text-center">Featured Events</h2>
+          <h2 className="text-[#37B5FF] text-4xl font-bold mb-12 text-center">Featured Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {

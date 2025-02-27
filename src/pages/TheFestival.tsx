@@ -1,13 +1,13 @@
 export default function TheFestival() {
   return (
-    <div className="min-h-screen bg-gray-900 py-16">
+    <div className="min-h-screen bg-[#111] py-16">
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
-        <div className="bg-[#CCFF33] inline-block px-4 py-1 mb-8">
+        <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
           <h1 className="text-gray-900 font-bold">The Festival</h1>
         </div>
 
-        <h2 className="text-[#FF6B4E] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
           Celebrating Arts, Science and Culture in Frome
         </h2>
 
@@ -99,25 +99,6 @@ export default function TheFestival() {
                   <h4 className="text-white font-bold mb-2">Workshop Space</h4>
                   <p className="text-gray-300">Dedicated area for interactive sessions and classes</p>
                 </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Impact Section */}
-          <section className="bg-gray-800 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-purple-400 mb-6">Our Impact</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div>
-                <p className="text-4xl font-bold text-[#CCFF33] mb-2">5,000+</p>
-                <p className="text-white">Annual Visitors</p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold text-[#CCFF33] mb-2">50+</p>
-                <p className="text-white">Events & Workshops</p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold text-[#CCFF33] mb-2">100+</p>
-                <p className="text-white">Local Artists Supported</p>
               </div>
             </div>
           </section>

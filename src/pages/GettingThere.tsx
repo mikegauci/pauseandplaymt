@@ -1,12 +1,12 @@
 export default function GettingThere() {
   return (
-    <div className="min-h-screen bg-gray-900 py-16">
+    <div className="min-h-screen bg-[#111] py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="bg-[#CCFF33] inline-block px-4 py-1 mb-8">
+        <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
           <h1 className="text-[#1E0B36] font-bold">Getting There</h1>
         </div>
 
-        <h2 className="text-[#FF6B4E] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
           Explore magical places in Frome<br />
           with the Festival
         </h2>
@@ -17,7 +17,7 @@ export default function GettingThere() {
         </p>
 
         {/* Memorial Theatre Venue Card */}
-        <div className="bg-[#CCFF33] rounded-lg p-6 mb-12">
+        <div className="bg-[#EEC60D] rounded-lg p-6 mb-12">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.686891052898!2d-2.3234813!3d51.2308273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48721b6589b4eb33%3A0x44a8b9e891fd0c86!2sFrome%20Memorial%20Theatre!5e0!3m2!1sen!2suk!4v1710337284099!5m2!1sen!2suk"
             width="100%" 
@@ -70,7 +70,7 @@ export default function GettingThere() {
 
         {/* Transportation Options Grid */}
         <div className="mt-16 mb-12">
-          <h2 className="text-[#FF6B4E] text-3xl font-bold mb-8">Transportation Options</h2>
+          <h2 className="text-[#37B5FF] text-3xl font-bold mb-8">Transportation Options</h2>
           <div className="grid grid-cols-2 gap-8">
             {/* Bus Transportation */}
             <div className="bg-[#FF6B4E] rounded-lg p-6">
@@ -91,7 +91,7 @@ export default function GettingThere() {
             </div>
 
             {/* Train Transportation */}
-            <div className="bg-[#CCFF33] rounded-lg p-6">
+            <div className="bg-[#EEC60D] rounded-lg p-6">
               <img 
                 src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800"
                 alt="Train Transportation"

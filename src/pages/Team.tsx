@@ -15,7 +15,7 @@ const teamMembers = [
     role: 'Creative Director',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80',
     shortBio: 'Award-winning theatre director whose productions have been featured worldwide.',
-    color: 'bg-[#CCFF33]'
+    color: 'bg-[#EEC60D]'
   },
   {
     id: 'elena-rodriguez',
@@ -29,32 +29,65 @@ const teamMembers = [
 
 const festivalCollaborators = [
   {
-    name: 'Emma Thompson',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80',
-    role: 'Workshop Facilitator'
+    id: 'alex-weenink',
+    name: 'Alex Weenink',
+    image: '/Alex-Weenink-1.jpg',
+    role: 'Workshop Facilitator',
+    color: 'bg-purple-500',
+    shortBio: 'Workshop Facilitator bringing creative experiences to life.'
   },
   {
-    name: 'James Wilson',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80',
-    role: 'Technical Director'
+    id: 'charlene-galea',
+    name: 'Charlene Galea',
+    image: '/Charlene-Galea-1.jpg',
+    role: 'Technical Director',
+    color: 'bg-[#EEC60D]',
+    shortBio: 'Technical Director ensuring seamless production execution.'
   },
   {
-    name: 'Maria Garcia',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80',
-    role: 'Community Liaison'
+    id: 'emily-salnitro',
+    name: 'Emily Salnitro',
+    image: '/Emily-Salnitro.jpg-1.jpg',
+    role: 'Community Liaison',
+    color: 'bg-amber-500',
+    shortBio: 'Community Liaison building bridges between artists and audiences.'
+  },
+  {
+    id: 'rebecca-grech-1',
+    name: 'Rebecca Grech',
+    image: '/Rebecca-Grech-1.jpg',
+    role: 'Production Assistant',
+    color: 'bg-purple-500',
+    shortBio: 'Production Assistant supporting all aspects of festival operations.'
+  },
+  {
+    id: 'rebecca-grech-2',
+    name: 'Rebecca Grech',
+    image: '/Rebecca-Grech-11.jpg',
+    role: 'Stage Manager',
+    color: 'bg-[#EEC60D]',
+    shortBio: 'Stage Manager coordinating performances with precision.'
+  },
+  {
+    id: 'rebecca-grech-3',
+    name: 'Rebecca Grech',
+    image: '/Rebecca-Grech-111.jpg',
+    role: 'Event Coordinator',
+    color: 'bg-amber-500',
+    shortBio: 'Event Coordinator orchestrating memorable festival experiences.'
   }
 ];
 
 export default function Team() {
   return (
-    <div className="min-h-screen bg-gray-900 py-16">
+    <div className="min-h-screen bg-[#111] py-16">
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
-        <div className="bg-[#CCFF33] inline-block px-4 py-1 mb-8">
+        <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
           <h1 className="text-gray-900 font-bold">Our Team</h1>
         </div>
 
-        <h2 className="text-[#FF6B4E] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
           Learn about the people behind this festival
         </h2>
 
@@ -88,10 +121,10 @@ export default function Team() {
                 className="w-full aspect-square object-cover"
               />
               <div className={`${member.color} p-6`}>
-                <h3 className={`text-2xl font-bold mb-2 ${member.color === 'bg-[#CCFF33]' ? 'text-[#1E0B36]' : 'text-white'}`}>
+                <h3 className={`text-2xl font-bold mb-2 ${member.color === 'bg-[#EEC60D]' ? 'text-[#1E0B36]' : 'text-white'}`}>
                   {member.name}
                 </h3>
-                <p className={member.color === 'bg-[#CCFF33]' ? 'text-[#1E0B36]/90' : 'text-white/90'}>
+                <p className={member.color === 'bg-[#EEC60D]' ? 'text-[#1E0B36]/90' : 'text-white/90'}>
                   {member.role}
                 </p>
               </div>
@@ -101,18 +134,27 @@ export default function Team() {
 
         {/* Festival Collaborators Section */}
         <h2 className="text-white text-4xl font-bold text-center mb-12">Festival Collaborators</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-[420px]:grid-cols-1">
           {festivalCollaborators.map((collaborator) => (
-            <div 
-              key={collaborator.name}
-              className="rounded-lg overflow-hidden"
+            <Link
+              key={collaborator.id}
+              to={`/team/${collaborator.id}`}
+              className="rounded-lg overflow-hidden block transition-transform hover:scale-105"
             >
               <img 
                 src={collaborator.image}
                 alt={collaborator.name}
                 className="w-full aspect-square object-cover"
               />
-            </div>
+              <div className={`${collaborator.color} p-6`}>
+                <h3 className={`text-2xl font-bold mb-2 ${collaborator.color === 'bg-[#EEC60D]' ? 'text-[#1E0B36]' : 'text-white'}`}>
+                  {collaborator.name}
+                </h3>
+                <p className={collaborator.color === 'bg-[#EEC60D]' ? 'text-[#1E0B36]/90' : 'text-white/90'}>
+                  {collaborator.role}
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

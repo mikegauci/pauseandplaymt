@@ -70,6 +70,138 @@ Elena is also passionate about mentoring the next generation of theatre technici
       'Sydney Theatre Company Season (2021)',
       'Teatro Real Opera Season (2019-2020)'
     ]
+  },
+  'alex-weenink': {
+    name: 'Alex Weenink',
+    role: 'Workshop Facilitator',
+    image: '/Alex-Weenink-1.jpg',
+    bio: `Alex Weenink is a dynamic Workshop Facilitator who brings creativity and innovation to every session. With a background in interactive theatre and educational programming, Alex specializes in creating engaging and transformative workshop experiences.
+
+Alex has developed numerous successful workshop programs that blend traditional theatre techniques with contemporary approaches. Their work focuses on making theatre accessible and engaging for participants of all backgrounds and experience levels.
+
+As Workshop Facilitator for Festival 2024, Alex designs and leads interactive sessions that encourage participants to explore their creativity and develop new skills. Their workshops are known for their inclusive approach and ability to bring out the best in participants.
+
+Alex's commitment to arts education and community engagement has made them a valuable member of the festival team, helping to bridge the gap between performers and audiences through hands-on learning experiences.`,
+    achievements: [
+      'Developed innovative workshop programs for diverse audiences',
+      'Led over 100 successful theatre workshops',
+      'Created inclusive theatre education programs',
+      'Received Excellence in Arts Education Award'
+    ],
+    productions: [
+      'Interactive Theatre Workshop Series (2023)',
+      'Community Theatre Development Program (2022)',
+      'Youth Theatre Initiative (2021)'
+    ]
+  },
+  'charlene-galea': {
+    name: 'Charlene Galea',
+    role: 'Technical Director',
+    image: '/Charlene-Galea-1.jpg',
+    bio: `Charlene Galea is an accomplished Technical Director with extensive experience in theatre production and technical management. Her expertise spans lighting design, sound engineering, and stage management.
+
+With a background in both traditional and contemporary theatre technologies, Charlene ensures that each production meets the highest technical standards while supporting artistic vision.
+
+As Technical Director for Festival 2024, Charlene oversees all technical aspects of productions, from initial planning to final execution. Her innovative approaches to technical challenges have helped create some of the festival's most memorable performances.
+
+Charlene's dedication to excellence and ability to solve complex technical challenges makes her an invaluable member of the festival team.`,
+    achievements: [
+      'Led technical direction for major international productions',
+      'Implemented innovative stage technologies',
+      'Developed sustainable technical practices',
+      'Excellence in Technical Theatre Award'
+    ],
+    productions: [
+      'International Theatre Festival (2023)',
+      'Modern Dance Technical Production (2022)',
+      'Experimental Theatre Series (2021)'
+    ]
+  },
+  'emily-salnitro': {
+    name: 'Emily Salnitro',
+    role: 'Community Liaison',
+    image: '/Emily-Salnitro.jpg-1.jpg',
+    bio: `Emily Salnitro serves as the vital link between the festival and the local community. With a background in community arts and cultural programming, Emily excels at creating meaningful connections between artists and audiences.
+
+Her work focuses on developing partnerships with local organizations, schools, and community groups to ensure the festival remains accessible and relevant to diverse audiences.
+
+As Community Liaison for Festival 2024, Emily coordinates outreach programs and develops initiatives that bring theatre into the community. Her work has been instrumental in expanding the festival's reach and impact.
+
+Emily's passion for community engagement and ability to build lasting relationships has helped create a more inclusive and welcoming festival environment.`,
+    achievements: [
+      'Established successful community partnership programs',
+      'Increased community participation by 200%',
+      'Developed youth engagement initiatives',
+      'Community Arts Leadership Award'
+    ],
+    productions: [
+      'Community Arts Festival (2023)',
+      'Neighborhood Theatre Program (2022)',
+      'Schools Outreach Initiative (2021)'
+    ]
+  },
+  'rebecca-grech-1': {
+    name: 'Rebecca Grech',
+    role: 'Production Assistant',
+    image: '/Rebecca-Grech-1.jpg',
+    bio: `Rebecca Grech brings efficiency and organization to her role as Production Assistant. Her attention to detail and strong organizational skills ensure smooth operations across all festival productions.
+
+Working closely with the production team, Rebecca coordinates various aspects of show preparation and execution, from rehearsal scheduling to performance support.
+
+Her role is crucial in maintaining communication between different departments and ensuring all production elements come together seamlessly.`,
+    achievements: [
+      'Coordinated multiple successful production runs',
+      'Streamlined production processes',
+      'Developed efficient scheduling systems',
+      'Excellence in Production Support Award'
+    ],
+    productions: [
+      'Main Stage Productions (2023)',
+      'Festival Workshop Series (2022)',
+      'Youth Theatre Program (2021)'
+    ]
+  },
+  'rebecca-grech-2': {
+    name: 'Rebecca Grech',
+    role: 'Stage Manager',
+    image: '/Rebecca-Grech-11.jpg',
+    bio: `As Stage Manager, Rebecca Grech demonstrates exceptional leadership in coordinating all aspects of stage productions. Her expertise in stage management ensures flawless execution of performances.
+
+With a keen eye for detail and strong communication skills, Rebecca maintains high standards of production quality while managing complex technical requirements.
+
+Her ability to handle multiple tasks under pressure and coordinate various production elements makes her an essential part of the festival team.`,
+    achievements: [
+      'Managed over 50 successful stage productions',
+      'Implemented innovative stage management systems',
+      'Excellence in Stage Management Award',
+      'Led multiple international productions'
+    ],
+    productions: [
+      'International Theatre Festival (2023)',
+      'Contemporary Dance Series (2022)',
+      'Classical Theatre Productions (2021)'
+    ]
+  },
+  'rebecca-grech-3': {
+    name: 'Rebecca Grech',
+    role: 'Event Coordinator',
+    image: '/Rebecca-Grech-111.jpg',
+    bio: `Rebecca Grech excels in her role as Event Coordinator, bringing creativity and precision to festival event planning and execution. Her expertise in event management ensures memorable experiences for all attendees.
+
+She oversees the planning and coordination of various festival events, from opening ceremonies to special performances and workshops.
+
+Rebecca's ability to anticipate needs and solve problems quickly has made her invaluable to the festival's success.`,
+    achievements: [
+      'Coordinated major festival events',
+      'Developed innovative event concepts',
+      'Increased event attendance by 150%',
+      'Event Management Excellence Award'
+    ],
+    productions: [
+      'Festival Opening Gala (2023)',
+      'Special Performance Series (2022)',
+      'Community Events Program (2021)'
+    ]
   }
 };
 
@@ -82,7 +214,7 @@ export default function TeamMember() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 py-16">
+    <div className="min-h-screen bg-[#111] py-16">
       <div className="max-w-6xl mx-auto px-4">
         <Link
           to="/team"

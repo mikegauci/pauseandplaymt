@@ -6,7 +6,7 @@ import { Layout } from './components/Layout';
 const Home = React.lazy(() => import('./pages/Home'));
 const Team = React.lazy(() => import('./pages/Team'));
 const TeamMember = React.lazy(() => import('./pages/TeamMember'));
-const TheatreStudies = React.lazy(() => import('./pages/TheatreStudies'));
+const DepartmentOfTheatreStudies = React.lazy(() => import('./pages/DepartmentOfTheatreStudies'));
 const Events = React.lazy(() => import('./pages/Events'));
 const Partners = React.lazy(() => import('./pages/Partners'));
 const Contact = React.lazy(() => import('./pages/Contact'));
@@ -35,9 +35,9 @@ function App() {
               <TeamMember />
             </React.Suspense>
           } />
-          <Route path="theatre-studies" element={
+          <Route path="department-of-theatre-studies" element={
             <React.Suspense fallback={<div>Loading...</div>}>
-              <TheatreStudies />
+              <DepartmentOfTheatreStudies />
             </React.Suspense>
           } />
           <Route path="events" element={
