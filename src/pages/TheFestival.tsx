@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function TheFestival() {
   return (
     <div className="min-h-screen bg-[#111] py-16">
@@ -11,9 +13,8 @@ export default function TheFestival() {
           Celebrating Arts, Science and Culture in Frome
         </h2>
 
-        <p className="text-white text-lg mb-16">
-          The Frome Festival brings together artists, performers, and audiences for an extraordinary 
-          celebration of creativity and innovation. Join us for three days of unforgettable experiences.
+        <p className="text-white text-lg mb-16 max-w-4xl">
+          Through this three-day festival, allow yourself to dive into the magic of the performing arts where artists let their imaginations run wild, and audiences get to explore, connect, and play in whatever way feels just right. From quiet reflections to moments of pure joy, we're here to celebrate how art brings us closer to ourselves and to each other.
         </p>
 
         {/* Main Content Sections */}
@@ -24,13 +25,13 @@ export default function TheFestival() {
               <h3 className="text-2xl font-bold text-purple-400 mb-4">About the Festival</h3>
               <div className="text-gray-300 space-y-4">
                 <p>
-                  Founded in 2020, the Frome Festival has grown into one of the region's most anticipated 
-                  cultural events. We bring together local and international talent to create a unique 
-                  platform for artistic expression and community engagement.
+                  Get ready to feel, connect, and discover the extraordinary in every performance! 
                 </p>
                 <p>
-                  Our mission is to make arts and culture accessible to everyone while supporting emerging 
-                  artists and fostering creative collaboration.
+                  This is a festival about celebrating play and creativity. This is a festival to pause and reflect, play to connect.
+                </p>
+                <p>
+                  The festival will take place over three days, beginning on the evening of Friday 9th, and continuing throughout Saturday 10th and Sunday 11th May.
                 </p>
               </div>
             </div>
@@ -41,65 +42,36 @@ export default function TheFestival() {
             />
           </section>
 
-          {/* What to Expect Section */}
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <img 
-              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800"
-              alt="Interactive workshop"
-              className="rounded-lg object-cover h-80 w-full md:order-2"
-            />
-            <div className="md:order-1">
-              <h3 className="text-2xl font-bold text-purple-400 mb-4">What to Expect</h3>
-              <ul className="text-gray-300 space-y-3 list-disc list-inside">
-                <li>Interactive workshops and masterclasses</li>
-                <li>Live performances and exhibitions</li>
-                <li>Community art projects</li>
-                <li>International guest artists</li>
-                <li>Family-friendly activities</li>
-                <li>Local food and craft vendors</li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Venues Section */}
+          {/* Navigation Links */}
           <section>
-            <h3 className="text-2xl font-bold text-purple-400 mb-6">Our Venues</h3>
+            <h3 className="text-2xl font-bold text-purple-400 mb-6">Explore More</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-gray-800 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=800"
-                  alt="Memorial Theatre"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h4 className="text-white font-bold mb-2">Memorial Theatre</h4>
-                  <p className="text-gray-300">Our main stage for performances and major events</p>
+              <Link to="/events" className="group">
+                <div className="bg-gray-800 rounded-lg overflow-hidden transition-all duration-300 group-hover:bg-gray-700 group-hover:shadow-lg border-l-4 border-[#37B5FF]">
+                  <div className="p-6">
+                    <h4 className="text-white font-bold text-xl mb-2 group-hover:text-[#37B5FF]">Events</h4>
+                    <p className="text-gray-300">Discover all the performances and activities planned for the festival</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="bg-gray-800 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800"
-                  alt="The Gallery"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h4 className="text-white font-bold mb-2">The Gallery</h4>
-                  <p className="text-gray-300">Exhibition space for visual arts and installations</p>
+              <Link to="/team" className="group">
+                <div className="bg-gray-800 rounded-lg overflow-hidden transition-all duration-300 group-hover:bg-gray-700 group-hover:shadow-lg border-l-4 border-[#EEC60D]">
+                  <div className="p-6">
+                    <h4 className="text-white font-bold text-xl mb-2 group-hover:text-[#EEC60D]">Festival Team</h4>
+                    <p className="text-gray-300">Meet the people who make the Pause & Play Festival possible</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="bg-gray-800 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1526399743290-f73cb4022f48?w=800"
-                  alt="Workshop Space"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h4 className="text-white font-bold mb-2">Workshop Space</h4>
-                  <p className="text-gray-300">Dedicated area for interactive sessions and classes</p>
+              <Link to="/getting-there" className="group">
+                <div className="bg-gray-800 rounded-lg overflow-hidden transition-all duration-300 group-hover:bg-gray-700 group-hover:shadow-lg border-l-4 border-purple-400">
+                  <div className="p-6">
+                    <h4 className="text-white font-bold text-xl mb-2 group-hover:text-purple-400">Getting There</h4>
+                    <p className="text-gray-300">Find directions, accommodation and local information</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </section>
         </div>

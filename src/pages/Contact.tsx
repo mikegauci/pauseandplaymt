@@ -79,26 +79,27 @@ export default function Contact() {
         </div>
 
         <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
-          Get in touch with the Frome Festival team.
+          Get in touch with the Pause & Play Festival team.
         </h2>
 
         <p className="text-white text-lg mb-16">
-          At Frome Festival, we'd love to hear from you! If you have any questions or want to get involved,
-          contact us through the form below:
+          We'd love to hear from you! If you have any questions or want to get in touch, contact us through the form below:
         </p>
 
         {/* Contact Form */}
-        <div className="bg-[#EEC60D] rounded-lg p-8 max-w-2xl mx-auto">
+        <div className="bg-[#1a1a1a] rounded-lg p-8 max-w-2xl mx-auto border border-[#37B5FF]/20">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-[#1E0B36] font-semibold mb-2">
-                Name <span className="text-red-600">*</span>
+              <label htmlFor="name" className="block text-[#37B5FF] font-semibold mb-2">
+                Name <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
                 id="name"
                 required
-                className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full px-4 py-2 rounded-lg bg-[#111] border border-[#37B5FF]/20 text-white 
+                         focus:outline-none focus:ring-2 focus:ring-[#37B5FF]/50 focus:border-[#37B5FF]
+                         placeholder-gray-500 transition-colors"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 disabled={isSubmitting}
@@ -106,14 +107,16 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-[#1E0B36] font-semibold mb-2">
-                Email <span className="text-red-600">*</span>
+              <label htmlFor="email" className="block text-[#37B5FF] font-semibold mb-2">
+                Email <span className="text-red-500">*</span>
               </label>
               <input
                 type="email"
                 id="email"
                 required
-                className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full px-4 py-2 rounded-lg bg-[#111] border border-[#37B5FF]/20 text-white 
+                         focus:outline-none focus:ring-2 focus:ring-[#37B5FF]/50 focus:border-[#37B5FF]
+                         placeholder-gray-500 transition-colors"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 disabled={isSubmitting}
@@ -121,14 +124,16 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-[#1E0B36] font-semibold mb-2">
-                Your Message <span className="text-red-600">*</span>
+              <label htmlFor="message" className="block text-[#37B5FF] font-semibold mb-2">
+                Your Message <span className="text-red-500">*</span>
               </label>
               <textarea
                 id="message"
                 required
                 rows={6}
-                className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full px-4 py-2 rounded-lg bg-[#111] border border-[#37B5FF]/20 text-white 
+                         focus:outline-none focus:ring-2 focus:ring-[#37B5FF]/50 focus:border-[#37B5FF]
+                         placeholder-gray-500 transition-colors resize-none"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 disabled={isSubmitting}
@@ -137,7 +142,9 @@ export default function Contact() {
 
             {status.message && (
               <div className={`p-4 rounded-lg ${
-                status.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                status.type === 'success' 
+                  ? 'bg-green-900/20 text-green-400 border border-green-500/20' 
+                  : 'bg-red-900/20 text-red-400 border border-red-500/20'
               }`}>
                 {status.message}
               </div>
@@ -146,8 +153,8 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`bg-[#1E0B36] text-white px-8 py-3 rounded-lg font-semibold 
-                ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-purple-900'} 
+              className={`bg-[#37B5FF] text-[#111] px-8 py-3 rounded-lg font-semibold 
+                ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#37B5FF]/90'} 
                 transition-colors w-full`}
             >
               {isSubmitting ? 'Sending...' : 'Submit'}

@@ -32,49 +32,65 @@ const festivalCollaborators = [
     id: 'alex-weenink',
     name: 'Alex Weenink',
     image: '/Alex-Weenink-1.jpg',
-    role: 'Workshop Facilitator',
+    role: 'Performer',
     color: 'bg-purple-500',
     shortBio: 'Workshop Facilitator bringing creative experiences to life.'
+  },
+  {
+    id: 'rebecca-greca',
+    name: 'Rebecca Grech',
+    image: '/Rebecca-Grech-1.jpg',
+    role: 'Performer',
+    color: 'bg-[#EEC60D]',
+    shortBio: 'Stage Manager coordinating performances with precision.'
+  },
+  {
+    id: 'edmilson-zammit',
+    name: 'Edmilson Zammit',
+    image: '/Edmilson-Zammit-1.jpg',
+    role: 'Performer',
+    color: 'bg-amber-500',
+    shortBio: 'Event Coordinator orchestrating memorable festival experiences.'
   },
   {
     id: 'charlene-galea',
     name: 'Charlene Galea',
     image: '/Charlene-Galea-1.jpg',
-    role: 'Technical Director',
+    role: 'Performer',
+    color: 'bg-[#EEC60D]',
+    shortBio: 'Technical Director ensuring seamless production execution.'
+  },
+  {
+    id: 'malcolm-micallef',
+    name: 'Malcolm Micallef',
+    image: '/Malcolm-Micallef-1.jpg',
+    role: 'Performer',
     color: 'bg-[#EEC60D]',
     shortBio: 'Technical Director ensuring seamless production execution.'
   },
   {
     id: 'emily-salnitro',
     name: 'Emily Salnitro',
-    image: '/Emily-Salnitro.jpg-1.jpg',
-    role: 'Community Liaison',
+    image: '/Emily-Salnitro-1.jpg',
+    role: 'Performer',
     color: 'bg-amber-500',
     shortBio: 'Community Liaison building bridges between artists and audiences.'
   },
   {
-    id: 'rebecca-grech-1',
-    name: 'Rebecca Grech',
-    image: '/Rebecca-Grech-1.jpg',
-    role: 'Production Assistant',
+    id: 'nicole-zammit',
+    name: 'Nicole Zammit',
+    image: '/Nicole-Zammit-1.jpg',
+    role: 'Performer',
     color: 'bg-purple-500',
     shortBio: 'Production Assistant supporting all aspects of festival operations.'
   },
   {
-    id: 'rebecca-grech-2',
-    name: 'Rebecca Grech',
-    image: '/Rebecca-Grech-11.jpg',
-    role: 'Stage Manager',
-    color: 'bg-[#EEC60D]',
-    shortBio: 'Stage Manager coordinating performances with precision.'
-  },
-  {
-    id: 'rebecca-grech-3',
-    name: 'Rebecca Grech',
-    image: '/Rebecca-Grech-111.jpg',
-    role: 'Event Coordinator',
+    id: 'benjamin-abela',
+    name: 'Benjamin Abela',
+    image: '/Benjamin-Abela-1.jpg',
+    role: 'Performer',
     color: 'bg-amber-500',
-    shortBio: 'Event Coordinator orchestrating memorable festival experiences.'
+    shortBio: 'Community Liaison building bridges between artists and audiences.'
   }
 ];
 

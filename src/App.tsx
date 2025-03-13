@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 
 // Pages
 const Home = React.lazy(() => import('./pages/Home'));
@@ -8,6 +9,7 @@ const Team = React.lazy(() => import('./pages/Team'));
 const TeamMember = React.lazy(() => import('./pages/TeamMember'));
 const DepartmentOfTheatreStudies = React.lazy(() => import('./pages/DepartmentOfTheatreStudies'));
 const Events = React.lazy(() => import('./pages/Events'));
+const EventsDetails = React.lazy(() => import('./pages/EventsDetails'));
 const Partners = React.lazy(() => import('./pages/Partners'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const FAQ = React.lazy(() => import('./pages/FAQ'));
@@ -18,6 +20,7 @@ const GettingThere = React.lazy(() => import('./pages/GettingThere'));
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={
@@ -33,6 +36,11 @@ function App() {
           <Route path="team/:id" element={
             <React.Suspense fallback={<div>Loading...</div>}>
               <TeamMember />
+            </React.Suspense>
+          } />
+          <Route path="events/:id" element={
+            <React.Suspense fallback={<div>Loading...</div>}>
+              <EventsDetails />
             </React.Suspense>
           } />
           <Route path="department-of-theatre-studies" element={
