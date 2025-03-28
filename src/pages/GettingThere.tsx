@@ -74,7 +74,7 @@ export default function GettingThere() {
           There will be three venues for the festival.
           <br />
           <br />
-          The main festival venue will be the University’s Valletta Campus, with
+          The main festival venue will be the University's Valletta Campus, with
           performances distributed across the ground floor.
           <br />
           <br />
@@ -170,21 +170,13 @@ export default function GettingThere() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Bus Transportation */}
             <div className="bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:translate-y-[-5px] group">
-              <div className="relative h-56 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800"
-                  alt="Bus Transportation"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 flex items-center">
-                  <Bus className="w-6 h-6 text-[#FF6B4E] mr-2" />
-                  <h3 className="text-white text-2xl font-bold">
-                    Travelling by Bus
-                  </h3>
+              <div className="p-6 flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full bg-[#222] flex items-center justify-center mb-4 border-2 border-[#FF6B4E]">
+                  <Bus className="w-10 h-10 text-[#FF6B4E]" />
                 </div>
-              </div>
-              <div className="p-6">
+                <h3 className="text-white text-2xl font-bold mb-4 text-center">
+                  Travelling by Bus
+                </h3>
                 <div className="text-gray-300 space-y-2">
                   <p>
                     Almost all buses travel to Valletta from pretty much
@@ -199,21 +191,13 @@ export default function GettingThere() {
 
             {/* Ferry Transportation */}
             <div className="bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:translate-y-[-5px] group">
-              <div className="relative h-56 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800"
-                  alt="Ferry Transportation"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 flex items-center">
-                  <Ship className="w-6 h-6 text-[#EEC60D] mr-2" />
-                  <h3 className="text-white text-2xl font-bold">
-                    Travelling by Ferry
-                  </h3>
+              <div className="p-6 flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full bg-[#222] flex items-center justify-center mb-4 border-2 border-[#EEC60D]">
+                  <Ship className="w-10 h-10 text-[#EEC60D]" />
                 </div>
-              </div>
-              <div className="p-6">
+                <h3 className="text-white text-2xl font-bold mb-4 text-center">
+                  Travelling by Ferry
+                </h3>
                 <div className="text-gray-300 space-y-2">
                   <p>
                     You can catch the ferry from; The Strand in Sliema directly
@@ -229,21 +213,13 @@ export default function GettingThere() {
 
             {/* Taxi */}
             <div className="bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:translate-y-[-5px] group">
-              <div className="relative h-56 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1581262177000-8139a463e531?w=800"
-                  alt="Taxi Transportation"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 flex items-center">
-                  <Car className="w-6 h-6 text-[#FFD700] mr-2" />
-                  <h3 className="text-white text-2xl font-bold">
-                    Travelling by Taxi
-                  </h3>
+              <div className="p-6 flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full bg-[#222] flex items-center justify-center mb-4 border-2 border-[#FFD700]">
+                  <Car className="w-10 h-10 text-[#FFD700]" />
                 </div>
-              </div>
-              <div className="p-6">
+                <h3 className="text-white text-2xl font-bold mb-4 text-center">
+                  Travelling by Taxi
+                </h3>
                 <div className="text-gray-300 space-y-2">
                   <p>
                     Taxis are incredibly easy to book from anywhere in Malta,
@@ -259,27 +235,19 @@ export default function GettingThere() {
 
             {/* Parking Spots */}
             <div className="bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:translate-y-[-5px] group">
-              <div className="relative h-56 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800"
-                  alt="Parking Spots"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 flex items-center">
-                  <Car className="w-6 h-6 text-[#FF6B4E] mr-2" />
-                  <h3 className="text-white text-2xl font-bold">
-                    Parking Spots
-                  </h3>
+              <div className="p-6 flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full bg-[#222] flex items-center justify-center mb-4 border-2 border-[#FF6B4E]">
+                  <div className="w-10 h-10 flex items-center justify-center text-[#FF6B4E] font-bold text-3xl">P</div>
                 </div>
-              </div>
-              <div className="p-6">
+                <h3 className="text-white text-2xl font-bold mb-4 text-center">
+                  Parking Spots
+                </h3>
                 <div className="text-gray-300 space-y-2">
                   <p>
                     While we encourage more sustainable uses of getting to the
                     festival, Valletta offers numerous parking spots (subject to
                     a CVA charge) and a car park (MCP Car Park) can be located
-                    just outside of Valletta’s main gates in Floriana. If you
+                    just outside of Valletta's main gates in Floriana. If you
                     choose to park in the car park, Valletta Campus (and other
                     external venues) is easily accessible by foot and should
                     only take you 15 minutes to get there.
