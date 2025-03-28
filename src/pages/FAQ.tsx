@@ -11,59 +11,61 @@ interface FAQSection {
 
 const faqSections: FAQSection[] = [
   {
-    title: "Getting to the Festival",
+    title: "Festival Information",
     questions: [
       {
-        question: "Where are the festival venues located?",
-        answer: "Our main venues are the Memorial Theatre and Merlin Theatre in Frome. Each event listing will specify the exact venue. Please check your tickets and event details carefully as performances take place at different locations throughout the festival."
+        question: "When will the festival be taking place?",
+        answer: "The festival will take place over three days, beginning on the evening of Friday 9th, and continuing throughout Saturday 10th and Sunday 11th May."
       },
       {
-        question: "What are my parking options?",
-        answer: [
-          "There are several parking options available in Frome:",
-          "• Cork Street Car Park - Closest to Memorial Theatre",
-          "• Merchants Barton Car Park - Central location",
-          "• Justice Lane Car Park - Near Merlin Theatre",
-          "We recommend arriving early to secure parking, especially for popular events."
-        ]
+        question: "Where will the festival be taking place?",
+        answer: "There will be three venues for the festival. The main venue will be the University's Valletta Campus, with performances distributed across the ground floor. Additional external venues will also host performances for the festival, namely Wild Honey Beer House & Bistro and MaeWest and are within walking distance from the main festival venue."
       },
       {
-        question: "Can I get there by public transport?",
-        answer: "Yes! Regular bus services run to Frome from Bath, Bristol, and surrounding areas. The nearest train station is Frome Railway Station, with direct services from London Paddington and Bristol Temple Meads."
+        question: "How much do tickets cost?",
+        answer: "The festival is entirely free of charge throughout the three days (except for the external performances), however a donation at the festival venue would be much appreciated."
+      },
+      {
+        question: "What is the age rating of the festival?",
+        answer: "The festival itself does not have an age rating and is suitable for everyone, however the individual performances may be unsuitable for younger audiences and its under the discretion of parents and/or guardians to decide whether the performance in question is suitable or not."
+      },
+      {
+        question: "Are there any content warnings?",
+        answer: "The festival itself is suitable for everyone, however certain performances may deal with sensitive and/or mature topics. We highly recommend checking before attending a performance to see whether said performance will have any content warnings or not and deciding then."
       }
     ]
   },
   {
-    title: "Attending a Show",
+    title: "External Performances",
     questions: [
       {
-        question: "I will be attending with someone who requires assistance. What should I do?",
-        answer: "Please contact our box office ahead of your visit so we can ensure your visit is as comfortable and enjoyable as possible. We're committed to making our venues accessible to all."
+        question: "What are the external performances?",
+        answer: "External performances are evening performances that will be taking place outside of the main festival venue. An additional external venue in Valletta will host these performances that are with a more risqué and/or feel-good atmosphere."
       },
       {
-        question: "Are seats numbered? When do doors open?",
-        answer: "Most seating is on a first-come, first-served basis (except for certain high-capacity shows). Venue doors typically open 30 minutes before the performance. We recommend arriving early to get your preferred seats."
+        question: "Where are the external performances?",
+        answer: "The external performances will be at two separate locations in Valletta, those being; Wild Honey Beer House & Bistro on Merchants' Street and MaeWest on Strait Street and not at Valletta Campus itself."
       },
       {
-        question: "What is your latecomers policy?",
-        answer: "To avoid disruption to performers and other audience members, latecomers may not be admitted until a suitable break in the performance. Please plan to arrive with plenty of time."
+        question: "How much are the external performances?",
+        answer: "The external performances will be free of charge with a €5 donation at the door which will also entitle you to a free drink at the venue. You can still attend without paying a €5 donation, but you will not be entitled to a drink. The donation is there to pay the external artists who are taking part."
       }
     ]
   },
   {
-    title: "Tickets and Booking",
+    title: "Accessibility",
     questions: [
       {
-        question: "How do I book tickets?",
-        answer: "You can book tickets online through our website or in person at our box office. We recommend booking in advance as many events sell out quickly."
+        question: "Is there disabled-friendly access?",
+        answer: "Valletta Campus is disabled-friendly, please contact: conferences@um.edu.mt for more information. Unfortunately, Wild Honey Beer House and Bistro and MaeWest are not disabled-friendly, we apologise for the inconvenience."
       },
       {
-        question: "Do you offer group discounts?",
-        answer: "Yes, we offer discounts for groups of 10 or more. Please contact our box office for details on group booking rates."
+        question: "Is the venue suitable for elderly or persons with mobility issues?",
+        answer: "Valletta Campus has a step-free access and can be accommodating for elderly/persons with mobility issues, please contact: conferences@um.edu.mt for more information. MaeWest may be accommodating for elderly/persons with mobility issues, we strongly suggest contacting the venue to query on this. Unfortunately, Wild Honey Beer House and Bistro may not be accommodating for elderly/persons with mobility issues, we apologise for the inconvenience."
       },
       {
-        question: "What is your refund policy?",
-        answer: "We do not offer refunds unless a performance is cancelled. In the event of a cancellation, ticket holders will be contacted directly with information about refunds."
+        question: "I have more questions, who do I contact?",
+        answer: "If you have more questions about the festival, the external performances or want more information, please contact the Pause & Play Festival Team on our contact page."
       }
     ]
   }
@@ -93,7 +95,7 @@ export default function FAQ() {
         </h2>
 
         <p className="text-white text-lg mb-16">
-          We've compiled answers to the most common questions about attending the Frome Festival. 
+          We've compiled answers to the most common questions about attending the Pause & Play Festival. 
           If you can't find what you're looking for, please don't hesitate to contact us.
         </p>
 

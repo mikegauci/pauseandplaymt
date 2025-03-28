@@ -24,38 +24,38 @@ export default function GettingThere() {
     {
       id: "valletta-campus",
       name: "Valletta Campus Theatre",
-      address: "Triq San Pawl, Il-Belt Valletta",
+      address: "Merchants Street, Valletta",
       description:
         "The Valletta Campus Theatre is located within the historic University of Malta Valletta Campus, a stunning baroque building in the heart of Valletta.",
-      coordinates: "35.89754,14.511698",
+      coordinates: "35.8986576,14.5152355",
       color: "#EEC60D",
       isMain: true,
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.7978535352865!2d14.511698!3d35.89754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e45257a20f57f%3A0xd77e882f484d0aee!2sValletta%20Campus%20Theatre!5e0!3m2!1sen!2smt!4v1721145847186!5m2!1sen!2smt",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d520.8464503221766!2d14.51510604956509!3d35.89874689148582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e452bb44faf19%3A0x7e227ae89c3f7071!2sValletta%20Campus%20Theatre%20VCT%20(Ex%20MITP)!5e1!3m2!1sen!2smt!4v1743139734472!5m2!1sen!2smt",
     },
     {
       id: "wild-honey",
       name: "Wild Honey Beer House & Bistro",
-      address: "Saint Lucia Street, Valletta",
+      address: "Merchants Street, Valletta",
       description:
         "Wild Honey is a popular venue known for its craft beers and excellent food, situated in a charming historic building in Valletta.",
-      coordinates: "35.898654,14.512673",
+      coordinates: "35.8998415,14.5169268",
       color: "#FFD700",
       isMain: false,
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.730744253809!2d14.512673!3d35.898654999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e452d2e0acd9d%3A0xc85a666e56de8348!2sWild%20Honey!5e0!3m2!1sen!2smt!4v1721145894071!5m2!1sen!2smt",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.9202066524996!2d14.516755811224634!3d35.899769434722444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e452c6e948a8b%3A0x97581ca2c3a8af22!2sWild%20Honey%20Beer%20House%20%26%20Bistro!5e1!3m2!1sen!2smt!4v1743139666772!5m2!1sen!2smt",
     },
     {
       id: "maewest",
       name: "MaeWest",
-      address: "51, Straight Street, Valletta",
+      address: "Strait Street, Valletta",
       description:
         "MaeWest is located on the famous Strait Street, known for its vibrant nightlife and artistic atmosphere.",
-      coordinates: "35.899272,14.515134",
+      coordinates: "35.900372,14.5148146",
       color: "#37B5FF",
       isMain: false,
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.70863636353!2d14.515134!3d35.899272999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e45268f4e3c53%3A0x1dc04ca04eaf0bcf!2sMaewst!5e0!3m2!1sen!2smt!4v1721145925444!5m2!1sen!2smt",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185.4240727670084!2d14.51481809942219!3d35.90041243829037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e455dfe83cf4d%3A0xdba2eb6efedee27d!2sMaeWest!5e1!3m2!1sen!2smt!4v1743139325758!5m2!1sen!2smt",
     },
   ];
 
@@ -67,19 +67,24 @@ export default function GettingThere() {
         </div>
 
         <h2 className="text-[#37B5FF] text-5xl font-bold mb-6">
-          Explore magical places in Valletta
-          <br />
-          with the Festival
+          Sustainable ways to get to the festival
         </h2>
 
         <p className="text-white mb-8 max-w-4xl text-lg">
-          Our festival will take place across three venues. Our venue is the
-          Valletta Campus Theatre, and the other two venues are Wild Honey Beer
-          House & Bistro, and MaeWest.
+          There will be three venues for the festival.
+          <br />
+          <br />
+          The main festival venue will be the University’s Valletta Campus, with
+          performances distributed across the ground floor.
+          <br />
+          <br />
+          Additional external venues will also host performances for the
+          festival, namely Wild Honey Beer House & Bistro and MaeWest and are
+          within walking distance from the main festival venue.
           <br />
           <br />
           With sustainability in mind, we strongly recommend the use of public
-          transport, and carpooling to get to our festival.
+          transport, getting a taxi or carpooling to get to our festival.
         </p>
 
         {/* Quick Navigation */}
@@ -136,23 +141,17 @@ export default function GettingThere() {
                   rel="noopener noreferrer"
                   className="block"
                 >
-                  <div
-                    className="p-6 border-t-4 border-[#37B5FF]"
-                  >
+                  <div className="p-6 border-t-4 border-[#37B5FF]">
                     <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#37B5FF] transition-colors">
                       {venue.name}
                     </h3>
                     <div className="flex items-center gap-2 mb-6">
-                      <MapPin
-                        className="h-5 w-5 flex-shrink-0 text-[#37B5FF]"
-                      />
+                      <MapPin className="h-5 w-5 flex-shrink-0 text-[#37B5FF]" />
                       <p className="text-[#37B5FF] text-sm">{venue.address}</p>
                     </div>
 
                     <div className="inline-flex items-center bg-[#1E1E1E] hover:bg-[#333] text-[#EEC60D] py-2 px-4 rounded-lg transition-colors">
-                      <Navigation
-                        className="h-4 w-4 mr-2 text-[#EEC60D]"
-                      />
+                      <Navigation className="h-4 w-4 mr-2 text-[#EEC60D]" />
                       <span>Get Directions</span>
                     </div>
                   </div>
@@ -187,7 +186,13 @@ export default function GettingThere() {
               </div>
               <div className="p-6">
                 <div className="text-gray-300 space-y-2">
-                  <p>Information coming soon...</p>
+                  <p>
+                    Almost all buses travel to Valletta from pretty much
+                    everywhere in Malta, to check bus times and where the
+                    nearest bus stop from your location is, we strongly advise
+                    visiting the Malta Public Transport website or downloading
+                    the Tallinja app
+                  </p>
                 </div>
               </div>
             </div>
@@ -210,7 +215,14 @@ export default function GettingThere() {
               </div>
               <div className="p-6">
                 <div className="text-gray-300 space-y-2">
-                  <p>Information coming soon...</p>
+                  <p>
+                    You can catch the ferry from; The Strand in Sliema directly
+                    to Valletta and from Valletta to the Three Cities
+                    (Vittoriosa, Senglea and Cospicua). The ferry service runs
+                    daily from early morning till late at night, we strongly
+                    advise visiting the Valletta Ferry Services website for more
+                    information and for ferry times
+                  </p>
                 </div>
               </div>
             </div>
@@ -233,7 +245,14 @@ export default function GettingThere() {
               </div>
               <div className="p-6">
                 <div className="text-gray-300 space-y-2">
-                  <p>Information coming soon...</p>
+                  <p>
+                    Taxis are incredibly easy to book from anywhere in Malta,
+                    the main taxi providers in Malta are; Bolt, Uber and eCabs
+                    (among others), there are also white cabs which are
+                    available too. All taxi services vary in pricing, so we
+                    strongly recommend visiting their respective website and/or
+                    download their app to book.
+                  </p>
                 </div>
               </div>
             </div>
@@ -256,7 +275,15 @@ export default function GettingThere() {
               </div>
               <div className="p-6">
                 <div className="text-gray-300 space-y-2">
-                  <p>Information coming soon...</p>
+                  <p>
+                    While we encourage more sustainable uses of getting to the
+                    festival, Valletta offers numerous parking spots (subject to
+                    a CVA charge) and a car park (MCP Car Park) can be located
+                    just outside of Valletta’s main gates in Floriana. If you
+                    choose to park in the car park, Valletta Campus (and other
+                    external venues) is easily accessible by foot and should
+                    only take you 15 minutes to get there.
+                  </p>
                 </div>
               </div>
             </div>

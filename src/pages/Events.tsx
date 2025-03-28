@@ -18,6 +18,7 @@ interface ExternalEvent {
   location: string;
   date: string;
   image: string;
+  link?: string;
 }
 
 const events: Event[] = [
@@ -32,7 +33,7 @@ const events: Event[] = [
   {
     id: 'no-name-no-past',
     title: 'No Name. No Past',
-    image: "/No-Name-No-Past.jpg",
+    image: "/No-Name-No-Past-1.jpg",
     category: 'Festival',
     ageRestriction: '13+',
     duration: '25 minutes'
@@ -40,7 +41,7 @@ const events: Event[] = [
   {
     id: 'when-good-enough-is-enough',
     title: 'When Good Enough is Enough',
-    image: "/When-Good-Enough-is-Enough.jpg",
+    image: "/When-Good-Enough-is-Enough-1.jpg",
     category: 'Festival',
     duration: '30 minutes'
   },
@@ -50,14 +51,6 @@ const events: Event[] = [
     image: "/90-Sekonda.jpg",
     category: 'Theatre',
     ageRestriction: '16+',
-    duration: '20 minutes'
-  },
-  {
-    id: 'the-language-of-the-deaf',
-    title: 'The Language of the Deaf',
-    image: "/90-Sekonda.jpg",
-    category: 'Theatre',
-    ageRestriction: '18+',
     duration: '45 minutes'
   },
   {
@@ -71,36 +64,73 @@ const events: Event[] = [
   {
     id: 'pause-and-reflect',
     title: 'Pause & Reflect',
-    image: "/TED-Talk.jpg",
+    image: "/Pause-and-reflect.jpg",
     category: 'Theatre',
     duration: '30 minutes'
+  },
+  {
+    id: 'the-language-of-the-deaf',
+    title: 'Language of the Deaf & Hooray, our World is Ending',
+    image: "/Hooray-the-world-is-over.jpg",
+    category: 'Theatre',
+    ageRestriction: '18+',
+    duration: '30 minutes'
+  },
+  {
+    id: 'first-year-performance',
+    title: 'First Year Performance',
+    image: "/First-year-performance.jpg",
+    category: 'Theatre',
+    duration: '30 minutes'
+  },
+  {
+    id: 'the-pigs-in-a-parlour',
+    title: 'The Pigs in a Parlour',
+    image: "/The-pigs-in-a-parlour.jpg",
+    category: 'Theatre',
+    duration: '30 minutes'
+  },
+  {
+    id: 'bahar',
+    title: 'Bahar',
+    image: "/Bahar.jpg",
+    category: 'Theatre',
+  },
+  {
+    id: 'to-be-confirmed',
+    title: 'To be confirmed',
+    image: "/E-Image.jpg",
+    category: 'Theatre',
   }
 ];
 
 const externalEvents: ExternalEvent[] = [
   {
     id: 'lets-have-a-drag-show',
-    title: "Let's Have a Drag Show",
+    title: "Werk it! A Drag Rave",
     description: "Join us for an evening of drinks, fun and a bit of diva at this external performance taking part in the Pause & Play Festival!",
     location: "Wild Honey Beer House & Bistro",
-    date: "9th May 2025",
-    image: "/lets-have-a-drag-show.jpg"
+    date: "9th May 2025 @ 21:45",
+    image: "/werk-it-a-drag-rave.jpg",
+    link: "https://www.eventbrite.com/e/werk-it-a-drag-rave-at-the-pause-play-festival-tickets-1249955302959?aff=oddtdtcreator&_gl=1%2Amr8fgq%2A_up%2AMQ..%2A_ga%2AMzc5MTQxNjg2LjE3NDA0MTg1MTQ.%2A_ga_TQVES5V6SH%2AMTc0MDQxODUxMy4xLjAuMTc0MDQxODUxMy4wLjAuMA"
   },
   {
     id: 'music-blues-with-tonation',
-    title: "Music Blues with Tonation",
+    title: "Amped Up: A Night of Music",
     description: "Join us for an evening of music, drinks and fun at this external performance taking part in the Pause & Play Festival!",
     location: "MaeWest",
-    date: "10th May 2025",
-    image: "/music-blues-with-tonation.jpg"
+    date: "10th May 2025 @ 21:45",
+    image: "/amped-up-a-night-of-music.jpg",
+    link: "https://www.eventbrite.com/e/amped-up-a-night-of-music-at-the-pause-play-festival-tickets-1249944941969?aff=oddtdtcreator&_gl=1%2Amr8fgq%2A_up%2AMQ..%2A_ga%2AMzc5MTQxNjg2LjE3NDA0MTg1MTQ.%2A_ga_TQVES5V6SH%2AMTc0MDQxODUxMy4xLjAuMTc0MDQxODUxMy4wLjAuMA"
   },
   {
     id: 'laugh-out-loud-comedy',
-    title: "Laugh Out Loud Comedy",
+    title: "The Laughing Stock: A Stand-Up Comedy Show",
     description: "Join us for an evening of laughter, drinks, fun and a bit of naughty at this external performance taking part in the Pause & Play Festival!",
     location: "MaeWest",
-    date: "11th May 2025",
-    image: "/laugh-out-loud-comedy.jpg"
+    date: "11th May 2025 @ 18:00",
+    image: "/the-laughing-stock.jpg",
+    link: "https://www.eventbrite.com/e/the-laughing-stock-at-the-pause-play-festival-tickets-1249964510499?aff=oddtdtcreator&_gl=1%2Amr8fgq%2A_up%2AMQ..%2A_ga%2AMzc5MTQxNjg2LjE3NDA0MTg1MTQ.%2A_ga_TQVES5V6SH%2AMTc0MDQxODUxMy4xLjAuMTc0MDQxODUxMy4wLjAuMA"
   }
 ];
 
@@ -114,7 +144,7 @@ export default function Events() {
         </div>
 
         <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
-          What’s happening at the Pause & Play Festival
+          What's happening at the Pause & Play Festival
         </h2>
 
         {/* Events Grid */}
@@ -170,38 +200,76 @@ export default function Events() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {externalEvents.map((event) => (
-              <div
-                key={event.id}
-                className="rounded-lg overflow-hidden bg-[#1a1a1a] border border-[#333] transition-transform hover:scale-105"
-              >
-                <div className="aspect-w-16 aspect-h-12 relative">
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-white text-xl font-bold mb-3">
-                    {event.title}
-                  </h3>
-                  <p className="text-gray-300 text-sm mb-4 min-h-[80px]">
-                    {event.description}
-                  </p>
-                  <div className="flex items-center text-[#37B5FF] text-sm mb-2">
-                    <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
-                    </svg>
-                    {event.location}
+              event.link ? (
+                <a 
+                  key={event.id}
+                  href={event.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg overflow-hidden bg-[#1a1a1a] border border-[#333] transition-transform hover:scale-105 block"
+                >
+                  <div className="aspect-w-16 aspect-h-12 relative">
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="flex items-center text-[#EEC60D] text-sm">
-                    <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path>
-                    </svg>
-                    {event.date}
+                  <div className="p-6">
+                    <h3 className="text-white text-xl font-bold mb-3">
+                      {event.title}
+                    </h3>
+                    <p className="text-gray-300 text-sm mb-4 min-h-[80px]">
+                      {event.description}
+                    </p>
+                    <div className="flex items-center text-[#37B5FF] text-sm mb-2">
+                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
+                      </svg>
+                      {event.location}
+                    </div>
+                    <div className="flex items-center text-[#EEC60D] text-sm">
+                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path>
+                      </svg>
+                      {event.date}
+                    </div>
+                  </div>
+                </a>
+              ) : (
+                <div
+                  key={event.id}
+                  className="rounded-lg overflow-hidden bg-[#1a1a1a] border border-[#333] transition-transform hover:scale-105"
+                >
+                  <div className="aspect-w-16 aspect-h-12 relative">
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-white text-xl font-bold mb-3">
+                      {event.title}
+                    </h3>
+                    <p className="text-gray-300 text-sm mb-4 min-h-[80px]">
+                      {event.description}
+                    </p>
+                    <div className="flex items-center text-[#37B5FF] text-sm mb-2">
+                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
+                      </svg>
+                      {event.location}
+                    </div>
+                    <div className="flex items-center text-[#EEC60D] text-sm">
+                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path>
+                      </svg>
+                      {event.date}
+                    </div>
                   </div>
                 </div>
-              </div>
+              )
             ))}
           </div>
         </div>

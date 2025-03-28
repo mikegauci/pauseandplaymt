@@ -167,10 +167,13 @@ export function Layout() {
 
       <footer className="bg-[#000] text-white">
         <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Festival 2024</h3>
-              <p className="text-gray-400">Celebrating arts and culture through unforgettable experiences.</p>
+              <h3 className="text-xl font-bold mb-4">Pause & Play Festival</h3>
+              <p className="text-gray-400">
+                This is a festival about celebrating play and creativity.<br/>
+                This is a festival to pause and reflect, play to connect.
+              </p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
@@ -180,7 +183,7 @@ export function Layout() {
                     <React.Fragment key={item.name}>
                       {item.items.map((subItem) => (
                         <li key={subItem.name}>
-                          <Link to={subItem.href} className="text-gray-400 hover:text-black transition-colors">
+                          <Link to={subItem.href} className="text-gray-400 hover:text-white transition-colors">
                             {subItem.name}
                           </Link>
                         </li>
@@ -188,7 +191,7 @@ export function Layout() {
                     </React.Fragment>
                   ) : (
                     <li key={item.name}>
-                      <Link to={item.href} className="text-gray-400 hover:text-black transition-colors">
+                      <Link to={item.href} className="text-gray-400 hover:text-white transition-colors">
                         {item.name}
                       </Link>
                     </li>
@@ -196,14 +199,17 @@ export function Layout() {
                 ))}
               </ul>
             </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Contact</h3>
-              <p className="text-gray-400">Email: info@festival2024.com</p>
-              <p className="text-gray-400">Phone: +1 234 567 890</p>
-            </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-            <p className="text-gray-400">&copy; 2024 Festival. All rights reserved.</p>
+          <div className="mt-8 pt-8 border-t border-gray-800">
+            <p className="text-gray-400">
+              Copyright Pause & Play Festival.
+            </p>              
+            <p className="text-gray-400">
+              This festival is being supported by the Department of Theatre Studies within the University of Malta's School of Performing Arts
+            </p>
+            <p className="mt-4 text-gray-400">
+              This festival website was designed by: Onyx Studio
+            </p>
           </div>
         </div>
       </footer>

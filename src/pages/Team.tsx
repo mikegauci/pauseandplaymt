@@ -1,99 +1,156 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const teamMembers = [
   {
-    id: 'sarah-johnson',
-    name: 'Sarah Johnson',
-    role: 'Festival Director',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80',
-    shortBio: 'Festival Director, with over 15 years of experience in theatre production and arts management.',
-    color: 'bg-purple-500'
+    id: "angelique-attard",
+    name: "Angelique Attard",
+    image:
+      "/Angelique-Attard-1.jpg",
+    color: "bg-[#EEC60D]",
   },
   {
-    id: 'michael-chen',
-    name: 'Michael Chen',
-    role: 'Creative Director',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80',
-    shortBio: 'Award-winning theatre director whose productions have been featured worldwide.',
-    color: 'bg-[#EEC60D]'
-  },
+    id: "brendon-joseph-thearle",
+    name: "Brendon Joseph Thearle",
+    image:
+      "/Brendon-Thearle.jpg",
+    color: "bg-purple-500",
+  },  
   {
-    id: 'elena-rodriguez',
-    name: 'Elena Rodriguez',
-    role: 'Production Manager',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80',
-    shortBio: 'Production manager with extensive experience in leading theatre companies.',
-    color: 'bg-amber-500'
-  }
+    id: "monique-alexandra-falzon",
+    name: "Monique Alexandra Falzon",
+    image:
+      "/Monique-Alexandra-Falzon-4.jpg",
+    color: "bg-amber-500",
+  },
 ];
 
 const festivalCollaborators = [
   {
-    id: 'alex-weenink',
-    name: 'Alex Weenink',
-    image: '/Alex-Weenink-1.jpg',
-    role: 'Performer',
-    color: 'bg-purple-500',
-    shortBio: 'Workshop Facilitator bringing creative experiences to life.'
+    id: "alex-weenink",
+    name: "Alex Weenink",
+    image: "/Alex-Weenink-1.jpg",
+    role: "Performer",
+    color: "bg-purple-500",
+    shortBio: "Workshop Facilitator bringing creative experiences to life.",
   },
   {
-    id: 'rebecca-greca',
-    name: 'Rebecca Grech',
-    image: '/Rebecca-Grech-1.jpg',
-    role: 'Performer',
-    color: 'bg-[#EEC60D]',
-    shortBio: 'Stage Manager coordinating performances with precision.'
+    id: "rebecca-greca",
+    name: "Rebecca Grech",
+    image: "/Rebecca-Grech-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio: "Stage Manager coordinating performances with precision.",
   },
   {
-    id: 'edmilson-zammit',
-    name: 'Edmilson Zammit',
-    image: '/Edmilson-Zammit-1.jpg',
-    role: 'Performer',
-    color: 'bg-amber-500',
-    shortBio: 'Event Coordinator orchestrating memorable festival experiences.'
+    id: "edmilson-zammit",
+    name: "Edmilson Zammit",
+    image: "/Edmilson-Zammit-1.jpg",
+    role: "Performer",
+    color: "bg-amber-500",
+    shortBio: "Event Coordinator orchestrating memorable festival experiences.",
   },
   {
-    id: 'charlene-galea',
-    name: 'Charlene Galea',
-    image: '/Charlene-Galea-1.jpg',
-    role: 'Performer',
-    color: 'bg-[#EEC60D]',
-    shortBio: 'Technical Director ensuring seamless production execution.'
+    id: "charlene-galea",
+    name: "Charlene Galea",
+    image: "/Charlene-Galea-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio: "Technical Director ensuring seamless production execution.",
   },
   {
-    id: 'malcolm-micallef',
-    name: 'Malcolm Micallef',
-    image: '/Malcolm-Micallef-1.jpg',
-    role: 'Performer',
-    color: 'bg-[#EEC60D]',
-    shortBio: 'Technical Director ensuring seamless production execution.'
+    id: "malcolm-micallef",
+    name: "Malcolm Micallef",
+    image: "/Malcolm-Micallef-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio: "Technical Director ensuring seamless production execution.",
   },
   {
-    id: 'emily-salnitro',
-    name: 'Emily Salnitro',
-    image: '/Emily-Salnitro-1.jpg',
-    role: 'Performer',
-    color: 'bg-amber-500',
-    shortBio: 'Community Liaison building bridges between artists and audiences.'
+    id: "emily-salnitro",
+    name: "Emily Salnitro",
+    image: "/Emily-Salnitro-1.jpg",
+    role: "Artist",
+    color: "bg-amber-500",
+    shortBio:
+      "Community Liaison building bridges between artists and audiences.",
   },
   {
-    id: 'nicole-zammit',
-    name: 'Nicole Zammit',
-    image: '/Nicole-Zammit-1.jpg',
-    role: 'Performer',
-    color: 'bg-purple-500',
-    shortBio: 'Production Assistant supporting all aspects of festival operations.'
+    id: "nicole-zammit",
+    name: "Nicole Zammit",
+    image: "/Nicole-Zammit-1.jpg",
+    role: "Performer",
+    color: "bg-purple-500",
+    shortBio:
+      "Production Assistant supporting all aspects of festival operations.",
   },
   {
-    id: 'benjamin-abela',
-    name: 'Benjamin Abela',
-    image: '/Benjamin-Abela-1.jpg',
-    role: 'Performer',
-    color: 'bg-amber-500',
-    shortBio: 'Community Liaison building bridges between artists and audiences.'
-  }
+    id: "benjamin-abela",
+    name: "Benjamin Abela",
+    image: "/Benjamin-Abela-1.jpg",
+    role: "Performer",
+    color: "bg-amber-500",
+    shortBio:
+      "Community Liaison building bridges between artists and audiences.",
+  },
+  {
+    id: "elena-marie-sciberras",
+    name: "Elena Marie Sciberras",
+    image: "/Elena-Marie-Sciberras-1.jpg",
+    role: "Artist",
+    color: "bg-amber-500",
+    shortBio:
+      "Community Liaison building bridges between artists and audiences.",
+  },
+  {
+    id: "lara-vella",
+    name: "Lara Vella",
+    image: "/Lara-Vella.jpg",
+    role: "Artist",
+    color: "bg-amber-500",
+  },  
+  {
+    id: "sarah-fofana",
+    name: "Sarah Fofana",
+    image: "/Sarah-Fofana.jpg",
+    role: "Performer",
+    color: "bg-amber-500",
+  },  
+  {
+    id: "alice-bertolasi",
+    name: "Alice Bertolasi",
+    image: "/Alice-Bertolasi.jpg",
+    role: "Performer",
+    color: "bg-amber-500",
+  },  
+  {
+    id: "giorgia-ionescu",
+    name: "Giorgia Ionescu",
+    image: "/Giorgia-Ionescu-1.jpg",
+    role: "Performer",
+    color: "bg-amber-500",
+  },    
+  {
+    id: "anna-issajeva",
+    name: "Anna Issajeva",
+    image: "/Anna-Issajeva.jpg",
+    role: "Performer",
+    color: "bg-amber-500",
+  },    
+  {
+    id: "kiki-valentine",
+    name: "Kiki Valentine",
+    image: "/Kiki-Valentine.jpg",
+    role: "Drag artist",
+    color: "bg-amber-500",
+  },    
+  {
+    id: "celeste-samodiva",
+    name: "Celeste Samodiva",
+    image: "/Celeste-Samodiva.jpg",
+    role: "Drag artist",
+    color: "bg-amber-500",
+  },    
 ];
-
 export default function Team() {
   return (
     <div className="min-h-screen bg-[#111] py-16">
@@ -110,20 +167,21 @@ export default function Team() {
         {/* Mission Statement */}
         <div className="text-white space-y-6 mb-20">
           <p>
-            Behind the scenes of the Frome Festival, is an international team of dedicated artists who 
-            strive to create a fresh and exciting event every year, one that resonates with people from 
-            all walks of life. A festival that is sensitive to the challenges we all face and that inspires 
-            all of us to make the changes we need to overcome these challenges.
-          </p>
-          <p>
-            We unfortunately don't have a magic wand to conjure up the festival. What we do have is an 
-            incredible team of creative thinkers and problem solvers, working tirelessly to bring you 
-            the best possible experience.
+            Behind the scenes of the Pause & Play festival, are Brendon,
+            Monique, and Angelique - three students who are currently in their
+            third and final year of the Bachelor in Theatre (Honours) degree at
+            the School of Performing Arts within the University of Malta. This
+            festival is a part of their final year project and through this,
+            they want to create a space to pause, reflect, and ultimately
+            connect people and young artists together in order to celebrate
+            creativity.
           </p>
         </div>
 
         {/* Core Team Section */}
-        <h2 className="text-white text-4xl font-bold text-center mb-12">The Core Team</h2>
+        <h2 className="text-white text-4xl font-bold text-center mb-12">
+          The Festival Team
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
           {teamMembers.map((member) => (
             <Link
@@ -131,25 +189,30 @@ export default function Team() {
               to={`/team/${member.id}`}
               className="rounded-lg overflow-hidden block transition-transform hover:scale-105"
             >
-              <img 
+              <img
                 src={member.image}
                 alt={member.name}
                 className="w-full aspect-square object-cover"
               />
               <div className={`${member.color} p-6`}>
-                <h3 className={`text-2xl font-bold mb-2 ${member.color === 'bg-[#EEC60D]' ? 'text-[#1E0B36]' : 'text-white'}`}>
+                <h3
+                  className={`text-2xl font-bold mb-2 ${
+                    member.color === "bg-[#EEC60D]"
+                      ? "text-[#1E0B36]"
+                      : "text-white"
+                  }`}
+                >
                   {member.name}
                 </h3>
-                <p className={member.color === 'bg-[#EEC60D]' ? 'text-[#1E0B36]/90' : 'text-white/90'}>
-                  {member.role}
-                </p>
               </div>
             </Link>
           ))}
         </div>
 
         {/* Festival Collaborators Section */}
-        <h2 className="text-white text-4xl font-bold text-center mb-12">Festival Collaborators</h2>
+        <h2 className="text-white text-4xl font-bold text-center mb-12">
+          Festival Collaborators
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-[420px]:grid-cols-1">
           {festivalCollaborators.map((collaborator) => (
             <Link
@@ -157,16 +220,28 @@ export default function Team() {
               to={`/team/${collaborator.id}`}
               className="rounded-lg overflow-hidden block transition-transform hover:scale-105"
             >
-              <img 
+              <img
                 src={collaborator.image}
                 alt={collaborator.name}
                 className="w-full aspect-square object-cover"
               />
               <div className={`${collaborator.color} p-6`}>
-                <h3 className={`text-2xl font-bold mb-2 ${collaborator.color === 'bg-[#EEC60D]' ? 'text-[#1E0B36]' : 'text-white'}`}>
+                <h3
+                  className={`text-2xl font-bold mb-2 ${
+                    collaborator.color === "bg-[#EEC60D]"
+                      ? "text-[#1E0B36]"
+                      : "text-white"
+                  }`}
+                >
                   {collaborator.name}
                 </h3>
-                <p className={collaborator.color === 'bg-[#EEC60D]' ? 'text-[#1E0B36]/90' : 'text-white/90'}>
+                <p
+                  className={
+                    collaborator.color === "bg-[#EEC60D]"
+                      ? "text-[#1E0B36]/90"
+                      : "text-white/90"
+                  }
+                >
                   {collaborator.role}
                 </p>
               </div>

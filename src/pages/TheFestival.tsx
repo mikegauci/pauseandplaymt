@@ -10,7 +10,7 @@ export default function TheFestival() {
         </div>
 
         <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
-          Celebrating Arts, Science and Culture in Frome
+          <strong><em>Pause & Play</em></strong> is a festival where creativity takes centre stage!
         </h2>
 
         <p className="text-white text-lg mb-16 max-w-4xl">
@@ -68,7 +68,7 @@ export default function TheFestival() {
                 <div className="bg-gray-800 rounded-lg overflow-hidden transition-all duration-300 group-hover:bg-gray-700 group-hover:shadow-lg border-l-4 border-purple-400">
                   <div className="p-6">
                     <h4 className="text-white font-bold text-xl mb-2 group-hover:text-purple-400">Getting There</h4>
-                    <p className="text-gray-300">Find directions, accommodation and local information</p>
+                    <p className="text-gray-300">Find directions and local information</p>
                   </div>
                 </div>
               </Link>

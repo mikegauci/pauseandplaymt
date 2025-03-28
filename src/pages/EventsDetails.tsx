@@ -1,15 +1,17 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Clock, Calendar, AlertTriangle } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, AlertTriangle, Info } from "lucide-react";
 
 // Define a type for the event data structure
 type EventData = {
   id: string;
   title: string;
-  duration: string;
-  time: string;
-  disclaimer?: string; // Make disclaimer optional
+  duration?: string;
+  time?: string;
+  disclaimer?: string;
   image: string;
   description: string;
+  isExhibition?: boolean;
+  exhibitionInfo?: string;
 };
 
 const eventsData: Record<string, EventData> = {
@@ -28,7 +30,7 @@ const eventsData: Record<string, EventData> = {
     duration: "25 minutes",
     time: "7:30 PM - 9:00 PM",
     disclaimer: "13+, there may be some flashing lights",
-    image: "/No-Name-No-Past.jpg",
+    image: "/No-Name-No-Past-1.jpg",
     description: `Three strangers jolt awake in a cold, unfamiliar room—no names, no memories, no clue how they got there.`,
   },
   "when-good-enough-is-enough": {
@@ -36,7 +38,8 @@ const eventsData: Record<string, EventData> = {
     title: "When Good Enough is Enough",
     duration: "30 minutes",
     time: "7:30 PM - 9:00 PM",
-    image: "/When-Good-Enough-is-Enough.jpg",
+    disclaimer: "Audience interaction may occur",
+    image: "/When-Good-Enough-is-Enough-1.jpg",
     description: `When Good Enough is Enough is a research-based performance that explores the intersection of personal history, creative industry expectations, and the limitations of standardized learning. This work is not merely a technical display of skill, but rather a nuanced exploration of the performer's journey through dance and identity. Charlene's early aspirations were marked by a desire to become a pom-pom dancer, later evolving into a deep passion into rave culture. However, in her thirties, when she began taking dance classes, she confronted the realization that conventional dance training was inherently incompatible with her own learning style. Despite repeated attempts, she struggled to conform to expectations, leading her to reconnect with the feeling of inadequacy she experienced as a child when she was punished for writing her name "wrong". This constant pressure to meet external standards of "correctness" triggered burnout and frustration. Yet from this struggle emerged a powerful act of rebellion, offering a voice to those who learn differently and advocating for the validation of non-conventional pathways within professional spaces. The performance challenges society's narrow definition of 'good enough' and celebrates what might be perceived as "failure," reframing it as an alternative way of being and doing.`,
   },
   "90-sekonda": {
@@ -46,17 +49,40 @@ const eventsData: Record<string, EventData> = {
     time: "7:30 PM - 9:00 PM",
     disclaimer: "16+, strong language, implied drug use",
     image: "/90-Sekonda.jpg",
-    description: `When Good Enough is Enough is a research-based performance that explores the intersection of personal history, creative industry expectations, and the limitations of standardized learning. This work is not merely a technical display of skill, but rather a nuanced exploration of the performer's journey through dance and identity. Charlene's early aspirations were marked by a desire to become a pom-pom dancer, later evolving into a deep passion into rave culture. However, in her thirties, when she began taking dance classes, she confronted the realization that conventional dance training was inherently incompatible with her own learning style. Despite repeated attempts, she struggled to conform to expectations, leading her to reconnect with the feeling of inadequacy she experienced as a child when she was punished for writing her name "wrong". This constant pressure to meet external standards of "correctness" triggered burnout and frustration. Yet from this struggle emerged a powerful act of rebellion, offering a voice to those who learn differently and advocating for the validation of non-conventional pathways within professional spaces. The performance challenges society's narrow definition of 'good enough' and celebrates what might be perceived as "failure," reframing it as an alternative way of being and doing.`,
+    description: `90 SEKONDA follows a nameless protagonist-narrator who sets off on a hedonistic mission of self-destruction in the wake of his eco-extremist brother Luca's sudden passing. The circumstances surrounding Luca's death - paired with the discovery of his extreme beliefs - force our protagonist to come to terms with the hypocrisy of his actions as a corporate slave, and subsequently challenge the status quo. 90 SEKONDA offers a nuanced critique of the ongoing climate crisis as it explores the futility of our own actions in light of corporate greed.`,
   },
   "the-language-of-the-deaf": {
     id: "the-language-of-the-deaf",
-    title: "The Language of the Deaf",
-    duration: "15 minutes",
+    title: "Language of the Deaf & Hooray, our World is Ending",
+    duration: "30 minutes",
     time: "7:30 PM - 9:00 PM",
     disclaimer:
       "18+, The performance contains and talks about aspects of sexual violence",
-    image: "/90-Sekonda.jpg",
-    description: `The Language of the Deaf explores topics of greed and unspoken taboos in society, gravity of silence and fear of words. How can we challenge societal cliches? Shed light onto subconscious patterns? A performance piece by D.Shows. A piece that provokes and intentionally questions conventional paradigms.`,
+    image: "/Hooray-the-world-is-over.jpg",
+    exhibitionInfo: "The exhibition is open to the general public throughout the festival",
+    description: `D Shows presents two performances in one sitting.
+
+    The Language of the Deaf explores topics of greed and unspoken taboos in society, gravity of silence and fear of words. How can we challenge societal cliches? Shed light onto subconscious patterns? A performance piece by D.Shows. A piece that provokes and intentionally questions conventional paradigms.
+    
+    Hooray, our World is Ending
+    
+    To the end of the world! And to whatever comes after 
+
+    This performance piece, set in a bar, dives into the sentiment of being
+    paralyzed by frustration.
+
+    The grumpy regular ranting about the world, while drinking through
+    another night of forgetting.
+
+    “ My mind is in: Palestine, Congo, Ethiopia, Sudan. It’s on one of the
+    boats that might arrive at our shores tomorrow. Or yesterday? and I
+    haven’t even kept up with the news to carry this knowledge like a
+    burden.”
+
+    But how can we do something about it?
+
+    D.Shows invites all the spectators to connect.
+    `,
   },
   "ted-talk": {
     id: "ted-talk",
@@ -70,11 +96,38 @@ const eventsData: Record<string, EventData> = {
   "pause-and-reflect": {
     id: "pause-and-reflect",
     title: "Pause & Reflect",
-    duration: "30 minutes",
-    time: "7:30 PM - 9:00 PM",
-    disclaimer: "16+",
-    image: "/TED-Talk.jpg",
+    isExhibition: true,
+    exhibitionInfo: "The exhibition is open to the general public throughout the festival",
+    image: "/Pause-and-reflect.jpg",
     description: `My work explores the balance between chaos and calm, capturing the need to pause in anxious moments and reflect on the good. Through painterly, abstract, and vibrant compositions, I create a sense of movement that represents life's unpredictability—its rush, its worries, its intensity. This dynamic energy is then balanced by areas of stillness, inviting a feeling of peace and mindfulness. Colour plays a key role, reflecting different moods and emotions, from tension to tranquillity. Each piece serves as a visual reminder to slow down, breathe, and find beauty in both the turbulence and the quiet moments of life.`,
+  },
+  "first-year-performance": {
+    id: "first-year-performance",
+    title: "First Year Performance",
+    image: "/First-year-performance.jpg",
+    description: `A performance by the first year students of the University of Malta.`,
+  },
+  "the-pigs-in-a-parlour": {
+    id: "the-pigs-in-a-parlour",
+    title: "The Pigs in a Parlour",
+    image: "/The-pigs-in-a-parlour.jpg",
+    description: `The Pigs in a Parlour is a performance that was created by the third year performing arts students as part of a practice research. The performance follows Duration 56, a concept developed by Professor Frank Camilleri, and explores the concept and practice of duration, repetition, and improvisation. Moreover, it explores its impact on the attention and work of performers within a structure of actions and tasks performed in an installation-type setting involving chairs and lanes.`,
+  },
+  "bahar": {
+    id: "bahar",
+    title: "Bahar",
+    image: "/Bahar.jpg",
+    description: `An intimate view of Malta’s sea: where light is refracted into a variety of unique works of art.`,
+    isExhibition: true,
+    exhibitionInfo: "The exhibition is open to the general public throughout the festival",
+  },
+  "to-be-confirmed": {
+    id: "to-be-confirmed",
+    title: "To be confirmed",
+    image: "/E-Image.jpg",
+    description: `A performance by the first year students of the University of Malta.`,
+    isExhibition: true,
+    exhibitionInfo: "The exhibition is open to the general public throughout the festival",
   },
 };
 
@@ -122,33 +175,46 @@ export default function EventsDetails() {
                 {event.title}
               </h1>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-[#37B5FF]">
-                  <div className="flex items-center">
-                    <Clock className="h-5 w-5 text-[#37B5FF] mr-3" />
-                    <div>
-                      <div className="text-gray-400 text-sm">Duration</div>
-                      <div className="text-white font-medium">
-                        {event.duration}
+              {!event.isExhibition && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-[#37B5FF]">
+                    <div className="flex items-center">
+                      <Clock className="h-5 w-5 text-[#37B5FF] mr-3" />
+                      <div>
+                        <div className="text-gray-400 text-sm">Duration</div>
+                        <div className="text-white font-medium">
+                          {event.duration}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-[#EEC60D]">
+                    <div className="flex items-center">
+                      <Calendar className="h-5 w-5 text-[#EEC60D] mr-3" />
+                      <div>
+                        <div className="text-gray-400 text-sm">Show Time</div>
+                        <div className="text-white font-medium">{event.time}</div>
                       </div>
                     </div>
                   </div>
                 </div>
+              )}
 
-                <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-[#EEC60D]">
+              {event.isExhibition && event.exhibitionInfo && (
+                <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-[#37B5FF] mb-6">
                   <div className="flex items-center">
-                    <Calendar className="h-5 w-5 text-[#EEC60D] mr-3" />
-                    <div>
-                      <div className="text-gray-400 text-sm">Show Time</div>
-                      <div className="text-white font-medium">{event.time}</div>
+                    <Info className="h-5 w-5 text-[#37B5FF] mr-3 mt-0.5 flex-shrink-0" />
+                    <div className="text-white">
+                      {event.exhibitionInfo}
                     </div>
                   </div>
                 </div>
-              </div>
+              )}
 
-              {event.disclaimer && (
+              {event.disclaimer && !event.isExhibition && (
                 <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-red-500 mt-4">
-                  <div className="flex items-start">
+                  <div className="flex items-center">
                     <AlertTriangle className="h-5 w-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
                       <div className="text-gray-400 text-sm">Disclaimer</div>
@@ -226,7 +292,6 @@ export default function EventsDetails() {
           </h2>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
             Don't miss this unique performance at the Pause & Play Festival.
-            Book your tickets now to secure your spot!
           </p>
           <a
             href="https://www.eventbrite.com/e/pause-play-festival-tickets-1249939425469?aff=oddtdtcreator"
@@ -234,7 +299,7 @@ export default function EventsDetails() {
             rel="noopener noreferrer"
             className="bg-[#EEC60D] text-[#1E0B36] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f5d02e] transition-colors inline-block"
           >
-            Book Your Spot!
+            Reserve Your Spot
           </a>
         </div>
       </div>

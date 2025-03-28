@@ -2,50 +2,26 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 const teamMembersData = {
-  "sarah-johnson": {
-    name: "Sarah Johnson",
-    role: "Festival Director",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80",
-    bio: `Sarah Johnson brings over 15 years of experience in theatre production and arts management to her role as Festival Director. Her journey in the performing arts began at the Royal Academy of Dramatic Art, where she honed her understanding of theatrical craft and production.
-
-Throughout her career, Sarah has directed major arts festivals across Europe, including the Edinburgh Fringe Festival and the Amsterdam Theatre Festival. Her innovative approach to festival curation has earned her numerous accolades, including the Arts Council Award for Excellence in Festival Management.
-
-Sarah's vision for Festival 2024 is to create a platform that celebrates both traditional theatrical forms and cutting-edge performances, while making the arts accessible to diverse audiences. Under her leadership, the festival has expanded its community outreach programs and established partnerships with leading international theatre companies.
-
-In addition to her role as Festival Director, Sarah is a frequent speaker at arts management conferences and has published several articles on the future of performing arts festivals in a digital age.`,
+  "brendon-joseph-thearle": {
+    name: "Brendon Joseph Thearle",
+    image: "/Brendon-Thearle.jpg",
+    bio: `Brendon entered the world of theatre at the age of five and since then has performed in various productions such as; MADC's traditional Shakespeare classics; The Merry Wives of Windsor (2022) as Frank Ford, as Mr. Scruples in Manoel Theatre's opera for 2019's ŻiguŻajg in The Impresario (2019), as Captain Barbuljatu in FM Theatre Productions' Christmas pantomime; The Little Mermaid - The Panto Under the Sea (2019), as Gary in MADC’s A Kick in the Baubles (2022), as Jeremy in Ħassle Mejjet Theatre Collective’s Popolazzjoni: 4 (2023), as Dame Widow Twankey in Teatru Manoel’s Learning & Participation Programme: TOI TOI’s The Great Little Panto Show (2023, 2024), and in MADC’s The Coarse Acting Show (2025), among many others. He has also delved into the directorial seat with such projects as Pandora (2019), L-Aħħar Siġra (2021), The Fourth Wall (2022) for MADC's One Act Play Festival in which The Fourth Wall won; Best Actor, Most Promising Actor, Best Director and Best Production and was nominated for; Most Promising Actress and most recently; Nostrum (2023). He is also currently studying for a Bachelor in Theatre (Honours) degree at the School of Performing Arts within the University of Malta..`,
   },
-  "michael-chen": {
-    name: "Michael Chen",
-    role: "Creative Director",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80",
-    bio: `Michael Chen is an award-winning theatre director whose innovative productions have captivated audiences worldwide. After graduating from the Yale School of Drama, Michael began his career as an assistant director at the Public Theater in New York.
-
-His unique approach to storytelling combines traditional theatrical elements with modern technology and immersive experiences. Michael's productions are known for breaking conventional boundaries and creating meaningful connections with audiences.
-
-As Creative Director of Festival 2024, Michael oversees the artistic vision of the festival, curating a program that pushes creative boundaries while honoring theatrical traditions. His commitment to nurturing emerging talent has led to the creation of several development programs within the festival.
-
-Michael's work has been recognized with multiple awards, including the Regional Theatre Tony Award and the Drama Desk Award for Outstanding Direction.`,
+  "angelique-attard": {
+    name: "Angelique Attard",
+    image: "/Angelique-Attard-1.jpg",
+    bio: `From a very young age, Angelique has always been drawn to the performing arts, as she pursued tap dance and jazz for seven years. However, theatre and acting stole the spotlight and she decided to enrol herself for the Bachelor in Theatre (Honours) degree at the School of Performing Arts within the University of Malta. Since then, she’s thrown herself into all sorts of productions, exploring new roles beyond acting — from stage management to light and sound design. Every experience has been a chance to learn, grow, and expand her skills both on and off the stage.`,
   },
-  "elena-rodriguez": {
-    name: "Elena Rodriguez",
-    role: "Production Manager",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80",
-    bio: `Elena Rodriguez is a seasoned production manager with a remarkable track record in executing complex theatrical productions. With a background in both technical theatre and project management, Elena brings a unique combination of creative understanding and organizational expertise to her role.
-
-Elena's career began in Madrid's prestigious Teatro Real, where she worked her way up from stage crew to assistant production manager. Her international experience includes work with the Royal Shakespeare Company and the Sydney Theatre Company.
-
-As Production Manager for Festival 2024, Elena oversees all technical aspects of production, ensuring seamless execution of performances across multiple venues. Her innovative approaches to production challenges have resulted in more efficient and sustainable theatre practices.
-
-Elena is also passionate about mentoring the next generation of theatre technicians and regularly conducts workshops on production management.`,
+  "monique-alexandra-falzon": {
+    name: "Monique Alexandra Falzon",
+    image: "/Monique-Alexandra-Falzon-4.jpg",
+    bio: `ElMonique Falzon has always shown a great appreciation for theatre since she was a child. Her interest peaked in secondary school when she started getting involved in her school’s musical productions, from playing Cinderella’s Fairy Godmother in Nugrufella, to Mr. Warbucks in Annie. Monique fell in love with the atmosphere and sense of belonging that is brought on by being on stage and from then on, decided to pursue a career in theatre. She is currently in her final year studying for a Bachelor in Theatre Studies (Honors) at the School of Performing at the University of Malta, where she wishes to continue exploring different theatrical styles and learn more about what theatre is.`,
   },
   "alex-weenink": {
     name: "Alex Weenink",
     role: "Performer",
     image: "/Alex-Weenink-1.jpg",
-    bio: `I am a multidisciplinary artist, exploring the intersections between artistic mediums and contexts while investigating themes of expression, emotion, identity, and communication. With a prominent background and career as a theatre-maker, I am curious about how live performance, written text, and spoken word can engage with visual, musical, and interactive mediums such as drawing, song, and conversation. I'm also the Artistic Director of Chewing Productions - a platform for original and innovative theatrical work with a focus on twenty-first-century forms and realities. Its portfolio includes ensemble-driven plays, collections of new writing, site-specific 'performance parties', creative development workshops, and open-mic nights.`,
+    bio: `Alex is a multidisciplinary artist, exploring the intersections between artistic mediums and contexts while investigating themes of expression, emotion, identity, and communication. With a prominent background and career as a theatre-maker, he is curious about how live performance, written text, and spoken word can engage with visual, musical, and interactive mediums such as drawing, song, and conversation. He is also the Artistic Director of Chewing Productions - a platform for original and innovative theatrical work with a focus on twenty-first-century forms and realities. Its portfolio includes ensemble-driven plays, collections of new writing, site-specific ‘performance parties’, creative development workshops, and open-mic nights.`,
   },
   "charlene-galea": {
     name: "Charlene Galea",
@@ -57,7 +33,7 @@ Elena is also passionate about mentoring the next generation of theatre technici
     name: "Emily Salnitro",
     role: "Performer",
     image: "/Emily-Salnitro-1.jpg",
-    bio: `I've been creating art since childhood, drawn to abstract, vibrant, and dreamlike expressions inspired by my thoughts, nature, and music. While primarily a visual artist, my background in Performing Arts education deepens my appreciation for the intersection of art forms. I hold a Bachelor's in Fine Art and am pursuing a Master's in Teaching and Learning Art to share my passion with students. Though trained in various mediums, I feel most connected to mixed media, where layers communicate emotion. Abstraction, to me, invites reflection—asking viewers to pause and consider: How does this make me feel? Why?`
+    bio: `Emily has been creating art since childhood, drawn to abstract, vibrant, and dreamlike expressions inspired by her thoughts, nature, and music. While primarily a visual artist, her background in Performing Arts education deepens her appreciation for the intersection of art forms. She holds a Bachelor's in Fine Art and is pursuing a Master's in Teaching and Learning Art to share her passion with students. Though trained in various mediums, Emily feels most connected to mixed media, where layers communicate emotion. Abstraction, to her, invites reflection—asking viewers to pause and consider: How does this make me feel? Why?`
     },
   "nicole-zammit": {
     name: "Nicole Zammit",
@@ -68,7 +44,7 @@ Elena is also passionate about mentoring the next generation of theatre technici
     name: "Rebecca Grech",
     role: "Performer",
     image: "/Rebecca-Grech-1.jpg",
-    bio: `Rebecca Grech is a versatile performer with extensive experience as a dancer, singer, and actress, contributing to various productions on and off stage. She began ballet at age 5 at The School of Dance tutored by Ms Joanna Vella and explored contemporary dance in 2022 at Nova Studios, expanding into Jazz, and Commercial Hip-Hop. Her recent participation includes Dance Festival Malta Community Project - Urban Symphonies, and Affinity (Dis)connection UM dance project. Graduating with a Bachelor's degree in Performing Arts, her thesis integrated Yoga with Contemporary Dance to depict the Five Earth Elements. Her research culminated in her performance - Prana at the ICA Festival in 2024.`
+    bio: `Rebecca Grech is a versatile performer with extensive experience as a dancer, singer, and actress, contributing to various productions on and off stage. She began ballet at the age of 5 at The School of Dance tutored by Ms Joanna Vella and explored contemporary dance in 2022 at Nova Studios, expanding into Jazz, and Commercial Hip-Hop. Her recent participation includes Dance Festival Malta Community Project - Urban Symphonies, and Affinity (Dis)connection UM dance project. Graduating with a Bachelor's degree in Performing Arts, her thesis integrated Yoga with Contemporary Dance to depict the Five Earth Elements. Her research culminated in her performance - Prana at the ICA Festival in 2024.`
   },
   "edmilson-zammit": {
     name: "Edmilson Zammit",
@@ -77,16 +53,64 @@ Elena is also passionate about mentoring the next generation of theatre technici
     bio: `Edmilson is a dynamic performing arts student at MCAST, specializing in dance and design elements. His creative journey weaves together a holistic approach to movement, blending the worlds of ritualistic clowning, light design, and therapeutic practices. With a passion for pushing artistic boundaries, Edmilson explores dance as a transformative medium that connects body, space, and emotion. for dementia people.`,
   },
   "malcolm-micallef": {
-    name: "Edmilson Zammit",
+    name: "Malcolm Micallef",
     role: "Performer",
-    image: "/Edmilson-Zammit-1.jpg",
-    bio: `I'm an artist that likes to create pieces that involve the self. My inspiration comes from existential philosophy and touches upon the absurd.I like to create and idea-generate concepts for theatre, film, and any other artistic medium.`,
+    image: "/Malcolm-Micallef-1.jpg",
+    bio: `Malcolm is an artist that likes to create pieces that involve the self. His inspiration comes from existential philosophy and touches upon the absurd. He likes to create and idea-generate concepts for theatre, film, and any other artistic medium. This piece is confined in the absurd of connectivity and numbers through a TED Talk.`,
   },
   "benjamin-abela": {
     name: "Benjamin Abela",
     role: "Performer",
     image: "/Benjamin-Abela-1.jpg",
     bio: `Over the years, Benjamin has participated in countless productions and, subsequently, played dozens of different roles. These include Pete in 'Dear Pete', Lamb in 'Is-Serra', Max in 'Ineż Kienet Perfetta', David in 'Il-Pożittivi', Grillu in 'Il-Giddieb Għomru Twil', and David in 'Id-Dnub tal-Magħżulin'. Benjamin's role within the local theatre industry goes beyond that of an actor. Over the years, he has written and co-written a number of scripts, such as 'NOSTRUM', 'Popolazzjoni: 4', '90 SEKONDA', 'Pandora', 'L-Aħħar Siġra', 'Help! Barbetti go Bohemian!', and 'iLand'. In 2017, Benjamin co- founded the Ħassle Mejjet Theatre Collective with Gianluca Mifsud and Brendon Thearle..`,
+  },
+  "elena-marie-sciberras": {
+    name: "Elena Marie Sciberras",
+    role: "Artist",
+    image: "/Elena-Marie-Sciberras-1.jpg",
+    bio: `Elena Sciberras is a twenty-year-old fine arts student currently in her third year at the University of Malta, where she is pursuing a BA in Fine Arts and Music Studies. She draws inspiration from the vast array of media that surrounds her daily—from the films she watches to the music playing as she travels from place to place. Despite often feeling overwhelmed by this endless curiosity, she finds relief in the knowledge that creating and discovering art ensures she will almost never experience boredom. Through her work, Elena hopes to inspire a deeper appreciation of the art embedded in everyday life. She aims to emphasize the significance of each passing moment, encouraging others to slow down and truly take it all in.`,
+  },
+  "lara-vella": {
+    name: "Lara Vella",
+    role: "Artist",
+    image: "/Lara-Vella.jpg",
+    bio: `Lara Vella is a Maltese oil and acrylic painter who is deeply inspired by the vibrant warmth of her homeland; Malta. The artist strives to portray her subjects in saturated, dreamlike tones; an aesthetic choice which serves the dual purpose of not only accentuating the lively colours of our island but also providing the viewer with the opportunity to experience the subjects through a childlike lens. Lara's most common themes are seascapes, sunsets, rural landscapes and traditional food still lifes all of which highlight Malta's unique, natural beauty and culture. Before her most recent solo exhibition at the Phoenicia in August 2024, Lara's journey into the arts began with her formal education in fine arts, where she honed her skills and developed a unique artistic voice. Lara completed a Master Course in Visual Arts in Florence, Italy, leaving Malta soon after she completed a Bachelor's Degree in Fine Arts and History of Art from the Department of Art and Art History at the University of Malta.`,
+  },
+  "sarah-fofana": {
+    name: "Sarah Fofana",
+    role: "Performer",
+    image: "/Sarah-Fofana.jpg",
+    bio: `Sarah is a third-year Performing Arts student at the University of Malta. She discovered a passion for the field at a young age, which motivated her to pursue formal education in theatre, dance, and music. Sarah has been part of several theatre plays and dance performances, each experience helping her grow as an artist. She appreciates opportunities to develop her skills and expand her artistic knowledge.`,
+  },
+  "alice-bertolasi": {
+    name: "Alice Bertolasi",
+    role: "Performer",
+    image: "/Alice-Bertolasi.jpg",
+    bio: `Alice Bertolasi studied painting at ABA Brera (Milan), MA, and she took part in the Erasmus programme at NCAD, Dublin, and UM, Malta. In 2019 she gave birth to 'In Parole Pòlvere': an artistic quest around the metaphorical potential of dust. Her work has been exhibited in Germany, Ireland, Italy and China. Her practice feeds on hybrid and crossed languages such as installation, poetry, drawing, rudimentary audio and video production, meditative body research practices and feminist thought, aiming to transform the visual apparatus into an emotional dimension of relational experience and vice versa.`,
+  },
+  "giorgia-ionescu": {
+    name: "Giorgia Ionescu",
+    role: "Performer",
+    image: "/Giorgia-Ionescu-1.jpg",
+    bio: `Giorgia Ionescu is a young upcoming actress from Romania. From an early age she has been eager to explore and learn from different cultures—starting with an exchange to Finland, pursuing a theatre degree in cork, and finally studying abroad in Malta. With her experience in not only short-films and traditional theatre, but also devised avant-garde movement-based work, Giorgia is both figuratively and literally— a boundary pusher.`,
+  },
+  "anna-issajeva": {
+    name: "Anna Issajeva",
+    role: "Performer",
+    image: "/Anna-Issajeva.jpg",
+    bio: `Anna Issajeva is a dedicated theatre artist with extensive acting experience. Originally from Ireland, she has been passionate about performance from an early age, exploring a range of theatrical forms. Currently pursuing a degree in Theatre and Performative Practices at University College Cork, she is expanding her practice while studying abroad in Malta. With a background spanning traditional theatre, devised work, and avant-garde movement-based performance, Anna is drawn to experimentation and pushing creative boundaries. Whether on stage or behind the scenes, she continues to explore new ways of engaging audiences and bringing bold ideas to life.`,
+  },
+  "kiki-valentine": {
+    name: "Kiki Valentine",
+    role: "Drag artist",
+    image: "/Kiki-Valentine.jpg",
+    bio: `A Fearless trans Maltese drag queen serving stunts, shock, and fierce femininity with a twist!`,
+  },
+  "celeste-samodiva": {
+    name: "Celeste Samodiva",
+    role: "Drag artist",
+    image: "/Celeste-Samodiva.jpg",
+    bio: `She’s kooky, she’s crazy, and she’s here to slay! Celeste Samodiva is a drag queen who lives for camp, concept, and a touch of chaos. Whether it’s a high-energy banger or a soul-stirring ballad, she delivers versatility with a twist, always keeping audiences on their toes. This crafty queen loves a good gag—reveal after reveal, she’s got tricks up her sleeve and then some. With a playful spirit and a fearless attitude, Celeste Samodiva isn’t afraid to make a fool of herself, all while serving unforgettable performances that blend creativity, comedy, and charisma. Buckle up—she’s just getting started!`,
   },
 };
 
@@ -115,7 +139,6 @@ export default function TeamMember() {
             <h1 className="text-6xl font-bold text-white mb-4">
               {member.name}
             </h1>
-            <h2 className="text-2xl text-purple-400">{member.role}</h2>
           </div>
 
           <div className="mt-8 md:mt-0">
