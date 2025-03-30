@@ -8,17 +8,17 @@ export default function Home() {
       <div 
         className="relative h-[85vh] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80")'
+          backgroundImage: 'url("home-page-hero-3.jpg")'
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-70" />
+        <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 h-full flex items-center">
-          <div className="max-w-4xl">
+          <div className="max-w-2xl">
             <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
               <h1 className="text-[#1E0B36] font-bold">Pause & Play Festival</h1>
             </div>
-            <h2 className="text-[#37B5FF] text-5xl md:text-6xl font-bold mb-8 leading-tight">
+            <h2 className="text-white text-2xl md:text-6xl font-bold mb-8 leading-tight">
               Get ready to feel, connect, and discover the extraordinary in every performance!
             </h2>
             <p className="text-white text-lg mb-8 max-w-2xl">
@@ -95,7 +95,7 @@ export default function Home() {
             <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-6">
               <h2 className="text-[#1E0B36] font-bold">What's On</h2>
             </div>
-            <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">Featured Events</h2>
+            <h2 className="text-[#37B5FF] text-2xl md:text-5xl font-bold mb-8">Featured Events</h2>
             <p className="text-white text-xl max-w-3xl mx-auto mb-8">
               Explore our exciting lineup of performances and activities scheduled throughout the festival. From interactive shows to captivating performances, there's something for everyone.
             </p>

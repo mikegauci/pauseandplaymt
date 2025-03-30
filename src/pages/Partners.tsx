@@ -15,34 +15,34 @@ export default function Partners() {
         <section className="mb-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <img 
-              src="/Partner-1.jpg"
-              alt="University of Bath"
-              className="w-full aspect-square object-contain bg-white rounded-lg p-4"
+              src="/Partner-5.jpg"
+              alt="University of Malta"
+              className="w-full aspect-square object-contain bg-white rounded-lg"
+            />           
+            <img 
+              src="/Partner-4.png"
+              alt="KSU"
+              className="w-full aspect-square object-contain bg-white rounded-lg"
             />
             <img 
               src="/Partner-2.jpg"
-              alt="Arts Council England"
-              className="w-full aspect-square object-contain bg-white rounded-lg p-4"
+              alt="Agenzija Zaghzagh"
+              className="w-full aspect-square object-contain bg-white rounded-lg"
+            />                         
+            <img 
+              src="/Partner-1.jpg"
+              alt="Wild & Honey"
+              className="w-full aspect-square object-contain bg-white rounded-lg"
             />
             <img 
               src="/Partner-3.jpg"
-              alt="Frome Town Council"
-              className="w-full aspect-square object-contain bg-white rounded-lg p-4"
-            />
-            <img 
-              src="/Partner-4.png"
-              alt="Somerset Council"
-              className="w-full aspect-square object-contain bg-white rounded-lg p-4"
-            />
-            <img 
-              src="/Partner-5.jpg"
-              alt="Somerset Council"
-              className="w-full aspect-square object-contain bg-white rounded-lg p-4"
+              alt="MaeWest"
+              className="w-full aspect-square object-contain bg-white rounded-lg"
             />
             <img 
               src="/Partner-6.jpg"
-              alt="Somerset Council"
-              className="w-full aspect-square object-contain bg-white rounded-lg p-4"
+              alt="Motor Element"
+              className="w-full aspect-square object-contain bg-white rounded-lg"
             />
           </div>
         </section>

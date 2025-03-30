@@ -4,90 +4,30 @@ const teamMembers = [
   {
     id: "angelique-attard",
     name: "Angelique Attard",
-    image:
-      "/Angelique-Attard-1.jpg",
-    color: "bg-[#EEC60D]",
+    image: "/Angelique-Attard-1.jpg",
+    color: "bg-[#37b5ff]",
   },
   {
     id: "brendon-joseph-thearle",
     name: "Brendon Joseph Thearle",
-    image:
-      "/Brendon-Thearle.jpg",
-    color: "bg-purple-500",
-  },  
+    image: "/Brendon-Thearle.jpg",
+    color: "bg-[#37b5ff]",
+  },
   {
     id: "monique-alexandra-falzon",
     name: "Monique Alexandra Falzon",
-    image:
-      "/Monique-Alexandra-Falzon-4.jpg",
-    color: "bg-amber-500",
+    image: "/Monique-Alexandra-Falzon-4.jpg",
+    color: "bg-[#37b5ff]",
   },
 ];
 
 const festivalCollaborators = [
-  {
-    id: "alex-weenink",
-    name: "Alex Weenink",
-    image: "/Alex-Weenink-1.jpg",
-    role: "Performer",
-    color: "bg-purple-500",
-    shortBio: "Workshop Facilitator bringing creative experiences to life.",
-  },
-  {
-    id: "rebecca-greca",
-    name: "Rebecca Grech",
-    image: "/Rebecca-Grech-1.jpg",
-    role: "Performer",
-    color: "bg-[#EEC60D]",
-    shortBio: "Stage Manager coordinating performances with precision.",
-  },
-  {
-    id: "edmilson-zammit",
-    name: "Edmilson Zammit",
-    image: "/Edmilson-Zammit-1.jpg",
-    role: "Performer",
-    color: "bg-amber-500",
-    shortBio: "Event Coordinator orchestrating memorable festival experiences.",
-  },
-  {
-    id: "charlene-galea",
-    name: "Charlene Galea",
-    image: "/Charlene-Galea-1.jpg",
-    role: "Performer",
-    color: "bg-[#EEC60D]",
-    shortBio: "Technical Director ensuring seamless production execution.",
-  },
-  {
-    id: "malcolm-micallef",
-    name: "Malcolm Micallef",
-    image: "/Malcolm-Micallef-1.jpg",
-    role: "Performer",
-    color: "bg-[#EEC60D]",
-    shortBio: "Technical Director ensuring seamless production execution.",
-  },
+  // Artists
   {
     id: "emily-salnitro",
     name: "Emily Salnitro",
     image: "/Emily-Salnitro-1.jpg",
     role: "Artist",
-    color: "bg-amber-500",
-    shortBio:
-      "Community Liaison building bridges between artists and audiences.",
-  },
-  {
-    id: "nicole-zammit",
-    name: "Nicole Zammit",
-    image: "/Nicole-Zammit-1.jpg",
-    role: "Performer",
-    color: "bg-purple-500",
-    shortBio:
-      "Production Assistant supporting all aspects of festival operations.",
-  },
-  {
-    id: "benjamin-abela",
-    name: "Benjamin Abela",
-    image: "/Benjamin-Abela-1.jpg",
-    role: "Performer",
     color: "bg-amber-500",
     shortBio:
       "Community Liaison building bridges between artists and audiences.",
@@ -107,49 +47,117 @@ const festivalCollaborators = [
     image: "/Lara-Vella.jpg",
     role: "Artist",
     color: "bg-amber-500",
-  },  
+  },
+
+  // Drag artists
+  {
+    id: "kiki-valentine",
+    name: "Kiki Valentine",
+    image: "/Kiki-Valentine.jpg",
+    role: "Drag Artist",
+    color: "bg-purple-500",
+  },
+  {
+    id: "celeste-samodiva",
+    name: "Celeste Samodiva",
+    image: "/Celeste-Samodiva.jpg",
+    role: "Drag Artist",
+    color: "bg-purple-500",
+  },
+  {
+    id: "ben-n-syder",
+    name: "Ben N. Syder",
+    image: "/ben-n-syder-1.jpg",
+    role: "Drag Artist",
+    color: "bg-purple-500",
+  },
+  // Performers
+  {
+    id: "alex-weenink",
+    name: "Alex Weenink",
+    image: "/Alex-Weenink-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio: "Workshop Facilitator bringing creative experiences to life.",
+  },
+  {
+    id: "rebecca-grech",
+    name: "Rebecca Grech",
+    image: "/Rebecca-Grech-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio: "Stage Manager coordinating performances with precision.",
+  },
+  {
+    id: "edmilson-zammit",
+    name: "Edmilson Zammit",
+    image: "/Edmilson-Zammit-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio: "Event Coordinator orchestrating memorable festival experiences.",
+  },
+  {
+    id: "charlene-galea",
+    name: "Charlene Galea",
+    image: "/Charlene-Galea-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio: "Technical Director ensuring seamless production execution.",
+  },
+  {
+    id: "malcolm-micallef",
+    name: "Malcolm Micallef",
+    image: "/Malcolm-Micallef-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio: "Technical Director ensuring seamless production execution.",
+  },
+  {
+    id: "nicole-zammit",
+    name: "Nicole Zammit",
+    image: "/Nicole-Zammit-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio:
+      "Production Assistant supporting all aspects of festival operations.",
+  },
+  {
+    id: "benjamin-abela",
+    name: "Benjamin Abela",
+    image: "/Benjamin-Abela-1.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+    shortBio:
+      "Community Liaison building bridges between artists and audiences.",
+  },
   {
     id: "sarah-fofana",
     name: "Sarah Fofana",
     image: "/Sarah-Fofana.jpg",
     role: "Performer",
-    color: "bg-amber-500",
-  },  
+    color: "bg-[#EEC60D]",
+  },
   {
     id: "alice-bertolasi",
     name: "Alice Bertolasi",
     image: "/Alice-Bertolasi.jpg",
     role: "Performer",
-    color: "bg-amber-500",
-  },  
+    color: "bg-[#EEC60D]",
+  },
   {
     id: "giorgia-ionescu",
     name: "Giorgia Ionescu",
     image: "/Giorgia-Ionescu-1.jpg",
     role: "Performer",
-    color: "bg-amber-500",
-  },    
+    color: "bg-[#EEC60D]",
+  },
   {
     id: "anna-issajeva",
     name: "Anna Issajeva",
     image: "/Anna-Issajeva.jpg",
     role: "Performer",
-    color: "bg-amber-500",
-  },    
-  {
-    id: "kiki-valentine",
-    name: "Kiki Valentine",
-    image: "/Kiki-Valentine.jpg",
-    role: "Drag artist",
-    color: "bg-amber-500",
-  },    
-  {
-    id: "celeste-samodiva",
-    name: "Celeste Samodiva",
-    image: "/Celeste-Samodiva.jpg",
-    role: "Drag artist",
-    color: "bg-amber-500",
-  },    
+    color: "bg-[#EEC60D]",
+  },
 ];
 export default function Team() {
   return (
@@ -160,7 +168,7 @@ export default function Team() {
           <h1 className="text-gray-900 font-bold">Our Team</h1>
         </div>
 
-        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-2xl md:text-5xl font-bold mb-8">
           Learn about the people behind this festival
         </h2>
 

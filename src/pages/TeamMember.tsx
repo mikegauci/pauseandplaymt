@@ -5,7 +5,7 @@ const teamMembersData = {
   "brendon-joseph-thearle": {
     name: "Brendon Joseph Thearle",
     image: "/Brendon-Thearle.jpg",
-    bio: `Brendon entered the world of theatre at the age of five and since then has performed in various productions such as; MADC's traditional Shakespeare classics; The Merry Wives of Windsor (2022) as Frank Ford, as Mr. Scruples in Manoel Theatre's opera for 2019's ŻiguŻajg in The Impresario (2019), as Captain Barbuljatu in FM Theatre Productions' Christmas pantomime; The Little Mermaid - The Panto Under the Sea (2019), as Gary in MADC’s A Kick in the Baubles (2022), as Jeremy in Ħassle Mejjet Theatre Collective’s Popolazzjoni: 4 (2023), as Dame Widow Twankey in Teatru Manoel’s Learning & Participation Programme: TOI TOI’s The Great Little Panto Show (2023, 2024), and in MADC’s The Coarse Acting Show (2025), among many others. He has also delved into the directorial seat with such projects as Pandora (2019), L-Aħħar Siġra (2021), The Fourth Wall (2022) for MADC's One Act Play Festival in which The Fourth Wall won; Best Actor, Most Promising Actor, Best Director and Best Production and was nominated for; Most Promising Actress and most recently; Nostrum (2023). He is also currently studying for a Bachelor in Theatre (Honours) degree at the School of Performing Arts within the University of Malta..`,
+    bio: `Brendon entered the world of theatre at the age of five and since then has performed in various productions such as; MADC's traditional Shakespeare classics; The Merry Wives of Windsor (2022) as Frank Ford, as Mr. Scruples in Manoel Theatre's opera for 2019's ŻiguŻajg in The Impresario (2019), as Captain Barbuljatu in FM Theatre Productions' Christmas pantomime; The Little Mermaid - The Panto Under the Sea (2019), as Gary in MADC’s A Kick in the Baubles (2022), as Jeremy in Ħassle Mejjet Theatre Collective’s Popolazzjoni: 4 (2023), as Dame Widow Twankey in Teatru Manoel’s Learning & Participation Programme: TOI TOI’s The Great Little Panto Show (2023, 2024), and in MADC’s The Coarse Acting Show (2025), among many others. He has also delved into the directorial seat with such projects as Pandora (2019), L-Aħħar Siġra (2021), The Fourth Wall (2022) for MADC's One Act Play Festival in which The Fourth Wall won; Best Actor, Most Promising Actor, Best Director and Best Production and was nominated for; Most Promising Actress and most recently; Nostrum (2023). He is also currently studying for a Bachelor in Theatre (Honours) degree at the School of Performing Arts within the University of Malta.`,
   },
   "angelique-attard": {
     name: "Angelique Attard",
@@ -15,7 +15,7 @@ const teamMembersData = {
   "monique-alexandra-falzon": {
     name: "Monique Alexandra Falzon",
     image: "/Monique-Alexandra-Falzon-4.jpg",
-    bio: `ElMonique Falzon has always shown a great appreciation for theatre since she was a child. Her interest peaked in secondary school when she started getting involved in her school’s musical productions, from playing Cinderella’s Fairy Godmother in Nugrufella, to Mr. Warbucks in Annie. Monique fell in love with the atmosphere and sense of belonging that is brought on by being on stage and from then on, decided to pursue a career in theatre. She is currently in her final year studying for a Bachelor in Theatre Studies (Honors) at the School of Performing at the University of Malta, where she wishes to continue exploring different theatrical styles and learn more about what theatre is.`,
+    bio: `Monique Alexandra Falzon has always shown a great appreciation for theatre since she was a child. Her interest peaked in secondary school when she started getting involved in her school’s musical productions, from playing Cinderella’s Fairy Godmother in Nugrufella, to Mr. Warbucks in Annie. Monique fell in love with the atmosphere and sense of belonging that is brought on by being on stage and from then on, decided to pursue a career in theatre. She is currently in her final year studying for a Bachelor in Theatre Studies (Honors) at the School of Performing at the University of Malta, where she wishes to continue exploring different theatrical styles and learn more about what theatre is.`,
   },
   "alex-weenink": {
     name: "Alex Weenink",
@@ -39,7 +39,8 @@ const teamMembersData = {
     name: "Nicole Zammit",
     role: "Performer",
     image: "/Nicole-Zammit-1.jpg",
-    bio: `Nicole is a freelance contemporary dance artist from Malta with a passion for performance and choreography. She began training in Latin American and contemporary dance and she graduated with a Bachelor in Dance Studies (Honours). She has trained internationally, performed in various choreographies, and worked with renowned choreographers. During her degree, Nicole had the opportunity to participate in a dance tour in Malta and Budapest in 2023/24. In addition, she choreographed her own work in Malta which was premiered in Valletta Campus Theatre. Later, Nicole restages her choreographed piece for the Prague New Generation Dance Festival 2024. Nicole teaches dance, aerial, and facilitates dance sessions`},
+    bio: `Nicole is a freelance contemporary dance artist from Malta with a passion for performance and choreography. She began training in Latin American and contemporary dance and she graduated with a Bachelor in Dance Studies (Honours). She has trained internationally, performed in various choreographies, and worked with renowned choreographers. During her degree, Nicole had the opportunity to participate in a dance tour in Malta and Budapest in 2023/24. In addition, she choreographed her own work in Malta which was premiered in Valletta Campus Theatre. Later, Nicole restages her choreographed piece for the Prague New Generation Dance Festival 2024. Nicole teaches dance, aerial, and facilitates dance sessions.`
+  },
   "rebecca-grech": {
     name: "Rebecca Grech",
     role: "Performer",
@@ -56,13 +57,13 @@ const teamMembersData = {
     name: "Malcolm Micallef",
     role: "Performer",
     image: "/Malcolm-Micallef-1.jpg",
-    bio: `Malcolm is an artist that likes to create pieces that involve the self. His inspiration comes from existential philosophy and touches upon the absurd. He likes to create and idea-generate concepts for theatre, film, and any other artistic medium. This piece is confined in the absurd of connectivity and numbers through a TED Talk.`,
+    bio: `Malcolm is an artist that likes to create pieces that involve the self. His inspiration comes from existential philosophy and touches upon the absurd. He likes to create and idea-generate concepts for theatre, film, and any other artistic medium.`,
   },
   "benjamin-abela": {
     name: "Benjamin Abela",
     role: "Performer",
     image: "/Benjamin-Abela-1.jpg",
-    bio: `Over the years, Benjamin has participated in countless productions and, subsequently, played dozens of different roles. These include Pete in 'Dear Pete', Lamb in 'Is-Serra', Max in 'Ineż Kienet Perfetta', David in 'Il-Pożittivi', Grillu in 'Il-Giddieb Għomru Twil', and David in 'Id-Dnub tal-Magħżulin'. Benjamin's role within the local theatre industry goes beyond that of an actor. Over the years, he has written and co-written a number of scripts, such as 'NOSTRUM', 'Popolazzjoni: 4', '90 SEKONDA', 'Pandora', 'L-Aħħar Siġra', 'Help! Barbetti go Bohemian!', and 'iLand'. In 2017, Benjamin co- founded the Ħassle Mejjet Theatre Collective with Gianluca Mifsud and Brendon Thearle..`,
+    bio: `Over the years, Benjamin has participated in countless productions and, subsequently, played dozens of different roles. These include Pete in 'Dear Pete', Lamb in 'Is-Serra', Max in 'Ineż Kienet Perfetta', David in 'Il-Pożittivi', Grillu in 'Il-Giddieb Għomru Twil', and David in 'Id-Dnub tal-Magħżulin'. Benjamin's role within the local theatre industry goes beyond that of an actor. Over the years, he has written and co-written a number of scripts, such as 'NOSTRUM', 'Popolazzjoni: 4', '90 SEKONDA', 'Pandora', 'L-Aħħar Siġra', 'Help! Barbetti go Bohemian!', and 'iLand'. In 2017, Benjamin co- founded the Ħassle Mejjet Theatre Collective with Gianluca Mifsud and Brendon Thearle.`,
   },
   "elena-marie-sciberras": {
     name: "Elena Marie Sciberras",
@@ -104,13 +105,19 @@ const teamMembersData = {
     name: "Kiki Valentine",
     role: "Drag artist",
     image: "/Kiki-Valentine.jpg",
-    bio: `A Fearless trans Maltese drag queen serving stunts, shock, and fierce femininity with a twist!`,
+    bio: `A fearless trans Maltese drag queen serving stunts, shock, and fierce femininity with a twist!`,
   },
   "celeste-samodiva": {
     name: "Celeste Samodiva",
     role: "Drag artist",
     image: "/Celeste-Samodiva.jpg",
     bio: `She’s kooky, she’s crazy, and she’s here to slay! Celeste Samodiva is a drag queen who lives for camp, concept, and a touch of chaos. Whether it’s a high-energy banger or a soul-stirring ballad, she delivers versatility with a twist, always keeping audiences on their toes. This crafty queen loves a good gag—reveal after reveal, she’s got tricks up her sleeve and then some. With a playful spirit and a fearless attitude, Celeste Samodiva isn’t afraid to make a fool of herself, all while serving unforgettable performances that blend creativity, comedy, and charisma. Buckle up—she’s just getting started!`,
+  },
+  "ben-n-syder": {
+    name: "Ben N. Syder",
+    role: "Drag artist",
+    image: "/ben-n-syder-1.jpg",
+    bio: `Spooking audiences with his vampiric flare and enthralling preferences - It's your resident drag thing, Ben N. Syder!`,
   },
 };
 

@@ -35,7 +35,7 @@ export function Layout() {
     { name: 'Partners', href: '/partners' },
     { name: 'Contact', href: '/contact' },
     { name: 'FAQ', href: '/faq' },
-    { name: 'Programme', href: '/programme' },
+    { name: 'Programme', href: '#' },
   ];
 
   return (

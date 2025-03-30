@@ -183,7 +183,7 @@ export default function GettingThere() {
                     everywhere in Malta, to check bus times and where the
                     nearest bus stop from your location is, we strongly advise
                     visiting the Malta Public Transport website or downloading
-                    the Tallinja app
+                    the Tallinja app.
                   </p>
                 </div>
               </div>
@@ -205,7 +205,7 @@ export default function GettingThere() {
                     (Vittoriosa, Senglea and Cospicua). The ferry service runs
                     daily from early morning till late at night, we strongly
                     advise visiting the Valletta Ferry Services website for more
-                    information and for ferry times
+                    information and for ferry times.
                   </p>
                 </div>
               </div>

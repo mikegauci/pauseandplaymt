@@ -9,7 +9,7 @@ export default function TheFestival() {
           <h1 className="text-gray-900 font-bold">The Festival</h1>
         </div>
 
-        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-2xl md:text-5xl font-bold mb-8">
           <strong><em>Pause & Play</em></strong> is a festival where creativity takes centre stage!
         </h2>
 
@@ -36,7 +36,7 @@ export default function TheFestival() {
               </div>
             </div>
             <img 
-              src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800"
+              src="about-the-festival.jpg"
               alt="Festival performance"
               className="rounded-lg object-cover h-80 w-full"
             />
@@ -68,7 +68,7 @@ export default function TheFestival() {
                 <div className="bg-gray-800 rounded-lg overflow-hidden transition-all duration-300 group-hover:bg-gray-700 group-hover:shadow-lg border-l-4 border-purple-400">
                   <div className="p-6">
                     <h4 className="text-white font-bold text-xl mb-2 group-hover:text-purple-400">Getting There</h4>
-                    <p className="text-gray-300">Find directions and local information</p>
+                    <p className="text-gray-300">Find directions and local <br/> information</p>
                   </div>
                 </div>
               </Link>

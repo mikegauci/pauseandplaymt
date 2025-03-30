@@ -53,36 +53,32 @@ const eventsData: Record<string, EventData> = {
   },
   "the-language-of-the-deaf": {
     id: "the-language-of-the-deaf",
-    title: "Language of the Deaf & Hooray, our World is Ending",
+    title: "Language of the Deaf & Hooray, Our World is Ending",
     duration: "30 minutes",
     time: "7:30 PM - 9:00 PM",
     disclaimer:
       "18+, The performance contains and talks about aspects of sexual violence",
     image: "/Hooray-the-world-is-over.jpg",
     exhibitionInfo: "The exhibition is open to the general public throughout the festival",
-    description: `D Shows presents two performances in one sitting.
+    description: `##D Shows presents two performances in one sitting
 
-    The Language of the Deaf explores topics of greed and unspoken taboos in society, gravity of silence and fear of words. How can we challenge societal cliches? Shed light onto subconscious patterns? A performance piece by D.Shows. A piece that provokes and intentionally questions conventional paradigms.
-    
-    Hooray, our World is Ending
-    
-    To the end of the world! And to whatever comes after 
+###The Language of the Deaf
 
-    This performance piece, set in a bar, dives into the sentiment of being
-    paralyzed by frustration.
+The Language of the Deaf explores topics of greed and unspoken taboos in society, gravity of silence and fear of words. How can we challenge societal cliches? Shed light onto subconscious patterns? A performance piece by D Shows. A piece that provokes and intentionally questions conventional paradigms.
 
-    The grumpy regular ranting about the world, while drinking through
-    another night of forgetting.
+###Hooray, our World is Ending
 
-    “ My mind is in: Palestine, Congo, Ethiopia, Sudan. It’s on one of the
-    boats that might arrive at our shores tomorrow. Or yesterday? and I
-    haven’t even kept up with the news to carry this knowledge like a
-    burden.”
+To the end of the world! And to whatever comes after
 
-    But how can we do something about it?
+This performance piece, set in a bar, dives into the sentiment of being paralyzed by frustration.
 
-    D.Shows invites all the spectators to connect.
-    `,
+The grumpy regular ranting about the world, while drinking through another night of forgetting.
+
+"My mind is in: Palestine, Congo, Ethiopia, Sudan. It's on one of the boats that might arrive at our shores tomorrow. Or yesterday? and I haven't even kept up with the news to carry this knowledge like a burden."
+
+But how can we do something about it?
+
+**D Shows invites all the spectators to connect.**`,
   },
   "ted-talk": {
     id: "ted-talk",
@@ -105,19 +101,21 @@ const eventsData: Record<string, EventData> = {
     id: "first-year-performance",
     title: "First Year Performance",
     image: "/First-year-performance.jpg",
-    description: `A performance by the first year students of the University of Malta.`,
+    description: "Which news items catch our attention? How do we deal with them? Using the dramatised, living newspaper model, First Year Theatre Studies students are excited to 'pause and play' by sharing a programme of five short performances on a variety of themes: power, security, status, loss, and empathy. How real are our stories? Do they mix with abstract ideas or dreams? Come and find out!",
   },
   "the-pigs-in-a-parlour": {
     id: "the-pigs-in-a-parlour",
     title: "The Pigs in a Parlour",
-    image: "/The-pigs-in-a-parlour.jpg",
-    description: `The Pigs in a Parlour is a performance that was created by the third year performing arts students as part of a practice research. The performance follows Duration 56, a concept developed by Professor Frank Camilleri, and explores the concept and practice of duration, repetition, and improvisation. Moreover, it explores its impact on the attention and work of performers within a structure of actions and tasks performed in an installation-type setting involving chairs and lanes.`,
+    image: "/the-pigs-in-a-parlour-1.jpg",
+    description: `'Four Practice Researchers trying to find the Pigs in a Parlour. 'The Pigs in a Parlour' formed part of 'Practice Research', which is a Theatre Studies study-unit at the University of Malta in 2024. The performance follows Duration 56, a concept developed by Prof. Frank Camilleri, and explores the concept and practice of duration, repetition, and improvisation. Moreover, it explores its impact on the attention and work of performers within a structure of actions and tasks performed in an installation-type setting involving chairs and lanes.`,
+    duration: "30 minutes",
+    disclaimer: "A majority of the performance will be in the dark",
   },
   "bahar": {
     id: "bahar",
     title: "Bahar",
     image: "/Bahar.jpg",
-    description: `An intimate view of Malta’s sea: where light is refracted into a variety of unique works of art.`,
+    description: `An intimate view of Malta's sea: where light is refracted into a variety of unique works of art.`,
     isExhibition: true,
     exhibitionInfo: "The exhibition is open to the general public throughout the festival",
   },
@@ -176,7 +174,7 @@ export default function EventsDetails() {
               </h1>
 
               {!event.isExhibition && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-1 mb-6">
                   <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-[#37B5FF]">
                     <div className="flex items-center">
                       <Clock className="h-5 w-5 text-[#37B5FF] mr-3" />
@@ -185,16 +183,6 @@ export default function EventsDetails() {
                         <div className="text-white font-medium">
                           {event.duration}
                         </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-[#EEC60D]">
-                    <div className="flex items-center">
-                      <Calendar className="h-5 w-5 text-[#EEC60D] mr-3" />
-                      <div>
-                        <div className="text-gray-400 text-sm">Show Time</div>
-                        <div className="text-white font-medium">{event.time}</div>
                       </div>
                     </div>
                   </div>
@@ -250,11 +238,36 @@ export default function EventsDetails() {
       <div className="max-w-4xl mx-auto px-4 mb-16">
         <div className="bg-[#1a1a1a] rounded-xl p-8 shadow-lg">
           <div className="prose prose-lg prose-invert max-w-none">
-            {event.description.split("\n\n").map((paragraph, index) => (
-              <p key={index} className="text-gray-300 text-lg leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
+            {event.description.split("\n\n").map((paragraph, index) => {
+              // Check if paragraph starts with markdown heading syntax
+              if (paragraph.startsWith("##") && !paragraph.startsWith("###")) {
+                // Main title (h2)
+                return (
+                  <h2 key={index} className="text-2xl font-bold text-white mb-6 text-center">
+                    {paragraph.replace(/^##/, '')}
+                  </h2>
+                );
+              } else if (paragraph.startsWith("###")) {
+                // Subheading (h3)
+                return (
+                  <h3 key={index} className="text-xl font-bold text-white mt-8 mb-4 border-b border-gray-700 pb-1 text-center">
+                    {paragraph.replace(/^###/, '')}
+                  </h3>
+                );
+              } else if (paragraph.startsWith("**") && paragraph.endsWith("**")) {
+                // Bold paragraph
+                return (
+                  <p key={index} className="text-gray-300 text-lg leading-relaxed mb-4 font-bold">
+                    {paragraph.replace(/^\*\*|\*\*$/g, '')}
+                  </p>
+                );
+              }
+              return (
+                <p key={index} className="text-gray-300 text-lg leading-relaxed mb-4">
+                  {paragraph}
+                </p>
+              );
+            })}
           </div>
         </div>
       </div>

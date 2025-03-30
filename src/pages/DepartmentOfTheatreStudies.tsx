@@ -3,111 +3,106 @@ export default function DepartmentOfTheatreStudies() {
     <div className="min-h-screen bg-[#111] py-16">
       <div className="max-w-6xl mx-auto px-4">
         <section className="mb-16">
-
           <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
-            <h1 className="text-gray-900 font-bold">Department of Theatre Studies</h1>
+            <h1 className="text-gray-900 font-bold">
+              Department of Theatre Studies
+            </h1>
           </div>
 
-          <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
-            Celebrating Arts, Science and Culture in Frome
+          <h2 className="text-[#37B5FF] text-2xl md:text-5xl font-bold mb-8">
+            University of Malta
           </h2>
 
-          <p className="text-white text-lg mb-16">
-            The Frome Festival brings together artists, performers, and
-            audiences for an extraordinary celebration of creativity and
-            innovation. Join us for three days of unforgettable experiences.
-          </p>
-
           <div className="prose prose-lg prose-invert max-w-none">
-            <h2 className="text-2xl font-semibold text-purple-400 mb-4">
-              Frome Festival's Theatre Studies program has been building bridges
-              between performers, directors, and the community for over a decade
-            </h2>
-
-            <p className="text-gray-300 mb-8">
-              The Theatre Studies program is an integral part of the Frome
-              Festival, offering workshops, masterclasses, and educational
-              opportunities that connect aspiring performers with industry
-              professionals and the wider theatrical community.
+            <p className="text-gray-300 mb-6 text-lg">
+              <a
+                href="https://www.um.edu.mt/performingarts/theatre/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#EEC60D] transform hover:text-[#ffdf4e] transition-colors duration-300"
+              >
+                The Department of Theatre Studies
+              </a>{" "}
+              at the University of Malta has been a central hub for theatre
+              education since welcoming its first students in 1988. It remains
+              until today the leading institution for tertiary-level theatre
+              education in Malta, offering a dynamic space where theatre,
+              performance, and critical thinking come together.
             </p>
 
             <h2 className="text-2xl font-semibold text-purple-400 mb-4">
-              Each year brings unique opportunities for learning and growth
+              Educational Approach
             </h2>
 
+            <p className="text-gray-300 mb-6">
+              Programmes offered by the department explore theatre as a living
+              and evolving practice deeply connected to the world around it.
+              Courses examine how performance responds to social and political
+              change, how spaces shape experiences, and how the role of the
+              performer continues to develop.
+            </p>
+
             <p className="text-gray-300 mb-8">
-              From intensive workshops to intimate seminars, our program
-              develops novel and exciting ways to engage participants with both
-              traditional and contemporary theatre practices.
+              Inspired by current trends in Performance Studies, the Department
+              looks at the roots of theatre practice in religious, political,
+              and cultural traditions, while also embracing the future through
+              contemporary theory and digital media.
             </p>
 
             <h2 className="text-2xl font-semibold text-purple-400 mb-4">
-              Core Values
+              Interdisciplinary Focus
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gray-800 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  Artistic Excellence
-                </h3>
-                <p className="text-gray-300">
-                  Commitment to the highest standards of theatrical training and
-                  performance
-                </p>
-              </div>
-
-              <div className="bg-gray-800 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  Innovation
-                </h3>
-                <p className="text-gray-300">
-                  Exploring new approaches to theatre education and performance
-                </p>
-              </div>
-
-              <div className="bg-gray-800 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  Inclusivity
-                </h3>
-                <p className="text-gray-300">
-                  Creating opportunities for diverse voices and perspectives in
-                  theatre
-                </p>
-              </div>
-
-              <div className="bg-gray-800 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  Community
-                </h3>
-                <p className="text-gray-300">
-                  Building strong connections between performers, educators, and
-                  audiences
-                </p>
-              </div>
-            </div>
+            <p className="text-gray-300 mb-8">
+              Added to this is the approach adopted by the academic staff
+              whereby theatre is never considered in isolation but always in
+              dialogue with music, dance, philosophy, and other theoretical and
+              practical contexts. This makes the Department's approach strongly
+              interdisciplinary, encouraging openness to a wide range of
+              influences and practices.
+            </p>
 
             <h2 className="text-2xl font-semibold text-purple-400 mb-4">
-              Program Offerings
+              Career Development
             </h2>
 
-            <ul className="list-disc list-inside space-y-4 text-gray-300 mb-12">
-              <li>Professional masterclasses with industry experts</li>
-              <li>Youth theatre workshops and development programs</li>
-              <li>Technical theatre and production training</li>
-              <li>Performance opportunities during the festival</li>
-              <li>Networking events with theatre professionals</li>
-            </ul>
+            <p className="text-gray-300 mb-8">
+              With a balance of critical inquiry and hands-on experience,
+              students are also equipped with the necessary tools to be
+              employable and work confidently within the broader cultural and
+              creative sectors.
+            </p>
 
-            <div className="bg-purple-900 p-8 rounded-lg mb-12">
-              <h2 className="text-2xl font-semibold text-white mb-4">
-                Get Involved!
-              </h2>
-              <p className="text-gray-200 mb-4">
-                Join us in this transformative journey. Whether you're an
-                aspiring actor, experienced performer, or theatre enthusiast,
-                there's a place for you in our Theatre Studies program.
-              </p>
-            </div>
+            <h2 className="text-2xl font-semibold text-purple-400 mb-4">
+              Study Options
+            </h2>
+
+            <p className="text-gray-300 mb-8">
+              The Department offers{" "}
+              <a
+                href="https://www.um.edu.mt/performingarts/theatre/students/courses/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#EEC60D] transform hover:text-[#ffdf4e] transition-colors duration-300"
+              >
+                undergraduate and postgraduate study options
+              </a>
+              , including a Bachelor of Arts (General or Honours), a Bachelor of
+              Theatre (Honours), Masters degrees (both taught and
+              research-based), and doctoral programmes.
+            </p>
+
+            <h2 className="text-2xl font-semibold text-purple-400 mb-4">
+              Student Community
+            </h2>
+
+            <p className="text-gray-300 mb-8">
+              Students at the Department of Theatre Studies come from diverse
+              backgrounds and nationalities – some new to theatre, others with
+              years of experience – creating a vibrant, collaborative learning
+              environment that reflects the diversity of contemporary
+              performance cultures.
+            </p>
           </div>
         </section>
       </div>

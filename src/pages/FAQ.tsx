@@ -90,7 +90,7 @@ export default function FAQ() {
           <h1 className="text-[#1E0B36] font-bold">FAQ</h1>
         </div>
 
-        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-2xl md:text-5xl font-bold mb-8">
           Everything You Need to Know About the Festival
         </h2>
 

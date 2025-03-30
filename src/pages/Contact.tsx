@@ -78,7 +78,7 @@ export default function Contact() {
           <h1 className="text-[#1E0B36] font-bold">Contact Us</h1>
         </div>
 
-        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-2xl md:text-5xl font-bold mb-8">
           Get in touch with the Pause & Play Festival team.
         </h2>
 

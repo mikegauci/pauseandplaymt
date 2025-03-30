@@ -62,15 +62,8 @@ const events: Event[] = [
     duration: '15 minutes'
   },
   {
-    id: 'pause-and-reflect',
-    title: 'Pause & Reflect',
-    image: "/Pause-and-reflect.jpg",
-    category: 'Theatre',
-    duration: '30 minutes'
-  },
-  {
     id: 'the-language-of-the-deaf',
-    title: 'Language of the Deaf & Hooray, our World is Ending',
+    title: 'Language of the Deaf & Hooray, Our World is Ending',
     image: "/Hooray-the-world-is-over.jpg",
     category: 'Theatre',
     ageRestriction: '18+',
@@ -86,28 +79,38 @@ const events: Event[] = [
   {
     id: 'the-pigs-in-a-parlour',
     title: 'The Pigs in a Parlour',
-    image: "/The-pigs-in-a-parlour.jpg",
+    image: "/the-pigs-in-a-parlour-1.jpg",
     category: 'Theatre',
     duration: '30 minutes'
   },
+];
+
+// Art exhibition events
+const exhibitionEvents: Event[] = [
+  {
+    id: 'pause-and-reflect',
+    title: 'Pause & Reflect',
+    image: "/Pause-and-reflect-1.jpg",
+    category: 'Exhibition',
+  },
   {
     id: 'bahar',
-    title: 'Bahar',
+    title: 'Baħar',
     image: "/Bahar.jpg",
-    category: 'Theatre',
+    category: 'Exhibition',
   },
   {
     id: 'to-be-confirmed',
     title: 'To be confirmed',
     image: "/E-Image.jpg",
-    category: 'Theatre',
+    category: 'Exhibition',
   }
 ];
 
 const externalEvents: ExternalEvent[] = [
   {
     id: 'lets-have-a-drag-show',
-    title: "Werk it! A Drag Rave",
+    title: "Werk it!\nA Drag Rave",
     description: "Join us for an evening of drinks, fun and a bit of diva at this external performance taking part in the Pause & Play Festival!",
     location: "Wild Honey Beer House & Bistro",
     date: "9th May 2025 @ 21:45",
@@ -116,7 +119,7 @@ const externalEvents: ExternalEvent[] = [
   },
   {
     id: 'music-blues-with-tonation',
-    title: "Amped Up: A Night of Music",
+    title: "Amped Up:\nA Night of Music",
     description: "Join us for an evening of music, drinks and fun at this external performance taking part in the Pause & Play Festival!",
     location: "MaeWest",
     date: "10th May 2025 @ 21:45",
@@ -125,7 +128,7 @@ const externalEvents: ExternalEvent[] = [
   },
   {
     id: 'laugh-out-loud-comedy',
-    title: "The Laughing Stock: A Stand-Up Comedy Show",
+    title: "Comedy Kingdom:\nThe Laughing Stock",
     description: "Join us for an evening of laughter, drinks, fun and a bit of naughty at this external performance taking part in the Pause & Play Festival!",
     location: "MaeWest",
     date: "11th May 2025 @ 18:00",
@@ -143,7 +146,7 @@ export default function Events() {
           <h1 className="text-[#1E0B36] font-bold">Events</h1>
         </div>
 
-        <h2 className="text-[#37B5FF] text-5xl font-bold mb-8">
+        <h2 className="text-[#37B5FF] text-2xl md:text-5xl font-bold mb-8">
           What's happening at the Pause & Play Festival
         </h2>
 
@@ -192,6 +195,45 @@ export default function Events() {
           ))}
         </div>
 
+        {/* Art Exhibition Section */}
+        <div className="mt-24 mb-8">
+          <div className="border-l-4 border-[#37B5FF] pl-4 mb-12">
+            <h2 className="text-4xl font-bold text-white">Art Exhibition</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {exhibitionEvents.map((event) => (
+              <Link
+                key={event.id}
+                to={`/events/${event.id}`}
+                className="rounded-lg overflow-hidden block transition-transform hover:scale-105 group relative"
+              >
+                <div className="aspect-w-16 aspect-h-12 relative">
+                  <img 
+                    src={event.image}
+                    alt={event.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                </div>
+                
+                <div className="p-6 bg-[#1a1a1a] border-t-2 border-[#37B5FF] relative z-10">
+                  <h3 className="text-white text-xl font-bold mb-2 group-hover:text-[#37B5FF] transition-colors">
+                    {event.title}
+                  </h3>
+                  
+                  {event.duration && (
+                    <div className="flex items-center text-gray-300 text-sm">
+                      <Clock className="w-4 h-4 mr-2 text-[#EEC60D]" />
+                      {event.duration}
+                    </div>
+                  )}
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* External Events Section */}
         <div className="mt-24 mb-8">
           <div className="border-l-4 border-[#EEC60D] pl-4 mb-12">
@@ -217,7 +259,11 @@ export default function Events() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-white text-xl font-bold mb-3">
-                      {event.title}
+                      {event.title.split('\n').map((line, i) => (
+                        <span key={i} className="block">
+                          {line}
+                        </span>
+                      ))}
                     </h3>
                     <p className="text-gray-300 text-sm mb-4 min-h-[80px]">
                       {event.description}
@@ -250,7 +296,11 @@ export default function Events() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-white text-xl font-bold mb-3">
-                      {event.title}
+                      {event.title.split('\n').map((line, i) => (
+                        <span key={i} className="block">
+                          {line}
+                        </span>
+                      ))}
                     </h3>
                     <p className="text-gray-300 text-sm mb-4 min-h-[80px]">
                       {event.description}
