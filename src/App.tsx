@@ -13,7 +13,6 @@ const EventsDetails = React.lazy(() => import('./pages/EventsDetails'));
 const Partners = React.lazy(() => import('./pages/Partners'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const FAQ = React.lazy(() => import('./pages/FAQ'));
-const Programme = React.lazy(() => import('./pages/Programme'));
 const TheFestival = React.lazy(() => import('./pages/TheFestival'));
 const GettingThere = React.lazy(() => import('./pages/GettingThere'));
 
@@ -71,11 +70,6 @@ function App() {
           <Route path="faq" element={
             <React.Suspense fallback={<div>Loading...</div>}>
               <FAQ />
-            </React.Suspense>
-          } />
-          <Route path="programme" element={
-            <React.Suspense fallback={<div>Loading...</div>}>
-              <Programme />
             </React.Suspense>
           } />
           <Route path="the-festival" element={

@@ -94,7 +94,7 @@ But how can we do something about it?
     title: "Pause & Reflect",
     isExhibition: true,
     exhibitionInfo: "The exhibition is open to the general public throughout the festival",
-    image: "/Pause-and-reflect.jpg",
+    image: "/Pause-and-reflect-12.jpg",
     description: `My work explores the balance between chaos and calm, capturing the need to pause in anxious moments and reflect on the good. Through painterly, abstract, and vibrant compositions, I create a sense of movement that represents life's unpredictability—its rush, its worries, its intensity. This dynamic energy is then balanced by areas of stillness, inviting a feeling of peace and mindfulness. Colour plays a key role, reflecting different moods and emotions, from tension to tranquillity. Each piece serves as a visual reminder to slow down, breathe, and find beauty in both the turbulence and the quiet moments of life.`,
   },
   "first-year-performance": {

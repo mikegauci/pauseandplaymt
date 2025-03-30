@@ -90,7 +90,7 @@ const exhibitionEvents: Event[] = [
   {
     id: 'pause-and-reflect',
     title: 'Pause & Reflect',
-    image: "/Pause-and-reflect-1.jpg",
+    image: "/Pause-and-reflect-12.jpg",
     category: 'Exhibition',
   },
   {
