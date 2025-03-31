@@ -62,7 +62,12 @@ const faqSections: FAQSection[] = [
       {
         question: "Is the venue suitable for elderly or persons with mobility issues?",
         answer: "Valletta Campus has a step-free access and can be accommodating for elderly/persons with mobility issues, please contact: conferences@um.edu.mt for more information. MaeWest may be accommodating for elderly/persons with mobility issues, we strongly suggest contacting the venue to query on this. Unfortunately, Wild Honey Beer House and Bistro may not be accommodating for elderly/persons with mobility issues, we apologise for the inconvenience."
-      },
+      }
+    ]
+  },
+  {
+    title: "Other Questions",
+    questions: [
       {
         question: "I have more questions, who do I contact?",
         answer: "If you have more questions about the festival, the external performances or want more information, please contact the Pause & Play Festival Team on our contact page."

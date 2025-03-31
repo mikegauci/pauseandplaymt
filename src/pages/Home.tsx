@@ -42,6 +42,7 @@ export default function Home() {
                 <Calendar className="ml-2 h-5 w-5" />
               </Link>
             </div>
+            <p className="text-gray-500 text-sm mt-4 opacity-70">Photo Credit: Darrin Zammit Lupi</p>
           </div>
         </div>
       </div>

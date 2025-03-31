@@ -35,11 +35,16 @@ export default function TheFestival() {
                 </p>
               </div>
             </div>
-            <img 
-              src="about-the-festival.jpg"
-              alt="Festival performance"
-              className="rounded-lg object-cover h-80 w-full"
-            />
+            <div className="relative">
+              <img 
+                src="about-the-festival.jpg"
+                alt="Festival performance"
+                className="rounded-lg object-cover h-80 w-full"
+              />
+              <p className="absolute bottom-2 right-2 text-gray-300 text-xs bg-black/50 px-2 py-1 rounded-md backdrop-blur-sm">
+                Photo Credit: Darrin Zammit Lupi
+              </p>
+            </div>
           </section>
 
           {/* Navigation Links */}

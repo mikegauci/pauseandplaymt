@@ -202,13 +202,7 @@ export function Layout() {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800">
             <p className="text-gray-400">
-              Copyright Pause & Play Festival.
-            </p>              
-            <p className="text-gray-400">
-              This festival is being supported by the Department of Theatre Studies within the University of Malta's School of Performing Arts
-            </p>
-            <p className="mt-4 text-gray-400">
-              This festival website was designed by: Onyx Studio
+            Copyright Pause & Play Festival. This festival is being supported by the Department of Theatre Studies within the University of Malta’s School of Performing Arts. This festival website was designed by Onyx Studio.
             </p>
           </div>
         </div>

@@ -119,6 +119,12 @@ const teamMembersData = {
     image: "/ben-n-syder-1.jpg",
     bio: `Spooking audiences with his vampiric flare and enthralling preferences - It's your resident drag thing, Ben N. Syder!`,
   },
+  "faye-mifsud-midolo": {
+    name: "Faye Mifsud Midolo",
+    role: "Performer",
+    image: "/Faye-Mifsud-Midolo.jpg",
+    bio: `Faye Mifsud Midolo is a passionate performing artist dedicated to storytelling through theatre and music. With a background in acting, singing, and stage production, her work spans from performing and directing to writing for the stage. She has collaborated with various theatre collectives, bringing narratives to life through innovative performances and immersive productions. She aims to produce engaging, thought-provoking experiences that audiences can relate to through her work.`,
+  },
 };
 
 export default function TeamMember() {

@@ -22,55 +22,6 @@ const teamMembers = [
 ];
 
 const festivalCollaborators = [
-  // Artists
-  {
-    id: "emily-salnitro",
-    name: "Emily Salnitro",
-    image: "/Emily-Salnitro-1.jpg",
-    role: "Artist",
-    color: "bg-amber-500",
-    shortBio:
-      "Community Liaison building bridges between artists and audiences.",
-  },
-  {
-    id: "elena-marie-sciberras",
-    name: "Elena Marie Sciberras",
-    image: "/Elena-Marie-Sciberras-1.jpg",
-    role: "Artist",
-    color: "bg-amber-500",
-    shortBio:
-      "Community Liaison building bridges between artists and audiences.",
-  },
-  {
-    id: "lara-vella",
-    name: "Lara Vella",
-    image: "/Lara-Vella.jpg",
-    role: "Artist",
-    color: "bg-amber-500",
-  },
-
-  // Drag artists
-  {
-    id: "kiki-valentine",
-    name: "Kiki Valentine",
-    image: "/Kiki-Valentine.jpg",
-    role: "Drag Artist",
-    color: "bg-purple-500",
-  },
-  {
-    id: "celeste-samodiva",
-    name: "Celeste Samodiva",
-    image: "/Celeste-Samodiva.jpg",
-    role: "Drag Artist",
-    color: "bg-purple-500",
-  },
-  {
-    id: "ben-n-syder",
-    name: "Ben N. Syder",
-    image: "/ben-n-syder-1.jpg",
-    role: "Drag Artist",
-    color: "bg-purple-500",
-  },
   // Performers
   {
     id: "alex-weenink",
@@ -157,6 +108,62 @@ const festivalCollaborators = [
     image: "/Anna-Issajeva.jpg",
     role: "Performer",
     color: "bg-[#EEC60D]",
+  },
+  {
+    id: "faye-mifsud-midolo",
+    name: "Faye Mifsud Midolo",
+    image: "/Faye-Mifsud-Midolo.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+  },
+  // Artists
+  {
+    id: "emily-salnitro",
+    name: "Emily Salnitro",
+    image: "/Emily-Salnitro-1.jpg",
+    role: "Artist",
+    color: "bg-amber-500",
+    shortBio:
+      "Community Liaison building bridges between artists and audiences.",
+  },
+  {
+    id: "elena-marie-sciberras",
+    name: "Elena Marie Sciberras",
+    image: "/Elena-Marie-Sciberras-1.jpg",
+    role: "Artist",
+    color: "bg-amber-500",
+    shortBio:
+      "Community Liaison building bridges between artists and audiences.",
+  },
+  {
+    id: "lara-vella",
+    name: "Lara Vella",
+    image: "/Lara-Vella.jpg",
+    role: "Artist",
+    color: "bg-amber-500",
+  },
+
+  // Drag artists
+  {
+    id: "kiki-valentine",
+    name: "Kiki Valentine",
+    image: "/Kiki-Valentine.jpg",
+    role: "Drag Artist",
+    color: "bg-purple-500",
+  },
+  {
+    id: "celeste-samodiva",
+    name: "Celeste Samodiva",
+    image: "/Celeste-Samodiva.jpg",
+    role: "Drag Artist",
+    color: "bg-purple-500",
+  },
+  {
+    id: "ben-n-syder",
+    name: "Ben N. Syder",
+    image: "/ben-n-syder-1.jpg",
+    role: "Drag Artist",
+    color: "bg-purple-500",
   },
 ];
 export default function Team() {

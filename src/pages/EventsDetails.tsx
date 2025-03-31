@@ -53,11 +53,11 @@ const eventsData: Record<string, EventData> = {
   },
   "the-language-of-the-deaf": {
     id: "the-language-of-the-deaf",
-    title: "Language of the Deaf & Hooray, Our World is Ending",
+    title: "The Language of the Deaf & Hooray, Our World is Ending",
     duration: "30 minutes",
     time: "7:30 PM - 9:00 PM",
     disclaimer:
-      "18+, The performance contains and talks about aspects of sexual violence",
+      "18+, the performance contains and talks about aspects of sexual violence",
     image: "/Hooray-the-world-is-over.jpg",
     exhibitionInfo: "The exhibition is open to the general public throughout the festival",
     description: `##D Shows presents two performances in one sitting
@@ -80,14 +80,14 @@ But how can we do something about it?
 
 **D Shows invites all the spectators to connect.**`,
   },
-  "ted-talk": {
-    id: "ted-talk",
-    title: "TED Talk",
+  "contact": {
+    id: "contact",
+    title: "Contact",
     duration: "30 minutes",
     time: "7:30 PM - 9:00 PM",
     disclaimer: "16+",
     image: "/TED-Talk.jpg",
-    description: `A TED Talk about how one can see the connectivity within connection.`,
+    description: `A “TED Talk” about how one can see the connectivity within connection.`,
   },
   "pause-and-reflect": {
     id: "pause-and-reflect",
@@ -95,17 +95,18 @@ But how can we do something about it?
     isExhibition: true,
     exhibitionInfo: "The exhibition is open to the general public throughout the festival",
     image: "/Pause-and-reflect-12.jpg",
-    description: `My work explores the balance between chaos and calm, capturing the need to pause in anxious moments and reflect on the good. Through painterly, abstract, and vibrant compositions, I create a sense of movement that represents life's unpredictability—its rush, its worries, its intensity. This dynamic energy is then balanced by areas of stillness, inviting a feeling of peace and mindfulness. Colour plays a key role, reflecting different moods and emotions, from tension to tranquillity. Each piece serves as a visual reminder to slow down, breathe, and find beauty in both the turbulence and the quiet moments of life.`,
+    description: `Emily's work explores the balance between chaos and calm, capturing the need to pause in anxious moments and reflect on the good. Through painterly, abstract, and vibrant compositions, she creates a sense of movement that represents life's unpredictability—its rush, its worries, its intensity. This dynamic energy is then balanced by areas of stillness, inviting a feeling of peace and mindfulness. Colour plays a key role, reflecting different moods and emotions, from tension to tranquillity. Each piece serves as a visual reminder to slow down, breathe, and find beauty in both the turbulence and the quiet moments of life.`,
   },
   "first-year-performance": {
     id: "first-year-performance",
     title: "First Year Performance",
     image: "/First-year-performance.jpg",
     description: "Which news items catch our attention? How do we deal with them? Using the dramatised, living newspaper model, First Year Theatre Studies students are excited to 'pause and play' by sharing a programme of five short performances on a variety of themes: power, security, status, loss, and empathy. How real are our stories? Do they mix with abstract ideas or dreams? Come and find out!",
+    duration: "1 Hour",
   },
   "the-pigs-in-a-parlour": {
     id: "the-pigs-in-a-parlour",
-    title: "The Pigs in a Parlour",
+    title: "The Pigs in a Parlour: A PaR Performance",
     image: "/the-pigs-in-a-parlour-1.jpg",
     description: `'Four Practice Researchers trying to find the Pigs in a Parlour. 'The Pigs in a Parlour' formed part of 'Practice Research', which is a Theatre Studies study-unit at the University of Malta in 2024. The performance follows Duration 56, a concept developed by Prof. Frank Camilleri, and explores the concept and practice of duration, repetition, and improvisation. Moreover, it explores its impact on the attention and work of performers within a structure of actions and tasks performed in an installation-type setting involving chairs and lanes.`,
     duration: "30 minutes",
@@ -121,9 +122,9 @@ But how can we do something about it?
   },
   "to-be-confirmed": {
     id: "to-be-confirmed",
-    title: "To be confirmed",
+    title: "Name: TBC",
     image: "/E-Image.jpg",
-    description: `A performance by the first year students of the University of Malta.`,
+    description: `TBC`,
     isExhibition: true,
     exhibitionInfo: "The exhibition is open to the general public throughout the festival",
   },

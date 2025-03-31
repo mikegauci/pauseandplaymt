@@ -54,8 +54,8 @@ const events: Event[] = [
     duration: '45 minutes'
   },
   {
-    id: 'ted-talk',
-    title: 'TED talk',
+    id: 'contact',
+    title: 'Contact',
     image: "/TED-Talk.jpg",
     category: 'Theatre',
     ageRestriction: '16+',
@@ -63,7 +63,7 @@ const events: Event[] = [
   },
   {
     id: 'the-language-of-the-deaf',
-    title: 'Language of the Deaf & Hooray, Our World is Ending',
+    title: 'The Language of the Deaf & Hooray, Our World is Ending',
     image: "/Hooray-the-world-is-over.jpg",
     category: 'Theatre',
     ageRestriction: '18+',
@@ -74,11 +74,11 @@ const events: Event[] = [
     title: 'First Year Performance',
     image: "/First-year-performance.jpg",
     category: 'Theatre',
-    duration: '30 minutes'
+    duration: '1 Hour'
   },
   {
     id: 'the-pigs-in-a-parlour',
-    title: 'The Pigs in a Parlour',
+    title: 'The Pigs in a Parlour: A PaR Performance',
     image: "/the-pigs-in-a-parlour-1.jpg",
     category: 'Theatre',
     duration: '30 minutes'
@@ -101,7 +101,7 @@ const exhibitionEvents: Event[] = [
   },
   {
     id: 'to-be-confirmed',
-    title: 'To be confirmed',
+    title: 'Name: TBC',
     image: "/E-Image.jpg",
     category: 'Exhibition',
   }
