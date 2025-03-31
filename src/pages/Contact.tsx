@@ -9,7 +9,17 @@ interface FormData {
 
 export default function Contact() {
   useEffect(() => {
-    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+    try {
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+      if (!publicKey) {
+        console.error('EmailJS public key is missing');
+        return;
+      }
+      emailjs.init(publicKey);
+      console.log('EmailJS initialized successfully');
+    } catch (error) {
+      console.error('Error initializing EmailJS:', error);
+    }
   }, []);
 
   const [formData, setFormData] = useState<FormData>({
@@ -34,18 +44,35 @@ export default function Contact() {
     setStatus({ type: null, message: '' });
 
     try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      // Validate environment variables
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('Missing required EmailJS configuration');
+      }
+
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
       };
 
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      console.log('Sending email with params:', {
+        serviceId,
+        templateId,
+        hasPublicKey: !!publicKey,
+      });
+
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
         templateParams,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        publicKey
       );
+
+      console.log('EmailJS response:', result);
 
       setStatus({
         type: 'success',
@@ -60,7 +87,7 @@ export default function Contact() {
       });
 
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error('Detailed error sending email:', error);
       setStatus({
         type: 'error',
         message: 'There was an error sending your message. Please try again later.'
