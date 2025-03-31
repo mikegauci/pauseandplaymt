@@ -66,7 +66,7 @@ export function Layout() {
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
                     {isAboutOpen && (
-                      <div className="absolute z-10 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                      <div className="absolute z-50 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                         <div className="py-1" role="menu">
                           {item.items.map((subItem) => (
                             <Link
@@ -118,7 +118,7 @@ export function Layout() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white">
+          <div className="md:hidden bg-[#36B6FF]">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navigation.map((item) => (
                 item.items ? (
