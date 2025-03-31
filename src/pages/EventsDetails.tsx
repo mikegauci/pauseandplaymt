@@ -66,7 +66,7 @@ const eventsData: Record<string, EventData> = {
 
 The Language of the Deaf explores topics of greed and unspoken taboos in society, gravity of silence and fear of words. How can we challenge societal cliches? Shed light onto subconscious patterns? A performance piece by D Shows. A piece that provokes and intentionally questions conventional paradigms.
 
-###Hooray, our World is Ending
+###Hooray, Our World is Ending
 
 To the end of the world! And to whatever comes after
 

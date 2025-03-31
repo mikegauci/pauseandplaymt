@@ -1,27 +1,38 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
-const teamMembersData = {
+interface TeamMember {
+  name: string;
+  image: string;
+  bio: string;
+  role?: string;
+  credit?: string;
+}
+
+const teamMembersData: Record<string, TeamMember> = {
   "brendon-joseph-thearle": {
     name: "Brendon Joseph Thearle",
-    image: "/Brendon-Thearle.jpg",
-    bio: `Brendon entered the world of theatre at the age of five and since then has performed in various productions such as; MADC's traditional Shakespeare classics; The Merry Wives of Windsor (2022) as Frank Ford, as Mr. Scruples in Manoel Theatre's opera for 2019's ŻiguŻajg in The Impresario (2019), as Captain Barbuljatu in FM Theatre Productions' Christmas pantomime; The Little Mermaid - The Panto Under the Sea (2019), as Gary in MADC’s A Kick in the Baubles (2022), as Jeremy in Ħassle Mejjet Theatre Collective’s Popolazzjoni: 4 (2023), as Dame Widow Twankey in Teatru Manoel’s Learning & Participation Programme: TOI TOI’s The Great Little Panto Show (2023, 2024), and in MADC’s The Coarse Acting Show (2025), among many others. He has also delved into the directorial seat with such projects as Pandora (2019), L-Aħħar Siġra (2021), The Fourth Wall (2022) for MADC's One Act Play Festival in which The Fourth Wall won; Best Actor, Most Promising Actor, Best Director and Best Production and was nominated for; Most Promising Actress and most recently; Nostrum (2023). He is also currently studying for a Bachelor in Theatre (Honours) degree at the School of Performing Arts within the University of Malta.`,
+    image: "/Brendon-1.jpg",
+    credit: "Photo Credit: Mike Paris",
+    bio: `Brendon entered the world of theatre at the age of five and since then has performed in various productions such as; MADC's traditional Shakespeare classics; The Merry Wives of Windsor (2022) as Frank Ford, as Mr. Scruples in Manoel Theatre's opera for 2019's ŻiguŻajg in The Impresario (2019), as Captain Barbuljatu in FM Theatre Productions' Christmas pantomime; The Little Mermaid - The Panto Under the Sea (2019), as Gary in MADC's A Kick in the Baubles (2022), as Jeremy in Ħassle Mejjet Theatre Collective's Popolazzjoni: 4 (2023), as Dame Widow Twankey in Teatru Manoel's Learning & Participation Programme: TOI TOI's The Great Little Panto Show (2023, 2024), and in MADC's The Coarse Acting Show (2025), among many others. He has also delved into the directorial seat with such projects as Pandora (2019), L-Aħħar Siġra (2021), The Fourth Wall (2022) for MADC's One Act Play Festival in which The Fourth Wall won; Best Actor, Most Promising Actor, Best Director and Best Production and was nominated for; Most Promising Actress and most recently; Nostrum (2023). He is also currently studying for a Bachelor in Theatre (Honours) degree at the School of Performing Arts within the University of Malta.`,
   },
   "angelique-attard": {
     name: "Angelique Attard",
-    image: "/Angelique-Attard-1.jpg",
-    bio: `From a very young age, Angelique has always been drawn to the performing arts, as she pursued tap dance and jazz for seven years. However, theatre and acting stole the spotlight and she decided to enrol herself for the Bachelor in Theatre (Honours) degree at the School of Performing Arts within the University of Malta. Since then, she’s thrown herself into all sorts of productions, exploring new roles beyond acting — from stage management to light and sound design. Every experience has been a chance to learn, grow, and expand her skills both on and off the stage.`,
+    image: "/Angelique-1.jpg",
+    credit: "Photo Credit: Mike Paris",
+    bio: `From a very young age, Angelique has always been drawn to the performing arts, as she pursued tap dance and jazz for seven years. However, theatre and acting stole the spotlight and she decided to enrol herself for the Bachelor in Theatre (Honours) degree at the School of Performing Arts within the University of Malta. Since then, she's thrown herself into all sorts of productions, exploring new roles beyond acting — from stage management to light and sound design. Every experience has been a chance to learn, grow, and expand her skills both on and off the stage.`,
   },
   "monique-alexandra-falzon": {
     name: "Monique Alexandra Falzon",
-    image: "/Monique-Alexandra-Falzon-4.jpg",
-    bio: `Monique Alexandra Falzon has always shown a great appreciation for theatre since she was a child. Her interest peaked in secondary school when she started getting involved in her school’s musical productions, from playing Cinderella’s Fairy Godmother in Nugrufella, to Mr. Warbucks in Annie. Monique fell in love with the atmosphere and sense of belonging that is brought on by being on stage and from then on, decided to pursue a career in theatre. She is currently in her final year studying for a Bachelor in Theatre Studies (Honors) at the School of Performing at the University of Malta, where she wishes to continue exploring different theatrical styles and learn more about what theatre is.`,
+    image: "/Monique-1.jpg",
+    credit: "Photo Credit: Mike Paris",
+    bio: `Monique Alexandra Falzon has always shown a great appreciation for theatre since she was a child. Her interest peaked in secondary school when she started getting involved in her school's musical productions, from playing Cinderella's Fairy Godmother in Nugrufella, to Mr. Warbucks in Annie. Monique fell in love with the atmosphere and sense of belonging that is brought on by being on stage and from then on, decided to pursue a career in theatre. She is currently in her final year studying for a Bachelor in Theatre Studies (Honors) at the School of Performing at the University of Malta, where she wishes to continue exploring different theatrical styles and learn more about what theatre is.`,
   },
   "alex-weenink": {
     name: "Alex Weenink",
     role: "Performer",
     image: "/Alex-Weenink-1.jpg",
-    bio: `Alex is a multidisciplinary artist, exploring the intersections between artistic mediums and contexts while investigating themes of expression, emotion, identity, and communication. With a prominent background and career as a theatre-maker, he is curious about how live performance, written text, and spoken word can engage with visual, musical, and interactive mediums such as drawing, song, and conversation. He is also the Artistic Director of Chewing Productions - a platform for original and innovative theatrical work with a focus on twenty-first-century forms and realities. Its portfolio includes ensemble-driven plays, collections of new writing, site-specific ‘performance parties’, creative development workshops, and open-mic nights.`,
+    bio: `Alex is a multidisciplinary artist, exploring the intersections between artistic mediums and contexts while investigating themes of expression, emotion, identity, and communication. With a prominent background and career as a theatre-maker, he is curious about how live performance, written text, and spoken word can engage with visual, musical, and interactive mediums such as drawing, song, and conversation. He is also the Artistic Director of Chewing Productions - a platform for original and innovative theatrical work with a focus on twenty-first-century forms and realities. Its portfolio includes ensemble-driven plays, collections of new writing, site-specific 'performance parties', creative development workshops, and open-mic nights.`,
   },
   "charlene-galea": {
     name: "Charlene Galea",
@@ -111,7 +122,7 @@ const teamMembersData = {
     name: "Celeste Samodiva",
     role: "Drag artist",
     image: "/Celeste-Samodiva.jpg",
-    bio: `She’s kooky, she’s crazy, and she’s here to slay! Celeste Samodiva is a drag queen who lives for camp, concept, and a touch of chaos. Whether it’s a high-energy banger or a soul-stirring ballad, she delivers versatility with a twist, always keeping audiences on their toes. This crafty queen loves a good gag—reveal after reveal, she’s got tricks up her sleeve and then some. With a playful spirit and a fearless attitude, Celeste Samodiva isn’t afraid to make a fool of herself, all while serving unforgettable performances that blend creativity, comedy, and charisma. Buckle up—she’s just getting started!`,
+    bio: `She's kooky, she's crazy, and she's here to slay! Celeste Samodiva is a drag queen who lives for camp, concept, and a touch of chaos. Whether it's a high-energy banger or a soul-stirring ballad, she delivers versatility with a twist, always keeping audiences on their toes. This crafty queen loves a good gag—reveal after reveal, she's got tricks up her sleeve and then some. With a playful spirit and a fearless attitude, Celeste Samodiva isn't afraid to make a fool of herself, all while serving unforgettable performances that blend creativity, comedy, and charisma. Buckle up—she's just getting started!`,
   },
   "ben-n-syder": {
     name: "Ben N. Syder",
@@ -162,6 +173,9 @@ export default function TeamMember() {
                 className="w-full h-full object-cover"
               />
             </div>
+            {member.credit && (
+              <p className="text-gray-500 text-sm mt-4 opacity-70 text-center">{member.credit}</p>
+            )}
           </div>
         </div>
 

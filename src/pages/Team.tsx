@@ -4,19 +4,19 @@ const teamMembers = [
   {
     id: "angelique-attard",
     name: "Angelique Attard",
-    image: "/Angelique-Attard-1.jpg",
+    image: "/Angelique-1.jpg",
     color: "bg-[#37b5ff]",
   },
   {
     id: "brendon-joseph-thearle",
     name: "Brendon Joseph Thearle",
-    image: "/Brendon-Thearle.jpg",
+    image: "/Brendon-1.jpg",
     color: "bg-[#37b5ff]",
   },
   {
     id: "monique-alexandra-falzon",
     name: "Monique Alexandra Falzon",
-    image: "/Monique-Alexandra-Falzon-4.jpg",
+    image: "/Monique-1.jpg",
     color: "bg-[#37b5ff]",
   },
 ];

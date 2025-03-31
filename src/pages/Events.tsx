@@ -59,7 +59,7 @@ const events: Event[] = [
     image: "/TED-Talk.jpg",
     category: 'Theatre',
     ageRestriction: '16+',
-    duration: '15 minutes'
+    duration: '30 minutes'
   },
   {
     id: 'the-language-of-the-deaf',

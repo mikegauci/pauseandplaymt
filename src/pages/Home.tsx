@@ -1,14 +1,17 @@
 import { ArrowRight, Calendar, MapPin, Users, Info, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 export default function Home() {
+  const isMobile = useIsMobile();
+
   return (
     <div className="min-h-screen bg-[#111]">
       {/* Hero Section */}
       <div 
         className="relative h-[85vh] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("home-page-hero-3.jpg")'
+          backgroundImage: `url(${isMobile ? "home-page-hero-mobile.jpg" : "home-page-hero-3.jpg"})`
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />
