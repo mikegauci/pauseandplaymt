@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import SEO from "../components/SEO";
 
 interface TeamMember {
   name: string;
@@ -148,6 +149,11 @@ export default function TeamMember() {
 
   return (
     <div className="min-h-screen bg-[#111] py-16">
+      <SEO
+        title={`${member.name}`}
+        description={`Learn more about ${member.name} from the Pause & Play Festival team`}
+        canonical={`https://pauseandplay.mt/team/${member.name}`}
+      />
       <div className="max-w-6xl mx-auto px-4">
         <Link
           to="/team"

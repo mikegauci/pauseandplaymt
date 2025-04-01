@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Clock } from "lucide-react";
+import SEO from "../components/SEO";
 
 interface Event {
   id: string;
@@ -140,6 +141,11 @@ const externalEvents: ExternalEvent[] = [
 export default function Events() {
   return (
     <div className="min-h-screen bg-[#111] py-16">
+      <SEO
+        title="Events"
+        description="Explore the events happening at the Pause & Play Festival, including performances, exhibitions, and external events."
+        canonical="https://pauseandplay.mt/events"
+      />
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
         <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">

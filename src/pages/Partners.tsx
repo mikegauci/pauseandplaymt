@@ -1,6 +1,13 @@
+import SEO from "../components/SEO";
+
 export default function Partners() {
   return (
     <div className="min-h-screen bg-[#111] py-16">
+      <SEO
+        title="Partners"
+        description="Learn about the partners that are making Pause & Play Festival a reality."
+        canonical="https://pauseandplay.mt/partners"
+      />
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
         <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">

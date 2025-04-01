@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function TheFestival() {
   return (
     <div className="min-h-screen bg-[#111] py-16">
+      <SEO
+        title="The Festival"
+        description="A three-day performing arts festival celebrating creativity, connection, and play. Join us May 9-11 for performances that inspire reflection and joy."
+        canonical="https://pauseandplay.mt/the-festival"
+      />
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
         <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">

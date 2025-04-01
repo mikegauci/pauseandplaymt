@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
+import FontPreloader from './components/FontPreloader';
 
 // Pages
 const Home = React.lazy(() => import('./pages/Home'));
@@ -19,6 +20,7 @@ const GettingThere = React.lazy(() => import('./pages/GettingThere'));
 function App() {
   return (
     <BrowserRouter>
+      <FontPreloader />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>

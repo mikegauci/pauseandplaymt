@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import SEO from "../components/SEO";
 const teamMembers = [
   {
     id: "angelique-attard",
@@ -169,6 +169,11 @@ const festivalCollaborators = [
 export default function Team() {
   return (
     <div className="min-h-screen bg-[#111] py-16">
+      <SEO
+        title="Meet the Festival Team"
+        description="Meet the creative minds behind Pause & Play Festival - from our core student organizers to performers, artists, and drag performers. Discover the diverse team making Malta's innovative performing arts festival possible."
+        canonical="https://pauseandplay.mt/team"
+      />
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
         <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">

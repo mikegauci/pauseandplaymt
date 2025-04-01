@@ -1,6 +1,13 @@
+import SEO from "../components/SEO";
+
 export default function DepartmentOfTheatreStudies() {
   return (
     <div className="min-h-screen bg-[#111] py-16">
+      <SEO
+        title="Department of Theatre Studies"
+        description="Learn about the Department of Theatre Studies at the University of Malta, offering a dynamic space for theatre, performance, and critical thinking."
+        canonical="https://pauseandplay.mt/department-of-theatre-studies"
+      />
       <div className="max-w-6xl mx-auto px-4">
         <section className="mb-16">
           <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">

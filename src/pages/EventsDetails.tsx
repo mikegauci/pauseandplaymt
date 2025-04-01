@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Clock, Calendar, AlertTriangle, Info } from "lucide-react";
+import SEO from "../components/SEO";
 
 // Define a type for the event data structure
 type EventData = {
@@ -153,6 +154,11 @@ export default function EventsDetails() {
 
   return (
     <div className="min-h-screen bg-[#111] pt-12">
+      <SEO
+        title={`${event.title} - Pause & Play Festival`}
+        description={`Learn more about ${event.title} at the Pause & Play Festival`}
+        canonical={`https://pauseandplay.mt/events/${event.id}`}
+      />
       {/* Navigation */}
       <div className="max-w-6xl mx-auto px-4 mb-6">
         <Link

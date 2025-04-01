@@ -1,24 +1,50 @@
 import { ArrowRight, Calendar, MapPin, Users, Info, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '../hooks/useIsMobile';
+import SEO from '../components/SEO';
+import { useEffect } from 'react';
+
+// Add image imports to ensure proper loading
+import heroDesktop from '/home-page-hero-3.jpg';
+import heroMobile from '/home-page-hero-mobile.jpg';
 
 export default function Home() {
   const isMobile = useIsMobile();
 
+  // Preload hero images
+  useEffect(() => {
+    const preloadImages = () => {
+      const imageList = [heroDesktop, heroMobile];
+      imageList.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+      });
+    };
+    preloadImages();
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#111]">
+      <SEO 
+        title="Home"
+        description="Pause & Play Festival - A celebration of play and creativity in Malta. Join us for extraordinary performances, interactive shows, and captivating experiences that will make you feel, connect, and discover."
+        canonical="https://pauseandplay.mt"
+      />
       {/* Hero Section */}
       <div 
-        className="relative h-[85vh] bg-cover bg-center"
+        className="relative min-h-[600px] h-[85vh] bg-cover bg-center bg-[#111]"
         style={{
-          backgroundImage: `url(${isMobile ? "home-page-hero-mobile.jpg" : "home-page-hero-3.jpg"})`
+          backgroundImage: `url(${isMobile ? heroMobile : heroDesktop})`,
+          aspectRatio: isMobile ? '4/5' : '16/9',
+          willChange: 'transform',
+          width: '100%',
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl">
-            <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
+            <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8 transform-gpu">
               <h1 className="text-[#1E0B36] font-bold">Pause & Play Festival</h1>
             </div>
             <h2 className="text-white text-2xl md:text-6xl font-bold mb-8 leading-tight">

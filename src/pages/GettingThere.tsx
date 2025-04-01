@@ -1,15 +1,12 @@
-import { Link } from "react-router-dom";
 import {
-  ArrowLeft,
   MapPin,
   Bus,
   Ship,
   Car,
   Building,
-  ExternalLink,
   Navigation,
 } from "lucide-react";
-
+import SEO from "../components/SEO";
 export default function GettingThere() {
   // Function to scroll to section
   const scrollToSection = (id: string) => {
@@ -61,6 +58,11 @@ export default function GettingThere() {
 
   return (
     <div className="min-h-screen bg-[#111] py-16">
+      <SEO
+        title="Getting There"
+        description="Learn about sustainable ways to get to the Pause & Play Festival, including public transport, taxis, and parking options."
+        canonical="https://pauseandplay.mt/getting-there"
+      />
       <div className="max-w-6xl mx-auto px-4">
         <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-6">
           <h1 className="text-[#1E0B36] font-bold">Getting There</h1>

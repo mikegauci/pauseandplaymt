@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import SEO from "../components/SEO";
 
 interface FAQSection {
   title: string;
@@ -89,6 +90,11 @@ export default function FAQ() {
 
   return (
     <div className="min-h-screen bg-[#111] py-16">
+      <SEO
+        title="FAQ"
+        description="Find answers about Pause & Play Festival's dates, venues, tickets, accessibility, and external performances. Get essential information about Malta's three-day performing arts festival."
+        canonical="https://pauseandplay.mt/faq"
+      />
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
         <div className="bg-[#EEC60D] inline-block px-4 py-1 mb-8">
