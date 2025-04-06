@@ -137,8 +137,8 @@ const teamMembersData: Record<string, TeamMember> = {
     image: "/Faye-Mifsud-Midolo.jpg",
     bio: `Faye Mifsud Midolo is a passionate performing artist dedicated to storytelling through theatre and music. With a background in acting, singing, and stage production, her work spans from performing and directing to writing for the stage. She has collaborated with various theatre collectives, bringing narratives to life through innovative performances and immersive productions. She aims to produce engaging, thought-provoking experiences that audiences can relate to through her work.`,
   },
-  "starcroseed": {
-    name: "Starcroseed",
+  "starcrossed": {
+    name: "Starcrossed",
     role: "Musicians",
     image: "/starcrossed-2.jpg",
     bio: `Starcrossed is a five-piece band that plays a variety of music genres such as soft rock and alternative indie. Formed in 2023, the band draws inspiration from artists such as Radiohead and Fleetwood Mac.`,

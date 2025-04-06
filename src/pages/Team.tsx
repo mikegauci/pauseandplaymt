@@ -124,8 +124,8 @@ const festivalCollaborators = [
   //   color: "bg-[#EEC60D]",
   // },
   {
-    id: "starcroseed",
-    name: "Starcroseed",
+    id: "starcrossed",
+    name: "Starcrossed",
     image: "/starcrossed-2.jpg",
     role: "Musicians",
     color: "bg-teal-500",
