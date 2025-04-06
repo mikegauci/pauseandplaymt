@@ -109,7 +109,7 @@ But how can we do something about it?
     id: "the-pigs-in-a-parlour",
     title: "The Pigs in a Parlour: A PaR Performance",
     image: "/the-pigs-in-a-parlour-1.jpg",
-    description: `'Four Practice Researchers trying to find the Pigs in a Parlour. 'The Pigs in a Parlour' formed part of 'Practice Research', which is a Theatre Studies study-unit at the University of Malta in 2024. The performance follows Duration 56, a concept developed by Prof. Frank Camilleri, and explores the concept and practice of duration, repetition, and improvisation. Moreover, it explores its impact on the attention and work of performers within a structure of actions and tasks performed in an installation-type setting involving chairs and lanes.`,
+    description: `Four Practice Researchers trying to find the Pigs in a Parlour. 'The Pigs in a Parlour' formed part of 'Practice Research', which is a Theatre Studies study-unit at the University of Malta in 2024. The performance follows Duration 56, a concept developed by Prof. Frank Camilleri, and explores the concept and practice of duration, repetition, and improvisation. Moreover, it explores its impact on the attention and work of performers within a structure of actions and tasks performed in an installation-type setting involving chairs and lanes.`,
     duration: "30 minutes",
     disclaimer: "A majority of the performance will be in the dark",
   },

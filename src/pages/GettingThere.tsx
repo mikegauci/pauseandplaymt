@@ -20,7 +20,7 @@ export default function GettingThere() {
   const venues = [
     {
       id: "valletta-campus",
-      name: "Valletta Campus Theatre",
+      name: "University of Malta Valletta Campus",
       address: "Merchants Street, Valletta",
       description:
         "The Valletta Campus Theatre is located within the historic University of Malta Valletta Campus, a stunning baroque building in the heart of Valletta.",

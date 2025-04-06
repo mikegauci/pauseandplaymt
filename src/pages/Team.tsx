@@ -116,6 +116,20 @@ const festivalCollaborators = [
     role: "Performer",
     color: "bg-[#EEC60D]",
   },
+  // {
+  //   id: "d-shows",
+  //   name: "D Shows",
+  //   image: "/D-Shows.jpg",
+  //   role: "Performers",
+  //   color: "bg-[#EEC60D]",
+  // },
+  {
+    id: "starcroseed",
+    name: "Starcroseed",
+    image: "/starcrossed-2.jpg",
+    role: "Musicians",
+    color: "bg-teal-500",
+  },
   // Artists
   {
     id: "emily-salnitro",

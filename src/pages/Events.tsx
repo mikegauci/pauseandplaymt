@@ -111,7 +111,7 @@ const exhibitionEvents: Event[] = [
 const externalEvents: ExternalEvent[] = [
   {
     id: 'lets-have-a-drag-show',
-    title: "Werk it!\nA Drag Rave",
+    title: "Werk It!\nA Drag Rave",
     description: "Join us for an evening of drinks, fun and a bit of diva at this external performance taking part in the Pause & Play Festival!",
     location: "Wild Honey Beer House & Bistro",
     date: "9th May 2025 @ 21:45",

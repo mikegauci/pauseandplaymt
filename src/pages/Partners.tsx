@@ -47,6 +47,11 @@ export default function Partners() {
               className="w-full aspect-square object-contain bg-white rounded-lg"
             />
             <img 
+              src="/Partner-7.jpg"
+              alt="MaeWest"
+              className="w-full aspect-square object-contain bg-white rounded-lg"
+            />
+            <img 
               src="/Partner-6.jpg"
               alt="Motor Element"
               className="w-full aspect-square object-contain bg-white rounded-lg"
