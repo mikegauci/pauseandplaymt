@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Clock, Calendar, AlertTriangle, Info } from "lucide-react";
+import { ArrowLeft, Clock, AlertTriangle, Info } from "lucide-react";
 import SEO from "../components/SEO";
 
 // Define a type for the event data structure

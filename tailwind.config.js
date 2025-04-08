@@ -1,6 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  safelist: [
+    'border-[#37b5ff]',
+    'border-[#EEC60D]',
+    'border-amber-500',
+    'border-teal-500',
+    'border-purple-500',
+  ],
   theme: {
     extend: {
       colors: {

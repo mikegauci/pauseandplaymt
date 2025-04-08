@@ -116,19 +116,12 @@ const festivalCollaborators = [
     role: "Performer",
     color: "bg-[#EEC60D]",
   },
-  // {
-  //   id: "d-shows",
-  //   name: "D Shows",
-  //   image: "/D-Shows.jpg",
-  //   role: "Performers",
-  //   color: "bg-[#EEC60D]",
-  // },
   {
-    id: "starcrossed",
-    name: "Starcrossed",
-    image: "/starcrossed-2.jpg",
-    role: "Musicians",
-    color: "bg-teal-500",
+    id: "d-shows",
+    name: "D Shows",
+    image: "/d-shows-1.jpg",
+    role: "Performers",
+    color: "bg-[#EEC60D]",
   },
   // Artists
   {
@@ -156,7 +149,13 @@ const festivalCollaborators = [
     role: "Artist",
     color: "bg-amber-500",
   },
-
+  {
+    id: "starcrossed",
+    name: "Starcrossed",
+    image: "/starcrossed-2.jpg",
+    role: "Musicians",
+    color: "bg-teal-500",
+  },
   // Drag artists
   {
     id: "kiki-valentine",
