@@ -71,7 +71,10 @@ export default function Home() {
                 <Calendar className="ml-2 h-5 w-5" />
               </Link>
             </div>
-            <p className="text-gray-500 text-sm mt-4 opacity-70">Photo Credit: Darrin Zammit Lupi</p>
+            <p className="text-gray-500 text-sm mt-4 opacity-90">
+              A day ticket entitles you to free entry to all events that are taking place at the University of Malta Valletta Campus only
+            </p>
+            <p className="text-gray-500 text-sm mt-4 opacity-50">Photo Credit: Darrin Zammit Lupi</p>
           </div>
         </div>
       </div>

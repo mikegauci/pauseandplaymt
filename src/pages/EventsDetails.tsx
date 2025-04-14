@@ -16,14 +16,14 @@ type EventData = {
 };
 
 const eventsData: Record<string, EventData> = {
-  "story-circle-play-time": {
-    id: "story-circle-play-time",
-    title: "Story Circle & Play Time",
+  "i-promised-id-tell-you-a-story-but-id-rather-play-the-fool": {
+    id: "i-promised-id-tell-you-a-story-but-id-rather-play-the-fool",
+    title: "I Promised I'd Tell You a Story but I'd Rather Play the Fool ",
     duration: "30 minutes",
     time: "7:30 PM - 9:00 PM",
     disclaimer: "15+, may contain strong language",
-    image: "/Story-Circle-Play-Time-Main-Photo.jpg",
-    description: `Combining poetry and storytelling, Alex will be guiding audience-participants through a series of simple interactive activities, all around a table top in an intimate environment. Expect doodling, LEGO bricks, sound effects, and general silliness. Storytelling and playfulness are fundamental aspects of human nature - we are never too old to gather in a circle, share stories, and play the fool.`,
+    image: "/i-promised-id-tell-you-a-story-but-id-rather-play-the-fool.jpg",
+    description: `*I Promised I'd Tell You a Story but I'd Rather Play the Fool* is a hybrid performance-workshop by Alex Weenink; an interactive experiment exploring anxiety, playfulness, and storytelling. Through a combination of spoken word and collective creative activities, Alex will guide audience-participants through a personal journey of creativity and authenticity. This performance is an invitation to all to gather in circles, share stories, and play the fool.`,
   },
   "no-name-no-past": {
     id: "no-name-no-past",
@@ -60,7 +60,8 @@ const eventsData: Record<string, EventData> = {
     disclaimer:
       "18+, the performance contains and talks about aspects of sexual violence",
     image: "/Hooray-the-world-is-over.jpg",
-    exhibitionInfo: "The exhibition is open to the general public throughout the festival",
+    exhibitionInfo:
+      "The exhibition is open to the general public throughout the festival",
     description: `##D Shows presents two performances in one sitting
 
 ###The Language of the Deaf
@@ -81,20 +82,21 @@ But how can we do something about it?
 
 **D Shows invites all the spectators to connect.**`,
   },
-  "contact": {
+  contact: {
     id: "contact",
     title: "Contact",
     duration: "30 minutes",
     time: "7:30 PM - 9:00 PM",
     disclaimer: "16+",
     image: "/TED-Talk.jpg",
-    description: `A “TED Talk” about how one can see the connectivity within connection.`,
+    description: `A "TED Talk" about how one can see the connectivity within connection.`,
   },
   "pause-and-reflect": {
     id: "pause-and-reflect",
     title: "Pause & Reflect",
     isExhibition: true,
-    exhibitionInfo: "The exhibition is open to the general public throughout the festival",
+    exhibitionInfo:
+      "The exhibition is open to the general public throughout the festival",
     image: "/Pause-and-reflect-12.jpg",
     description: `Emily's work explores the balance between chaos and calm, capturing the need to pause in anxious moments and reflect on the good. Through painterly, abstract, and vibrant compositions, she creates a sense of movement that represents life's unpredictability—its rush, its worries, its intensity. This dynamic energy is then balanced by areas of stillness, inviting a feeling of peace and mindfulness. Colour plays a key role, reflecting different moods and emotions, from tension to tranquillity. Each piece serves as a visual reminder to slow down, breathe, and find beauty in both the turbulence and the quiet moments of life.`,
   },
@@ -102,7 +104,8 @@ But how can we do something about it?
     id: "first-year-performance",
     title: "First Year Performance",
     image: "/First-year-performance.jpg",
-    description: "Which news items catch our attention? How do we deal with them? Using the dramatised, living newspaper model, First Year Theatre Studies students are excited to 'pause and play' by sharing a programme of five short performances on a variety of themes: power, security, status, loss, and empathy. How real are our stories? Do they mix with abstract ideas or dreams? Come and find out!",
+    description:
+      "Which news items catch our attention? How do we deal with them? Using the dramatised, living newspaper model, First Year Theatre Studies students are excited to 'pause and play' by sharing a programme of five short performances on a variety of themes: power, security, status, loss, and empathy. How real are our stories? Do they mix with abstract ideas or dreams? Come and find out!",
     duration: "1 Hour",
   },
   "the-pigs-in-a-parlour": {
@@ -113,21 +116,23 @@ But how can we do something about it?
     duration: "30 minutes",
     disclaimer: "A majority of the performance will be in the dark",
   },
-  "bahar": {
+  bahar: {
     id: "bahar",
     title: "Bahar",
     image: "/Bahar.jpg",
     description: `An intimate view of Malta's sea: where light is refracted into a variety of unique works of art.`,
     isExhibition: true,
-    exhibitionInfo: "The exhibition is open to the general public throughout the festival",
+    exhibitionInfo:
+      "The exhibition is open to the general public throughout the festival",
   },
-  "to-be-confirmed": {
-    id: "to-be-confirmed",
-    title: "Name: TBC",
+  "moments-between": {
+    id: "moments-between",
+    title: "Moments Between",
     image: "/E-Image.jpg",
-    description: `TBC`,
+    description: `*Moments Between* offers glimpses into the strangers we encounter in our daily lives, revealing small windows into experiences as rich and complex as our own. Like the act of people-watching, these moments invite you to notice the subtle choreography of everyday life, fostering empathy and understanding. Inspired by sonder—the humbling awareness that you are not the centre of the universe, and that every person around you has their own web of experiences, emotions, and relationships just as intricate as yours—this series encourages you to pause, observe, and find beauty in the unnoticed.`,
     isExhibition: true,
-    exhibitionInfo: "The exhibition is open to the general public throughout the festival",
+    exhibitionInfo:
+      "The exhibition is open to the general public throughout the festival",
   },
 };
 
@@ -200,9 +205,7 @@ export default function EventsDetails() {
                 <div className="bg-[#1a1a1a] p-4 rounded-lg border-l-4 border-[#37B5FF] mb-6">
                   <div className="flex items-center">
                     <Info className="h-5 w-5 text-[#37B5FF] mr-3 mt-0.5 flex-shrink-0" />
-                    <div className="text-white">
-                      {event.exhibitionInfo}
-                    </div>
+                    <div className="text-white">{event.exhibitionInfo}</div>
                   </div>
                 </div>
               )}
@@ -250,27 +253,63 @@ export default function EventsDetails() {
               if (paragraph.startsWith("##") && !paragraph.startsWith("###")) {
                 // Main title (h2)
                 return (
-                  <h2 key={index} className="text-2xl font-bold text-white mb-6 text-center">
-                    {paragraph.replace(/^##/, '')}
+                  <h2
+                    key={index}
+                    className="text-2xl font-bold text-white mb-6 text-center"
+                  >
+                    {paragraph.replace(/^##/, "")}
                   </h2>
                 );
               } else if (paragraph.startsWith("###")) {
                 // Subheading (h3)
                 return (
-                  <h3 key={index} className="text-xl font-bold text-white mt-8 mb-4 border-b border-gray-700 pb-1 text-center">
-                    {paragraph.replace(/^###/, '')}
+                  <h3
+                    key={index}
+                    className="text-xl font-bold text-white mt-8 mb-4 border-b border-gray-700 pb-1 text-center"
+                  >
+                    {paragraph.replace(/^###/, "")}
                   </h3>
                 );
-              } else if (paragraph.startsWith("**") && paragraph.endsWith("**")) {
+              } else if (
+                paragraph.startsWith("**") &&
+                paragraph.endsWith("**")
+              ) {
                 // Bold paragraph
                 return (
-                  <p key={index} className="text-gray-300 text-lg leading-relaxed mb-4 font-bold">
-                    {paragraph.replace(/^\*\*|\*\*$/g, '')}
+                  <p
+                    key={index}
+                    className="text-gray-300 text-lg leading-relaxed mb-4 font-bold"
+                  >
+                    {paragraph.replace(/^\*\*|\*\*$/g, "")}
+                  </p>
+                );
+              }
+              // Handle italics
+              if (paragraph.includes("*")) {
+                const parts = paragraph.split(/(\*[^*]+\*)/g);
+                return (
+                  <p
+                    key={index}
+                    className="text-gray-300 text-lg leading-relaxed mb-4"
+                  >
+                    {parts.map((part, i) => {
+                      if (part.startsWith("*") && part.endsWith("*")) {
+                        return (
+                          <span key={i} className="italic">
+                            {part.slice(1, -1)}
+                          </span>
+                        );
+                      }
+                      return part;
+                    })}
                   </p>
                 );
               }
               return (
-                <p key={index} className="text-gray-300 text-lg leading-relaxed mb-4">
+                <p
+                  key={index}
+                  className="text-gray-300 text-lg leading-relaxed mb-4"
+                >
                   {paragraph}
                 </p>
               );
@@ -321,6 +360,10 @@ export default function EventsDetails() {
           >
             Reserve Your Spot
           </a>
+          <p className="text-gray-500 text-sm mt-4 opacity-90">
+            A day ticket entitles you to free entry to all events that are<br/>
+            taking place at the University of Malta Valletta Campus only
+          </p>
         </div>
       </div>
     </div>

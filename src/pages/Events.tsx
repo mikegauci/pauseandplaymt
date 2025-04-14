@@ -24,9 +24,9 @@ interface ExternalEvent {
 
 const events: Event[] = [
   {
-    id: 'story-circle-play-time',
-    title: "Story Circle & Play Time",
-    image: "/Story-Circle-Play-Time-Main-Photo.jpg",
+    id: 'i-promised-id-tell-you-a-story-but-id-rather-play-the-fool',
+    title: "I Promised I'd Tell You a Story but I'd Rather Play the Fool ",
+    image: "/i-promised-id-tell-you-a-story-but-id-rather-play-the-fool.jpg",
     category: 'Workshop',
     ageRestriction: '15+',
     duration: '30 minutes'
@@ -101,8 +101,8 @@ const exhibitionEvents: Event[] = [
     category: 'Exhibition',
   },
   {
-    id: 'to-be-confirmed',
-    title: 'Name: TBC',
+    id: 'moments-between',
+    title: 'Moments Between',
     image: "/E-Image.jpg",
     category: 'Exhibition',
   }

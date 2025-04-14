@@ -174,6 +174,40 @@ const teamMembersData: Record<string, TeamMember> = {
     color: "bg-teal-500",
     bio: `Starcrossed is a five-piece band that plays a variety of music genres such as soft rock and alternative indie. Formed in 2023, the band draws inspiration from artists such as Radiohead and Fleetwood Mac.`,
   },
+  "tim-borg": {
+    name: "Tim Borg",
+    role: "Comedian",
+    image: "/Tim-Borg-1.jpg",
+    color: "bg-red-500",
+    bio: `Tim Borg has established himself as one of Malta's most versatile stand ups, leaving audiences breathless with his ability to excel in traditional stand up, alternative comedy, and crowd work. He has opened for Shane Callaghan and Mustafa Algiyadi on the Maltese legs of their European tours, and performed in Ireland, Germany, Spain, and the United Kingdom.<br /><br />
+    "Tim's quirky offbeat comedy combined with a likeable persona, fearless experimentation, and delightful geekiness makes him worth having on any comedy line up" – Aideen McQueen (Craic Den Comedy Club)<br /><br />
+    "Damn right funny" – Mustafa Algiyadi<br /><br />
+    "Doesn't know how to relax" – Tim's therapist`,
+  },
+  "daniel-diacono": {
+    name: "Daniel Diacono",
+    role: "Comedian",
+    image: "/Daniel-Diacono.jpg",
+    color: "bg-red-500",
+    bio: `Daniel Diacono is a Maltese stand-up comedian and actor known for his unpredictable and unhinged comedic style. He has been a prominent figure in Malta's comedy scene, performing at various events such as the *Wild Roast Battle Malta* in March 2025, where he was described as "gloriously unpredictable". In May 2024, he featured in Comedy Kingdom at Junior College, sharing the stage with other notable comedians. Beyond stand-up, he showcased his acting skills in the mockumentary series *Il-Kunsill Lokali*, portraying the character *Coleiro*.`,
+  },
+  "andrew-john-sciberras": {
+    name: "Andrew John Sciberras",
+    role: "Comedian",
+    image: "/Andrew-John-Sciberras.jpg",
+    color: "bg-red-500",
+    bio: `In the past couple of years, Andrew, Maltese comedy's favourite nerd, has quickly developed himself into one of the key members of the local scene. This is matched with Andrew's onstage performance, which stems from his numerous theatrical credits both locally and abroad.<br /><br />
+    "One of Malta's fastest-rising comedy stars" - Malcolm Galea<br /><br />
+    Andrew's sharp and clever writing helped him pick up the award for "Best Joke" in Malta's 2024 comedy awards, cementing himself as one of the scene's best and wittiest writers.<br /><br />
+    "A structured, seasoned and effortless joke writer" - Joshua Bethania, Winner of So You Think You're Funny? winner 2021`,
+  },
+  "crush-velvet": {
+    name: "Crush Velvet",
+    role: "Comedian",
+    image: "/Crush-Velvet.jpg",
+    color: "bg-red-500",
+    bio: `Crush Velvet is proof that the struggle is real. Mid at comedy, poetry, writing, and drag, this multi hyphenate flop has been taking Malta by storm for too long. Notable shows include *Crush Velvet kill yourself* as part of *Strada Xalata*, the hosting of and starring in *Saturgay*, and losing to Daniel Diacono at the first *Wild Comedy Roast*. If losing is the new winning, someone hand Crush the Oscar for losing three Chuckle awards in one night. Chaotic, Cunty and Cringe to the core, this triple threat is ready to take the stage.`,
+  },
 };
 
 export default function TeamMember() {
@@ -224,10 +258,19 @@ export default function TeamMember() {
 
         {/* Content Section */}
         <div className="prose prose-lg prose-invert max-w-none">
-          <div
-            className="text-gray-300 mb-6 text-lg leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: member.bio }}
-          />
+          <div className="text-gray-300 mb-6 text-lg leading-relaxed">
+            {member.bio.split(/<br \/><br \/>/).map((paragraph, pIndex) => (
+              <p key={pIndex} className="mb-4">
+                {paragraph.split(/(\*[^*]+\*)/).map((part, index) => {
+                  if (part.startsWith('*') && part.endsWith('*')) {
+                    // Remove the asterisks and render in italics
+                    return <i key={index}>{part.slice(1, -1)}</i>;
+                  }
+                  return <span key={index}>{part}</span>;
+                })}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>
