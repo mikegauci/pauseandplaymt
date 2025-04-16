@@ -35,7 +35,7 @@ export function Layout() {
     { name: 'Partners', href: '/partners' },
     { name: 'Contact', href: '/contact' },
     { name: 'FAQ', href: '/faq' },
-    { name: 'Programme', href: '#' },
+    { name: 'Programme', href: '/Pause-and-Play-Festival-Programme.pdf', external: true },
   ];
 
   return (
@@ -86,6 +86,16 @@ export function Layout() {
                       </div>
                     )}
                   </div>
+                ) : item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black border-b-2 border-transparent hover:border-black px-3 py-2 text-sm font-medium transition-all"
+                  >
+                    {item.name}
+                  </a>
                 ) : (
                   <Link
                     key={item.name}
@@ -141,6 +151,17 @@ export function Layout() {
                       </Link>
                     ))}
                   </div>
+                ) : item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-3 py-2 text-base font-medium border-b-2 text-black border-transparent hover:border-[#EEC60D]"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
                 ) : (
                   <Link
                     key={item.name}
@@ -202,7 +223,7 @@ export function Layout() {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800">
             <p className="text-gray-400">
-            Copyright Pause & Play Festival. This festival is being supported by the Department of Theatre Studies within the University of Malta’s School of Performing Arts. This festival website was designed by Onyx Studio.
+            Copyright Pause & Play Festival. This festival is being supported by the Department of Theatre Studies within the University of Malta's School of Performing Arts. This festival website was designed by Onyx Studio.
             </p>
           </div>
         </div>

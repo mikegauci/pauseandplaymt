@@ -16,6 +16,7 @@ const Contact = React.lazy(() => import('./pages/Contact'));
 const FAQ = React.lazy(() => import('./pages/FAQ'));
 const TheFestival = React.lazy(() => import('./pages/TheFestival'));
 const GettingThere = React.lazy(() => import('./pages/GettingThere'));
+const Programme = React.lazy(() => import('./pages/Programme'));
 
 function App() {
   return (
@@ -77,6 +78,11 @@ function App() {
           <Route path="the-festival" element={
             <React.Suspense fallback={<div>Loading...</div>}>
               <TheFestival />
+            </React.Suspense>
+          } />
+          <Route path="programme" element={
+            <React.Suspense fallback={<div>Loading...</div>}>
+              <Programme />
             </React.Suspense>
           } />
         </Route>
