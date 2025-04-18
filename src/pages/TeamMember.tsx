@@ -208,6 +208,14 @@ const teamMembersData: Record<string, TeamMember> = {
     color: "bg-red-500",
     bio: `Crush Velvet is proof that the struggle is real. Mid at comedy, poetry, writing, and drag, this multi hyphenate flop has been taking Malta by storm for too long. Notable shows include *Crush Velvet kill yourself* as part of *Strada Xalata*, the hosting of and starring in *Saturgay*, and losing to Daniel Diacono at the first *Wild Comedy Roast*. If losing is the new winning, someone hand Crush the Oscar for losing three Chuckle awards in one night. Chaotic, Cunty and Cringe to the core, this triple threat is ready to take the stage.`,
   },
+  "tina-camilleri": {
+    name: "Tina Camilleri",
+    role: "Performer",
+    image: "/Tina-Camilleri.jpg",
+    color: "bg-[#EEC60D]",
+    bio: `Tina is driven by an inquisitive spirit, delving into the intersections of arts, visual culture, community development, and social justice. Holding a B.A. in Fine Art and currently pursuing an M.A. in Social Practice Art and Critical Education, she is not tied to a particular field, exploring the diverse cultural landscape around her by actively engaging in performative, literary, club-oriented and audio-visual collaborations through DJing and live improvisations.<br /><br />
+    Tina continues to explore the multifaceted applications of art for fostering fruitful collaborations, including through active involvement with grass-root organisations, with a commitment to leveraging art as a catalyst for positive social transformation and collective action.`,
+  },
 };
 
 export default function TeamMember() {

@@ -100,12 +100,12 @@ But how can we do something about it?
     image: "/Pause-and-reflect-12.jpg",
     description: `Emily's work explores the balance between chaos and calm, capturing the need to pause in anxious moments and reflect on the good. Through painterly, abstract, and vibrant compositions, she creates a sense of movement that represents life's unpredictability—its rush, its worries, its intensity. This dynamic energy is then balanced by areas of stillness, inviting a feeling of peace and mindfulness. Colour plays a key role, reflecting different moods and emotions, from tension to tranquillity. Each piece serves as a visual reminder to slow down, breathe, and find beauty in both the turbulence and the quiet moments of life.`,
   },
-  "first-year-performance": {
-    id: "first-year-performance",
-    title: "First Year Performance",
-    image: "/First-year-performance.jpg",
+  "then-and-now": {
+    id: "then-and-now",
+    title: "Then and Now (First Year Performance)",
+    image: "/1st-year.jpg",
     description:
-      "Which news items catch our attention? How do we deal with them? Using the dramatised, living newspaper model, First Year Theatre Studies students are excited to 'pause and play' by sharing a programme of five short performances on a variety of themes: power, security, status, loss, and empathy. How real are our stories? Do they mix with abstract ideas or dreams? Come and find out!",
+      "Which news items catch our attention? How do we deal with them? Using the dramatised, Living Newspaper model, Theatre Studies Year 1 students are excited to ‘pause and play’ by sharing a programme of 5 short performances on a variety of themes: power, security, status, loss, and empathy...their causes then, but also their effects now. How real are our stories? Do they mix with abstract ideas or dreams? Come and find out!",
     duration: "1 Hour",
   },
   "the-pigs-in-a-parlour": {
@@ -116,7 +116,7 @@ But how can we do something about it?
     duration: "30 minutes",
     disclaimer: "A majority of the performance will be in the dark",
   },
-  bahar: {
+  "bahar": {
     id: "bahar",
     title: "Bahar",
     image: "/Bahar.jpg",

@@ -117,11 +117,26 @@ const festivalCollaborators = [
     color: "bg-[#EEC60D]",
   },
   {
+    id: "tina-camilleri",
+    name: "Tina Camilleri",
+    image: "/Tina-Camilleri.jpg",
+    role: "Performer",
+    color: "bg-[#EEC60D]",
+  },
+  {
     id: "d-shows",
     name: "D Shows",
     image: "/d-shows-1.jpg",
     role: "Performers",
     color: "bg-[#EEC60D]",
+  },
+  // Musicians
+  {
+    id: "starcrossed",
+    name: "Starcrossed",
+    image: "/starcrossed-2.jpg",
+    role: "Musicians",
+    color: "bg-teal-500",
   },
   // Artists
   {
@@ -149,14 +164,6 @@ const festivalCollaborators = [
     role: "Artist",
     color: "bg-amber-500",
   },
-  // Musicians
-  {
-    id: "starcrossed",
-    name: "Starcrossed",
-    image: "/starcrossed-2.jpg",
-    role: "Musicians",
-    color: "bg-teal-500",
-  },
   // Comedians
   {
     id: "tim-borg",
@@ -164,28 +171,28 @@ const festivalCollaborators = [
     image: "/Tim-Borg-1.jpg",
     role: "Comedian",
     color: "bg-red-500",
-  },  
+  },
   {
     id: "daniel-diacono",
     name: "Daniel Diacono",
     image: "/Daniel-Diacono.jpg",
     role: "Comedian",
     color: "bg-red-500",
-  },  
+  },
   {
     id: "andrew-john-sciberras",
     name: "Andrew John Sciberras",
     image: "/Andrew-John-Sciberras.jpg",
     role: "Comedian",
     color: "bg-red-500",
-  },  
+  },
   {
     id: "crush-velvet",
     name: "Crush Velvet",
     image: "/Crush-Velvet.jpg",
     role: "Comedian",
     color: "bg-red-500",
-  },  
+  },
   // Drag artists
   {
     id: "kiki-valentine",
