@@ -105,7 +105,13 @@ But how can we do something about it?
     title: "Then and Now (First Year Performance)",
     image: "/1st-year.jpg",
     description:
-      "Which news items catch our attention? How do we deal with them? Using the dramatised, Living Newspaper model, Theatre Studies Year 1 students are excited to ‘pause and play’ by sharing a programme of 5 short performances on a variety of themes: power, security, status, loss, and empathy...their causes then, but also their effects now. How real are our stories? Do they mix with abstract ideas or dreams? Come and find out!",
+      `Which news items catch our attention? How do we deal with them? Using the dramatised, Living Newspaper model, Theatre Studies Year 1 students are excited to 'pause and play' by sharing a programme of 5 short performances on a variety of themes: power, security, status, loss, and empathy...their causes then, but also their effects now. How real are our stories? Do they mix with abstract ideas or dreams? Come and find out!
+
+      
+      To book for this specific event, please email: theatre.year1@gmail.com
+
+      A minimum €5 donation at the door is encouraged for this specific event.
+`,
     duration: "1 Hour",
   },
   "the-pigs-in-a-parlour": {
@@ -139,6 +145,17 @@ But how can we do something about it?
 export default function EventsDetails() {
   const { id } = useParams();
   const event = eventsData[id as keyof typeof eventsData];
+
+  // Helper function to render email as a clickable mailto link
+  const renderWithMailtoLink = (text: string) => {
+    if (id === 'then-and-now' && text.includes('theatre.year1@gmail.com')) {
+      return text.replace(
+        'theatre.year1@gmail.com',
+        '<a href="mailto:theatre.year1@gmail.com" style="color:#37B5FF; text-decoration:none;" onmouseover="this.style.textDecoration=\'underline\'" onmouseout="this.style.textDecoration=\'none\'">theatre.year1@gmail.com</a>'
+      );
+    }
+    return text;
+  };
 
   if (!event) {
     return (
@@ -310,7 +327,11 @@ export default function EventsDetails() {
                   key={index}
                   className="text-gray-300 text-lg leading-relaxed mb-4"
                 >
-                  {paragraph}
+                  {paragraph.includes("<a") ? (
+                    <span dangerouslySetInnerHTML={{ __html: paragraph }} />
+                  ) : (
+                    <span dangerouslySetInnerHTML={{ __html: renderWithMailtoLink(paragraph) }} />
+                  )}
                 </p>
               );
             })}
@@ -352,14 +373,23 @@ export default function EventsDetails() {
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
             Don't miss this unique performance at the Pause & Play Festival.
           </p>
-          <a
-            href="https://www.eventbrite.com/e/pause-play-festival-tickets-1249939425469?aff=oddtdtcreator"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#EEC60D] text-[#1E0B36] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f5d02e] transition-colors inline-block"
-          >
-            Reserve Your Spot
-          </a>
+          {event.id === "then-and-now" ? (
+            <a
+              href="mailto:theatre.year1@gmail.com"
+              className="bg-[#EEC60D] text-[#1E0B36] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f5d02e] transition-colors inline-block"
+            >
+              Reserve Your Spot
+            </a>
+          ) : (
+            <a
+              href="https://www.eventbrite.com/e/pause-play-festival-tickets-1249939425469?aff=oddtdtcreator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#EEC60D] text-[#1E0B36] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f5d02e] transition-colors inline-block"
+            >
+              Reserve Your Spot
+            </a>
+          )}
           <p className="text-gray-500 text-sm mt-4 opacity-90">
             A day ticket entitles you to free entry to all events that are<br/>
             taking place at the University of Malta Valletta Campus only
